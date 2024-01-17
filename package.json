@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "html5-boilerplate": "^9.0.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
   }
 }
