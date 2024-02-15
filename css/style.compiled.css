@@ -548,6 +548,10 @@ html {
   --tw-backdrop-sepia:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -658,6 +662,10 @@ html {
 
 .mb-10 {
   margin-bottom: 2.5rem;
+}
+
+.mt-40 {
+  margin-top: 10rem;
 }
 
 .inline-block {
@@ -1053,6 +1061,22 @@ html {
 
 .pr-4 {
   padding-right: 1rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
+.pt-40 {
+  padding-top: 10rem;
+}
+
+.pt-80 {
+  padding-top: 20rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
 }
 
 .text-center {
@@ -1478,6 +1502,14 @@ html {
 
   .md\:pr-4 {
     padding-right: 1rem;
+  }
+
+  .md\:pb-20 {
+    padding-bottom: 5rem;
+  }
+
+  .md\:pt-40 {
+    padding-top: 10rem;
   }
 
   .md\:text-4xl {
