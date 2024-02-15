@@ -23,256 +23,200 @@
 
 </head>
 
-<body>
+<body class="">
 
-  <div class="bg-zinc-900">
-    <header class="text-white">
-      <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
-        <div class="flex lg:flex-1">
-          <a href="#" class="-m-1.5 p-1.5">
-            <span>Design Tokens Pro</span>
-            <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=teal&shade=600" alt="">
+  <header class="text-white bg-violet-950 p-5 border-b border-b-neutral-950">
+    <div class="max-w-screen-2xl mx-auto">
+      <nav class="flex flex-col md:flex-row items-center px-4" aria-label="Global">
+        <div class="flex md:w-full mb-12 md:mb-0">
+          <a href="#" class="flex flex-row-reverse items-center">
+            <img class="w-auto h-12" src="/img/logo.webp" alt="Design Tokens Pro logo">
           </a>
         </div>
-        <div class="hidden">
-          <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
-            <span class="sr-only">Open main menu</span>
-            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
-          </button>
-        </div>
-        <div class="lg:flex lg:gap-x-12">
-          <a href="#section-about" class="text-sm font-semibold leading-6">About the course</a>
-          <a href="#section-faq" class="text-sm font-semibold leading-6">FAQ</a>
-          <a href="join.html" class="text-sm font-semibold leading-6">Join waitlist</a>
-        </div>
-        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" class="text-sm font-semibold leading-6">Log in <span aria-hidden="true">&rarr;</span></a>
+        <div class="w-full text-right flex justify-evenly md:justify-end text-lg font-normal leading-6">
+          <a href="#section-about">About</a>
+          <a href="#section-faq" class="sm:pl-6 md:pl-12">FAQ</a>
+          <a href="join.html" class="sm:pl-6 md:pl-12 text-green-400 font-medium">Join the waitlist →</a>
         </div>
       </nav>
+    </div>
+  </header>
+
+  <section class="px-6 py-10 md:py-20 bg-violet-950 grid md:grid-cols-3 gap-6">
+    <div class="max-w-screen-2xl mx-auto col-span-2 mt-10 md:mt-0">
+      <h1 class="max-w-5xl md:pr-12 text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-4 font-medium tracking-tighter text-white">Master the use of design tokens to harness their potential</h1>
+      <div class="max-w-3xl">
+        <p class="text-2xl text-white opacity-80 mb-6">Learn how to effectively create, manage, and utilize design tokens in your digital products.
+        </p>
+        <a class="inline-block bg-green-400 hover:bg-green-300 transition-colors text-xl font-medium text-zinc-900 px-12 py-4 rounded-full" href="join.html">Join the waitlist →</a>
+      </div>
+    </div>
+    <div class="col-span-2 md:col-span-1">
+      <a href="join.html">
+        <img class="w-full col-span-2 md:col-span-1" src="/img/course-cover@2x.webp" alt="The cover of Design Tokens Pro course">
+      </a>
+    </div>
+  </section>
+
+
+  <section class="bg-white px-6 py-20">
+    <div class="max-w-screen-2xl mx-auto grid lg:grid-cols-2 gap-6">
+      <h2 class="col-span-1 text-6xl font-medium mb-8 text-zinc-800 lg:pr-12">Who, specifically, is this course for?</h2>
+      <div class="col-span-1 text-zinc-700 font-normal">
+        <p class="text-2xl mb-6">The Design Tokens Pro course is intended for <strong>designers</strong>, <strong>developers</strong>, and <strong>stakeholders</strong> involved in a product design process. 
+        </p>
+        <p class="text-2xl mb-6">It provides a <strong>reliable guide</strong> for establishin the best management workflow to your specific context.</p>
+        <p class="text-2xl mb-6">If managing design tokens across various files or tools seems daunting, <strong>this course is for you</strong>.</p>
+        <p class="text-2xl border-t border-t-zinc-200 pt-4">
+          <a class="text-green-400 hover:text-green-500 transition-colors font-medium underline" href="#section-about">
+            What's in the course 
+          </a> 
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white px-6 py-20">
+    <div class="max-w-screen-2xl mx-auto border-t border-t-zinc-800">
+      <h2 class="text-6xl font-medium my-20 text-zinc-800">What you'll learn</h2>
+      <article class="grid lg:grid-cols-2 gap-6 mb-20 lg:mb-40">
+        <header class="col-span-1 ">
+          <h3 class="text-3xl font-medium mb-1 text-zinc-800">Develop a shared vocabulary.</h3>
+          <p class="text-2xl text-zinc-600">Creating a shared taxonomy with clear naming conventions is vital. It organizes information, enhances clarity, and promotes teamwork and efficiency.</p>
+        </header>
+        <img class="col-span-1 w-full" src="https://placehold.it/600x300" alt="">
+      </article>
+
+      <article class="grid lg:grid-cols-2 gap-6 mb-20 lg:mb-40">
+        <header class="col-span-1 ">
+          <h3 class="text-3xl font-medium mb-1 text-zinc-800">Translate values into design decisions.</h3>
+          <p class="text-2xl text-zinc-600">Every token you make is a careful choice, not just a random number. As you learn more, you'll see how and when you make these important choices and use this understanding in real situations.</p>
+        </header>
+        <img class="col-span-1 w-full" src="https://placehold.it/600x300" alt="">
+      </article>
+
+      <article class="grid lg:grid-cols-2 gap-6 mb-20 lg:mb-40">
+        <header class="col-span-1 ">
+          <h3 class="text-3xl font-medium mb-1 text-zinc-800">Select the right token for each case.</h3>
+          <p class="text-2xl text-zinc-600">Choosing the right token is vital for different use cases, as it ensures functionality. Select based on each use case's specific needs and be aware of any potential implications.</p>
+        </header>
+        <img class="col-span-1 w-full" src="https://placehold.it/600x300" alt="">
+      </article>
+
+      <article class="grid lg:grid-cols-2 gap-6 mb-20">
+        <header class="col-span-1 ">
+          <h3 class="text-3xl font-medium mb-1 text-zinc-800">Optimize your process.</h3>
+          <p class="text-2xl text-zinc-600">Understanding the tools for efficient design token updates is key. As products evolve, so must these tokens. Developing skills to manage and update these tokens can greatly enhance the design process.</p>
+        </header>
+        <img class="col-span-1 w-full" src="https://placehold.it/600x300" alt="">
+      </article>
+
+    </div>
+  </section>
+
+  </div>
+
+  <section id="section-about" class="bg-zinc-100 px-6 py-20">
+    <div class="max-w-screen-2xl mx-auto">
+      <h2 class="text-6xl font-medium mb-6">What's in the course</h2>
       
-      <!-- Mobile menu, show/hide based on menu open state.
-      <div class="hidden" role="dialog" aria-modal="true">
-        <!-- Background backdrop, show/hide based on slide-over state.
-        <div class="fixed inset-0 z-50"></div>
-        <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 md:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-          <div class="flex items-center justify-between">
-            <a href="#" class="-m-1.5 p-1.5">
-              <span class="sr-only">Your Company</span>
-              <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=teal&shade=600" alt="">
-            </a>
-            <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
-              <span class="sr-only">Close menu</span>
-              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-          <div class="mt-6 flow-root">
-            <div class="-my-6 divide-y divide-gray-500/10">
-              <div class="space-y-2 py-6">
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Product</a>
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Features</a>
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Marketplace</a>
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
-              </div>
-              <div class="py-6">
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>-->
-    </header>
-
-    <div class="relative isolate px-4 pt-14 lg:px-8">
-     <!-- <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
-        <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
-      </div>-->
-      <div class="mx-auto max-w-5xl py-12 lg:pb-40">
-        <!--<div class="hidden sm:mb-8 sm:flex sm:justify-center">
-          <div class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-            Announcing our next round of funding. <a href="#" class="font-semibold text-teal-600"><span class="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
-          </div>
-        </div>-->
-        <div class="text-center text-white">
-          <h3 class="text-sm uppercase tracking-wide">the design tokens course</h3>
-          <h1 class="text-6xl sm:text-8xl font-bold tracking-tight text-white">Master design tokens for best use in your product.</h1>
-          <p class="mt-6 text-lg leading-8 text-gray-200">Learn to create, manage and use design tokens to maintain consistency in your digital products. Understand the fundamentals of design tokens, how to implement them in your projects, and how they can streamline your design process.</p>
-          <div class="mt-10 flex items-center justify-center gap-x-6">
-            <a href="join.html" class="inline-block rounded-md bg-teal-600 px-14 py-3 font-semibold text-lg text-white shadow-sm hover:bg-teal-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">Join the waitlist</a>
-            <!--<a href="#" class="text-sm font-semibold leading-6 text-gray-900">Learn more <span aria-hidden="true">→</span></a>-->
-          </div> 
-
-        </div>
-      </div>
-      <!--<div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
-        <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
-      </div>-->
-    </div>
-  </div>
-
-  <div class="bg-white px-4 py-40">
-    <div class="lg:px-8 max-w-7xl mx-auto">
-      <div class="text-left">
-        <h2 class="text-6xl font-semibold mb-8 text-zinc-800">Who, specifically, is this course for?</h2>
-        <p class="text-2xl mb-6 text-zinc-800 max-w-3xl">The <strong>Design Tokens Pro</strong> course is intended for designers, developers, product owners, and stakeholders involded in product design process. 
-        </p>
-        <p class="text-2xl text-zinc-800 mb-6 max-w-3xl">It provides a <strong>reliable guide</strong> for creating high-quality digital products on any platform. If managing design tokens across various files or tools seems like a challenge, this course is for you.</p>
-        <p class="text-xl">
-          <a class="text-teal-600 hover:text-teal-800 font-semibold underline" href="#section-about">Explore the course</a>
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="bg-zinc-50 px-6 py-40 text-zinc-600">
-    <div class="lg:px-8 max-w-7xl mx-auto">
-      <div class="text-">
-        <h2 class="text-6xl font-semibold mb-24 text-zinc-800">What you'll learn</h2>
-      </div>
-    </div>
-
-    <div class="lg:px-8 mb-14 mx-auto max-w-7xl">
-      <article class="lg:flex">
-        <header class="lg:pr-8">
-          <h3 class="text-4xl font-bold mb-8 text-zinc-800">Develop a shared vocabulary.</h3>
-          <p class="">Developing a shared taxonomy with clear naming conventions is vital. It organizes information, enhances clarity, and promotes teamwork and efficiency.</p>
-        </header>
-        <img src="https://placehold.it/600x300" alt="">
-      </article>
-    </div>
-
-    <div class="lg:px-8 mb-14 mx-auto max-w-7xl">
-      <article class="lg:flex">
-        <header class="lg:pr-8">
-          <h3 class="text-4xl font-bold mb-8 text-zinc-800">Translate values into design decisions.</h3>
-          <p class="">Every token you make is a careful choice, not just a random number. As you learn more, you'll see how and when you make these important choices and use this understanding in real situations.</p>
-        </header>
-        <img src="https://placehold.it/600x300" alt="">
-      </article>
-    </div>
-
-    <div class="lg:px-8 mb-14 mx-auto max-w-7xl">
-      <article class="lg:flex">
-        <header class="lg:pr-8">
-          <h3 class="text-4xl font-bold mb-8 text-zinc-800">Select the right token for each case.</h3>
-          <p class="">Choosing the right token is vital for different use cases, as it ensures functionality. Select based on each use case's specific needs and be aware of any potential implications.</p>
-        </header>
-        <img src="https://placehold.it/600x300" alt="">
-      </article>
-    </div>
-
-    <div class="lg:px-8 mx-auto max-w-7xl mb-14">
-      <article class="lg:flex">
-        <header class="lg:pr-8">
-          <h3 class="text-4xl font-bold mb-8 text-zinc-800">Optimize your process.</h3>
-          <p class="">Understanding the tools for efficient design token updates is key. As products evolve, so must these tokens. Developing skills to manage and update these tokens can greatly enhance the design process.</p>
-        </header>
-        <img src="https://placehold.it/600x300" alt="">
-      </article>
-    </div>
-
-    <div class="lg:px-8 mx-auto max-w-2xl text-center">
-      <a href="join.html" class="inline-block rounded-md bg-teal-600 px-14 py-3 font-semibold text-lg text-white shadow-sm hover:bg-teal-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">Join waitlist</a>
-    </div>
-
-  </div>
-
-  <div id="section-about" class="bg-white px-4 py-14">
-
-    <div class="lg:px-8">
-      <h2 class="text-6xl font-bold mb-8">What's in the course</h2>
-      <h3 class="text-3xl mb-6">Part 1</h3>
-      <div class="md:flex md:flex-wrap mb-12">
-        <div class="md:w-6/12 lg:w-3/12 pb-8 md:pr-8">
-          <span class="text-zinc-600 font-bold">01</span>
-          <h4 class="text-2xl font-semibold pt-2 border-t border-t-zinc-300">Introduction</h4>
+      <h3 class="text-md mb-6 uppercase text-zinc-500 border-t border-zinc-300 pt-6">Fundamentals</h3>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-3 mb-12">
+        <article class="col-span-1 ">
+          <span class="text-violet-600 font-medium font-mono">01</span>
+          <h4 class="text-2xl font-medium mb-3">Basics</h4>
           <p>What are design tokens, their benefits and why they aren't simply variables</p>
-        </div>
-        <div class="md:w-6/12 lg:w-3/12 pb-8 md:pr-8">
-          <span>02</span>
-          <h4 class="text-2xl font-semibold pt-2 border-t border-t-zinc-300">Elements of a token name</h4>
-          <p>Levels and groups</p>
-        </div>
-        <div class="md:w-6/12 lg:w-3/12 pb-8 md:pr-8">
-          <span>03</span>
-          <h4 class="text-2xl font-semibold pt-2 border-t border-t-zinc-300">Rules of a naming convention</h4>
+        </article>
+        <article class="col-span-1 ">
+          <span class="text-violet-600 font-medium font-mono">02</span>
+          <h4 class="text-2xl font-medium mb-3">Elements of a Name</h4>
+          <p>What are design tokens, their benefits and why they aren't simply variables</p>
+        </article>
+        <article class="col-span-1">
+          <span class="text-violet-600 font-medium font-mono">03</span>
+          <h4 class="text-2xl font-medium mb-3">Token Levels</h4>
           <p>Set the rules for choosing words</p>
-        </div>
-        <div class="md:w-6/12 lg:w-3/12 pb-8 md:pr-8">
-          <span>04</span>
-          <h4 class="text-2xl font-semibold pt-2 border-t border-t-zinc-300">Create a taxonomy</h4>
+        </article>
+        <article class="col-span-1">
+          <span class="text-violet-600 font-medium font-mono">04</span>
+          <h4 class="text-2xl font-medium mb-3">Taxonomy & Naming Convention</h4>
           <p>Set the rules for choosing words</p>
-        </div>
+        </article>
       </div>
-      <h3 class="text-3xl mb-6">Part 2</h3>
-      <div class="md:flex md:flex-wrap">
-        <div class="md:w-6/12 lg:w-3/12 pb-8 md:pr-8">
-          <span>05</span>
-          <h4 class="text-2xl font-semibold pt-2 border-t border-t-zinc-300">Power of semantic words</h4>
-          <p>The power of well-roganzied semantic tokens and why avoid to be specific is the right way</p>
-        </div>
-        <div class="md:w-6/12 lg:w-3/12 pb-8 md:pr-8">
-          <span>06</span>
-          <h4 class="text-2xl font-semibold pt-2 border-t border-t-zinc-300">Lifecycle of a design tokens</h4>
-          <p>The power of well-roganzied semantic tokens and why avoid to be specific is the right way</p>
-        </div>
-        <div class="md:w-6/12 lg:w-3/12 pb-8 md:pr-8">
-          <span>07</span>
-          <h4 class="text-2xl font-semibold pt-2 border-t border-t-zinc-300">Documenting tokens</h4>
+
+      <h3 class="text-md mb-6 uppercase text-zinc-500 border-t border-zinc-300 pt-6">Advanced Topics</h3>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-3">
+        <article class="col-span-1">
+          <span class="text-violet-600 font-medium font-mono">04</span>
+          <h4 class="text-2xl font-medium mb-3">Semantic words</h4>
+          <p>What are design tokens, their benefits and why they aren't simply variables</p>
+        </article>
+        <article class="col-span-1">
+          <span class="text-violet-600 font-medium font-mono">05</span>
+          <h4 class="text-2xl font-medium mb-3">Themes</h4>
+          <p>What are design tokens, their benefits and why they aren't simply variables</p>
+        </article>
+        <article class="col-span-1">
+          <span class="text-violet-600 font-medium font-mono">06</span>
+          <h4 class="text-2xl font-medium mb-3">Documenting tokens</h4>
           <p>Set the rules for choosing words</p>
-        </div>
-        <div class="md:w-6/12 lg:w-3/12 pb-8 md:pr-8">
-          <span>08</span>
-          <h4 class="text-2xl font-semibold pt-2 border-t border-t-zinc-300">Tools</h4>
-          <p>The power of well-roganzied semantic tokens and why avoid to be specific is the right way</p>
-        </div>
+        </article>
+        <article class="col-span-1">
+          <span class="text-violet-600 font-medium font-mono">04</span>
+          <h4 class="text-2xl font-medium mb-3">Tools & Process</h4>
+          <p>Set the rules for choosing words</p>
+        </article>
       </div>
-      <div class="lg:px-8 mx-auto max-w-2xl text-center">
-        <a href="join.html" class="inline-block rounded-md bg-teal-600 px-14 py-3 font-semibold text-lg text-white shadow-sm hover:bg-teal-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">Join waitlist</a>
-      </div>
+
     </div>
 
-  </div>
+  </section>
 
-  <div id="section-faq" class="bg-zinc-900 px-4 lg:px-8 py-14 text-white lg:pt-24">
-    <h2 class="text-5xl font-semibold mb-16 max-w-5xl">Trying to decide if Design Tokens Pro is for you?</h2>
-    <div class="">
+  <section id="section-faq" class="bg-violet-800 px-6 py-20 text-white">
+    <div class="max-w-screen-2xl grid lg:grid-cols-2 gap-6 mx-auto pt-6">
 
-      <article class="md:flex border-t border-t-zinc-400 pt-6 pb-12">
-        <h3 class="md:w-6/12 text-4xl">Is it suitable for beginners?</h3>
-        <p class="md:w-6/12 text-lg">Yes, the guide is written in a clear and easy-to-understand manner for those starting from scratch. Even experienced designers will find new insights and tips in the guide.</p>
-      </article>
-
-      <article class="md:flex border-t border-t-zinc-400 pt-6 pb-12">
-        <h3 class="md:w-6/12 text-4xl">What problems will this course help me overcome?</h3>
-        <p class="md:w-6/12 text-lg">This course makes it easier for you to use design tokens. It helps keep your digital projects consistent, understand how to use design tokens, and simplify your design process. It also offers tips for managing design tokens across different tools or files.</p>
-      </article>
-
-      <article class="md:flex border-t border-t-zinc-400 pt-6 pb-12">
-        <h3 class="md:w-6/12 text-4xl">Should I know to code?</h3>
-        <p class="md:w-6/12 text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda ut nam ex reprehenderit qui excepturi ad voluptates, ducimus facilis nihil. Tempore autem culpa minima nesciunt reprehenderit consequuntur optio dolores sapiente?</p>
-      </article>
-
-      <!--<div class="lg:px-8 mx-auto max-w-2xl text-center py-14">
-        <a href="join.html" class="inline-block rounded-md bg-teal-600 px-14 py-3 font-semibold text-lg text-white shadow-sm hover:bg-teal-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">Join waitlist</a>
-      </div>-->
-
-    </div>
-  </div>
-
-  <div class="bg-zinc-950 py-24 ">
-    <div class="flex flex-col md:flex-row px-4 items-center">
-      <h2 class="text-white text-6xl mb-4 md:mr-4">Advance your skills in design tokens.</h2>
-      <div>
-        <a href="join.html" class="inline-block rounded-md bg-teal-600 px-14 py-3 font-semibold text-lg text-white shadow-sm hover:bg-teal-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">Join waitlist</a>
+      <div class="col-span-1 lg:pr-12">
+        <h2 class="col-span-1 text-6xl font-medium mb-8">Trying to decide if Design Tokens Pro is for you?</h2>
+        <p class="text-2xl mb-6">Here's what many people often ask about the course.</p>
+        <p class="text-2xl">If you still have questions, please feel free to <strong><a class="text-green-400 hover:text-green-500 underline transition-colors" href="">contact me</a></strong>. I'll be pleased to answer them.</p>
       </div>
+
+      <div class="col-span-1">
+        <article class="pb-12">
+          <h3 class="text-3xl font-medium">Is it suitable for beginners?</h3>
+          <p class="text-xl opacity-80">Yes, the guide is written in a clear and easy-to-understand manner for those starting from scratch. Even experienced designers will find new insights and tips in the guide.</p>
+        </article>
+  
+        <article class="border-t border-t-violet-700 pt-6 pb-12">
+          <h3 class="text-3xl font-medium">What problems will this course help me overcome?</h3>
+          <p class="text-xl opacity-80">This course makes it easier for you to use design tokens. It helps keep your digital projects consistent, understand how to use design tokens, and simplify your design process. It also offers tips for managing design tokens across different tools or files.</p>
+        </article>
+  
+        <article class="border-t border-t-zinc-600 pt-6 pb-12">
+          <h3 class="text-3xl font-medium">Can I do the lessons when I have time?</h3>
+          <p class="text-xl opacity-80">Yes, this is a self-paced course, you can take as long as you want to complete it.</p>
+        </article>
+  
+        <article class=" border-t border-t-zinc-600 pt-6 pb-12">
+          <h3 class="text-3xl font-medium">Should I know to code?</h3>
+          <p class="text-xl opacity-80">While knowing how to code can enhance your understanding of design tokens, it's not a requirement for this course. The guide is designed to be accessible for both designers and developers, with practical examples that don't require coding expertise.</p>
+        </article>
+
+      </div>
+    
+  
+    </div>
+  </section>
+
+  <div class="bg-violet-950 px-6 py-20 border-t border-neutral-900">
+    <div class="max-w-screen-2xl mx-auto text-center px-4 py-20 items-center">
+      <h2 class="text-white text-6xl mb-12">Advance your skills in design tokens.</h2>
+      <a class="inline-block bg-green-400 hover:bg-green-300 transition-colors text-xl font-medium text-zinc-900 px-12 py-4 rounded-full" href="join.html">Join the waitlist →</a>
     </div>
   </div>
-  <footer class="bg-zinc-950 p-4 flex flex-col md:flex-row flex-initial items-center justify-center md:justify-between text-white border-t border-t-teal-900">
-    <p>&copy; 2024 Francesco Improta</p>
+
+  <footer class="bg-violet-950 px-6 py-5 flex flex-col md:flex-row flex-initial items-center justify-center md:justify-between text-white border-t border-t-neutral-900">
+    <p class="opacity-50">&copy; 2024 Francesco Improta</p>
     <nav class="flex my-4 md:m-0">
       <a href="privacy.html" class="px-4">Privacy Policy</a>
       <a href="fullfillment.html" class="px-4">Fullfillment Policy</a>

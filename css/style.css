@@ -5,6 +5,30 @@
 
 /* CUSTOM */
 
+@font-face {
+  font-family: "Apercu";
+  font-weight: 400;
+  src: url(/fonts/Apercu-Regular.woff2);
+}
+
+@font-face {
+  font-family: "Apercu";
+  font-weight: 500;
+  src: url(/fonts/Apercu-Medium.woff2);
+}
+
+@font-face {
+  font-family: "Apercu";
+  font-weight: 700;
+  src: url(/fonts/Apercu-Bold.woff2);
+}
+
+@layer base {
+  html {
+    font-family: 'Apercu', 'system-ui', monospace;
+  }
+}
+
 html {
   scroll-behavior:smooth;
 }
