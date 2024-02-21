@@ -32,3 +32,11 @@
 html {
   scroll-behavior:smooth;
 }
+
+.-mt-30 {
+  margin-top: -128px;
+}
+
+.bg-violet-1000 {
+  background-color: hsl(263, 77%, 15%);
+}
