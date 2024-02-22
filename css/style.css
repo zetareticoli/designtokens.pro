@@ -40,3 +40,7 @@ html {
 .bg-violet-1000 {
   background-color: hsl(263, 77%, 15%);
 }
+
+.background-image{
+  background-image: url(/img/hero-background.svg) bottom left no-repeat;
+}
