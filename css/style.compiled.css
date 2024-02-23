@@ -739,6 +739,10 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -914,6 +918,11 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.75rem;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -924,6 +933,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .leading-6 {
@@ -976,6 +989,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .text-zinc-900\/70 {
   color: rgb(24 24 27 / 0.7);
+}
+
+.text-white\/40 {
+  color: rgb(255 255 255 / 0.4);
 }
 
 .underline {
