@@ -444,7 +444,7 @@ video {
   display: none;
 }
 
-html {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Hubot Sans', 'system-ui', monospace;
 }
 
@@ -619,10 +619,6 @@ html {
   margin-top: -5rem;
 }
 
-.mb-1 {
-  margin-bottom: 0.25rem;
-}
-
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -727,14 +723,6 @@ html {
   max-width: 1440px;
 }
 
-.max-w-xl {
-  max-width: 36rem;
-}
-
-.flex-1 {
-  flex: 1 1 0%;
-}
-
 .flex-row-reverse {
   flex-direction: row-reverse;
 }
@@ -793,9 +781,9 @@ html {
   border-color: rgb(255 255 255 / 0.15);
 }
 
-.border-t-zinc-800 {
+.border-t-zinc-300 {
   --tw-border-opacity: 1;
-  border-top-color: rgb(39 39 42 / var(--tw-border-opacity));
+  border-top-color: rgb(212 212 216 / var(--tw-border-opacity));
 }
 
 .bg-green-400 {
@@ -934,8 +922,8 @@ html {
   font-weight: 500;
 }
 
-.font-normal {
-  font-weight: 400;
+.font-semibold {
+  font-weight: 600;
 }
 
 .leading-6 {
@@ -1025,9 +1013,9 @@ html {
   background-color: rgb(134 239 172 / var(--tw-bg-opacity));
 }
 
-.hover\:text-green-700:hover {
+.hover\:text-green-600:hover {
   --tw-text-opacity: 1;
-  color: rgb(21 128 61 / var(--tw-text-opacity));
+  color: rgb(22 163 74 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
@@ -1067,10 +1055,6 @@ html {
 
   .md\:m-0 {
     margin: 0px;
-  }
-
-  .md\:-mt-40 {
-    margin-top: -10rem;
   }
 
   .md\:mb-0 {
@@ -1129,6 +1113,10 @@ html {
 }
 
 @media (min-width: 1024px) {
+  .lg\:-mt-40 {
+    margin-top: -10rem;
+  }
+
   .lg\:mb-40 {
     margin-bottom: 10rem;
   }
@@ -1143,6 +1131,10 @@ html {
 
   .lg\:flex-row {
     flex-direction: row;
+  }
+
+  .lg\:pr-8 {
+    padding-right: 2rem;
   }
 
   .lg\:text-7xl {
@@ -1213,9 +1205,8 @@ html {
   background-image: url(/img/hero-background.svg) bottom left no-repeat;
 }
 
-.headline-big {
+.font-wide {
   font-stretch: 110%;
-  font-weight: 700;
 }
 
 .block {
@@ -1223,7 +1214,7 @@ html {
 }
 
 .slide {
-  animation: slideIn 1s ease forwards;
+  animation: slideIn .5s ease forwards;
 }
 
 @keyframes slideIn {
@@ -1236,4 +1227,17 @@ html {
     opacity: 1;
     transform: translateY(0%);
   }
+}
+
+.seva-overlay,
+.formkit-overlay {
+  background-color: rgba(31,8,66, .75) !important;
+}
+
+.seva-modal .formkit-close:hover, .formkit-modal .formkit-close:hover {
+  background-color: transparent !important;
+}
+
+.formkit-submit {
+  background-color: rgb(74 222 128) !important;
 }
