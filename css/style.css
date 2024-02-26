@@ -48,8 +48,29 @@ html {
 }
 
 .offset {
-  margin-top: -5vw;
+  margin-top: -80px;
+  
+  @media screen and (min-width: 768px) {
+    margin-top: -120px;
+    
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: -160px;
+    
+  }
 }
+
+.underline {
+  text-decoration-color: (currentColor)50;
+  text-underline-offset: 6px;
+
+  &:hover {
+    text-decoration-color: #6ee7B7;
+  }
+
+}
+
 
 .bg-violet-1000 {
   background-color: hsl(263, 77%, 15%);
