@@ -731,6 +731,10 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column-reverse;
 }
 
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
 }
@@ -741,10 +745,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.justify-around {
-  justify-content: space-around;
 }
 
 .gap-3 {
@@ -786,14 +786,24 @@ h1, h2, h3, h4, h5, h6 {
   border-top-color: rgb(212 212 216 / var(--tw-border-opacity));
 }
 
+.bg-emerald-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(110 231 183 / var(--tw-bg-opacity));
+}
+
 .bg-green-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(74 222 128 / var(--tw-bg-opacity));
 }
 
-.bg-violet-950 {
+.bg-orange-50 {
   --tw-bg-opacity: 1;
-  background-color: rgb(46 16 101 / var(--tw-bg-opacity));
+  background-color: rgb(255 247 237 / var(--tw-bg-opacity));
+}
+
+.bg-slate-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -856,6 +866,10 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 5rem;
 }
 
+.pr-4 {
+  padding-right: 1rem;
+}
+
 .pt-10 {
   padding-top: 2.5rem;
 }
@@ -868,28 +882,12 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 1.5rem;
 }
 
-.pr-4 {
-  padding-right: 1rem;
-}
-
-.pl-4 {
-  padding-left: 1rem;
-}
-
-.pl-8 {
-  padding-left: 2rem;
-}
-
 .text-left {
   text-align: left;
 }
 
 .text-center {
   text-align: center;
-}
-
-.text-right {
-  text-align: right;
 }
 
 .font-mono {
@@ -947,8 +945,9 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
-.leading-6 {
-  line-height: 1.5rem;
+.text-emerald-400 {
+  --tw-text-opacity: 1;
+  color: rgb(52 211 153 / var(--tw-text-opacity));
 }
 
 .text-green-300 {
@@ -971,6 +970,16 @@ h1, h2, h3, h4, h5, h6 {
   color: rgb(20 83 45 / var(--tw-text-opacity));
 }
 
+.text-slate-700 {
+  --tw-text-opacity: 1;
+  color: rgb(51 65 85 / var(--tw-text-opacity));
+}
+
+.text-slate-800 {
+  --tw-text-opacity: 1;
+  color: rgb(30 41 59 / var(--tw-text-opacity));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -978,6 +987,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .text-white\/50 {
   color: rgb(255 255 255 / 0.5);
+}
+
+.text-white\/85 {
+  color: rgb(255 255 255 / 0.85);
 }
 
 .text-zinc-600 {
@@ -1029,9 +1042,19 @@ h1, h2, h3, h4, h5, h6 {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
+.hover\:bg-emerald-400:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(52 211 153 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-green-300:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(134 239 172 / var(--tw-bg-opacity));
+}
+
+.hover\:text-emerald-300:hover {
+  --tw-text-opacity: 1;
+  color: rgb(110 231 183 / var(--tw-text-opacity));
 }
 
 .hover\:text-green-600:hover {
@@ -1062,6 +1085,10 @@ h1, h2, h3, h4, h5, h6 {
     grid-column-start: 5;
   }
 
+  .md\:col-start-7 {
+    grid-column-start: 7;
+  }
+
   .md\:col-end-10 {
     grid-column-end: 10;
   }
@@ -1074,12 +1101,24 @@ h1, h2, h3, h4, h5, h6 {
     grid-column-end: 5;
   }
 
+  .md\:col-end-7 {
+    grid-column-end: 7;
+  }
+
   .md\:m-0 {
     margin: 0px;
   }
 
   .md\:mb-0 {
     margin-bottom: 0px;
+  }
+
+  .md\:mb-20 {
+    margin-bottom: 5rem;
+  }
+
+  .md\:mr-16 {
+    margin-right: 4rem;
   }
 
   .md\:mt-0 {
@@ -1115,6 +1154,10 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 5rem;
   }
 
+  .md\:pb-32 {
+    padding-bottom: 8rem;
+  }
+
   .md\:pl-12 {
     padding-left: 3rem;
   }
@@ -1130,6 +1173,11 @@ h1, h2, h3, h4, h5, h6 {
   .md\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -1150,12 +1198,8 @@ h1, h2, h3, h4, h5, h6 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .lg\:flex-row {
-    flex-direction: row;
-  }
-
-  .lg\:pr-8 {
-    padding-right: 2rem;
+  .lg\:flex-row-reverse {
+    flex-direction: row-reverse;
   }
 
   .lg\:text-7xl {
@@ -1201,7 +1245,7 @@ h1, h2, h3, h4, h5, h6 {
 
   font-stretch: 75% 115%;
 
-  font-weight: 400 700;
+  font-weight: 400 900;
 
   src:
     url('/fonts/HubotSans-variable.woff2') format('woff2 supports variations'),
@@ -1214,8 +1258,12 @@ html {
   scroll-behavior: smooth;
 }
 
-.-mt-30 {
+.md\:-mt-30 {
   margin-top: -128px;
+}
+
+.offset {
+  margin-top: -5vw;
 }
 
 .bg-violet-1000 {
@@ -1226,8 +1274,9 @@ html {
   background-image: url(/img/hero-background.svg) bottom left no-repeat;
 }
 
-.font-wide {
-  font-stretch: 110%;
+.heading {
+  font-stretch: 75%;
+  font-weight: 900;
 }
 
 .block {
@@ -1261,4 +1310,12 @@ html {
 
 .formkit-submit {
   background-color: rgb(74 222 128) !important;
+}
+
+.bg-orange-50 {
+  background-color:#FFF5E9;
+}
+
+.button-primary {
+  background: #6ee7B7;
 }

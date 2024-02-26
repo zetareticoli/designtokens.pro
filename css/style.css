@@ -26,7 +26,7 @@
 @font-face {
   font-family: 'Hubot Sans';
   font-stretch: 75% 115%;
-  font-weight: 400 700;
+  font-weight: 400 900;
   src:
     url('/fonts/HubotSans-variable.woff2') format('woff2 supports variations'),
     url('/fonts/HubotSans-variable.woff2') format('woff2-variations');
@@ -43,8 +43,12 @@ html {
   scroll-behavior: smooth;
 }
 
-.-mt-30 {
+.md\:-mt-30 {
   margin-top: -128px;
+}
+
+.offset {
+  margin-top: -5vw;
 }
 
 .bg-violet-1000 {
@@ -55,8 +59,9 @@ html {
   background-image: url(/img/hero-background.svg) bottom left no-repeat;
 }
 
-.font-wide {
-  font-stretch: 110%;
+.heading {
+  font-stretch: 75%;
+  font-weight: 900;
 }
 
 .block {
@@ -89,4 +94,12 @@ html {
 
 .formkit-submit {
   background-color: rgb(74 222 128) !important;
+}
+
+.bg-orange-50 {
+  background-color:#FFF5E9;
+}
+
+.button-primary {
+  background: #6ee7B7;
 }
