@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-  var blocks = document.querySelectorAll('.block');
+  var blocks = document.querySelectorAll('.animate');
   window.addEventListener('scroll', function() {
     blocks.forEach(function(block) {
       if (isElementInViewport(block)) {
