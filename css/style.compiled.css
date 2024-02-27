@@ -1050,6 +1050,11 @@ h1, h2, h3, h4, h5, h6 {
   color: rgb(110 231 183 / var(--tw-text-opacity));
 }
 
+.hover\:text-emerald-700:hover {
+  --tw-text-opacity: 1;
+  color: rgb(4 120 87 / var(--tw-text-opacity));
+}
+
 .hover\:text-green-600:hover {
   --tw-text-opacity: 1;
   color: rgb(22 163 74 / var(--tw-text-opacity));
@@ -1063,11 +1068,6 @@ h1, h2, h3, h4, h5, h6 {
 .hover\:text-slate-900:hover {
   --tw-text-opacity: 1;
   color: rgb(15 23 42 / var(--tw-text-opacity));
-}
-
-.hover\:text-emerald-700:hover {
-  --tw-text-opacity: 1;
-  color: rgb(4 120 87 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px) {
@@ -1363,7 +1363,7 @@ html {
 }
 
 .formkit-submit {
-  background-color: rgb(74 222 128) !important;
+  background-color: rgb(110 231 183) !important;
 }
 
 .bg-orange-50 {
