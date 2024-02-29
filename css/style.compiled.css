@@ -845,11 +845,6 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 3.5rem;
 }
 
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1338,7 +1333,7 @@ html {
 }
 
 .slide {
-  animation: .8s slideIn .25s ease-out forwards;
+  animation: .5s slideIn ease-out forwards;
 }
 
 @keyframes slideIn {
