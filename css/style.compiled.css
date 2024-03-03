@@ -750,6 +750,10 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 9999px;
 }
 
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
 .border {
   border-width: 1px;
 }
