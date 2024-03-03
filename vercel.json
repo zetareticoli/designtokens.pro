@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "privacy.html",
+      "destination": "https://designtokens.pro/privacy"
+    }
+  ]
+}
