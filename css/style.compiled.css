@@ -1016,6 +1016,12 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.85;
 }
 
+.shadow-xl {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .transition-colors {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1136,10 +1142,6 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 5rem;
   }
 
-  .md\:pb-24 {
-    padding-bottom: 6rem;
-  }
-
   .md\:pl-6 {
     padding-left: 1.5rem;
   }
@@ -1180,6 +1182,10 @@ h1, h2, h3, h4, h5, h6 {
     grid-column-end: 7;
   }
 
+  .lg\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .lg\:mb-20 {
     margin-bottom: 5rem;
   }
@@ -1206,6 +1212,10 @@ h1, h2, h3, h4, h5, h6 {
 
   .lg\:grid-cols-12 {
     grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
+  .lg\:pb-0 {
+    padding-bottom: 0px;
   }
 
   .lg\:text-7xl {
