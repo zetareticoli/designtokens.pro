@@ -572,6 +572,10 @@ h1, h2, h3, h4, h5, h6 {
   top: 0.05em;
 }
 
+.isolate {
+  isolation: isolate;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -690,6 +694,10 @@ h1, h2, h3, h4, h5, h6 {
   display: grid;
 }
 
+.contents {
+  display: contents;
+}
+
 .list-item {
   display: list-item;
 }
@@ -712,6 +720,22 @@ h1, h2, h3, h4, h5, h6 {
 
 .max-w-screen-2xl {
   max-width: 1440px;
+}
+
+.max-w-7xl {
+  max-width: 80rem;
+}
+
+.max-w-5xl {
+  max-width: 64rem;
+}
+
+.max-w-4xl {
+  max-width: 56rem;
+}
+
+.max-w-3xl {
+  max-width: 48rem;
 }
 
 .flex-col {
@@ -891,6 +915,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+.font-sans {
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -919,6 +947,11 @@ h1, h2, h3, h4, h5, h6 {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .font-bold {
