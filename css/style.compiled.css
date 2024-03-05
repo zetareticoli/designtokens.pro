@@ -556,10 +556,6 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
-.sticky {
-  position: sticky;
-}
-
 .bottom-0 {
   bottom: 0px;
 }
@@ -588,10 +584,6 @@ h1, h2, h3, h4, h5, h6 {
   grid-column: span 12 / span 12;
 }
 
-.col-span-4 {
-  grid-column: span 4 / span 4;
-}
-
 .col-span-8 {
   grid-column: span 8 / span 8;
 }
@@ -601,14 +593,14 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: auto;
 }
 
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
 .my-16 {
   margin-top: 4rem;
   margin-bottom: 4rem;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .-mr-4 {
@@ -625,10 +617,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .mb-14 {
   margin-bottom: 3.5rem;
-}
-
-.mb-16 {
-  margin-bottom: 4rem;
 }
 
 .mb-2 {
@@ -683,10 +671,6 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
 }
 
-.inline {
-  display: inline;
-}
-
 .flex {
   display: flex;
 }
@@ -697,10 +681,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .grid {
   display: grid;
-}
-
-.list-item {
-  display: list-item;
 }
 
 .h-12 {
@@ -929,6 +909,11 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.75rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -937,11 +922,6 @@ h1, h2, h3, h4, h5, h6 {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }
 
 .font-bold {
@@ -1047,14 +1027,6 @@ h1, h2, h3, h4, h5, h6 {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-}
-
-.ease-in-out {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.ease-out {
-  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
 .hover\:bg-emerald-400:hover {
@@ -1183,8 +1155,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (min-width: 1024px) {
+  .lg\:col-span-4 {
+    grid-column: span 4 / span 4;
+  }
+
   .lg\:col-span-6 {
     grid-column: span 6 / span 6;
+  }
+
+  .lg\:col-span-8 {
+    grid-column: span 8 / span 8;
   }
 
   .lg\:col-start-1 {
@@ -1255,14 +1235,14 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 0px;
   }
 
-  .lg\:text-7xl {
-    font-size: 4.5rem;
-    line-height: 1;
-  }
-
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .lg\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
   }
 }
 
