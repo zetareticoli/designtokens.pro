@@ -3,6 +3,10 @@
     {
       "source": "/privacy",
       "destination": "https://www.designtokens.pro/privacy.html"
+    },
+    {
+      "source": "/confirm",
+      "destination": "https://www.designtokens.pro/confirm.html"
     }
   ]
 }
