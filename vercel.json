@@ -7,6 +7,10 @@
     {
       "source": "/confirm",
       "destination": "https://www.designtokens.pro/confirm.html"
+    },
+    {
+      "source": "/join",
+      "destination": "https://www.designtokens.pro/join.html"
     }
   ]
 }
