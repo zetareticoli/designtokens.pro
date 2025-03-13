@@ -88,7 +88,7 @@ html {
 }
 
 .slide {
-  animation: .5s slideIn ease-out forwards;
+  animation: .3s slideIn ease-out forwards;
 }
 
 @keyframes slideIn {

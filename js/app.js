@@ -18,3 +18,12 @@ function isElementInViewport(el) {
     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
 }
+
+document.addEventListener("scroll", function () {
+  const header = document.querySelector(".js-header");
+  if (window.scrollY > 550) {
+    header.classList.add("shadow-xl");
+  } else {
+    header.classList.remove("shadow-xl");
+  }
+})
