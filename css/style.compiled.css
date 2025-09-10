@@ -659,10 +659,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 1rem;
 }
 
-.ml-8 {
-  margin-left: 2rem;
-}
-
 .mr-2 {
   margin-right: 0.5rem;
 }
@@ -1109,21 +1105,6 @@ h1, h2, h3, h4, h5, h6 {
   color: rgb(24 24 27 / var(--tw-text-opacity));
 }
 
-.text-orange-400 {
-  --tw-text-opacity: 1;
-  color: rgb(251 146 60 / var(--tw-text-opacity));
-}
-
-.text-orange-800 {
-  --tw-text-opacity: 1;
-  color: rgb(154 52 18 / var(--tw-text-opacity));
-}
-
-.text-orange-900 {
-  --tw-text-opacity: 1;
-  color: rgb(124 45 18 / var(--tw-text-opacity));
-}
-
 .underline {
   text-decoration-line: underline;
 }
@@ -1554,8 +1535,17 @@ html {
   background-color: rgba(30,41,59, .75) !important;
 }
 
-.seva-modal .formkit-close:hover, .formkit-modal .formkit-close:hover {
+.seva-modal {
+  background-color: #fff;
+}
+
+.formkit-modal .formkit-close {
   background-color: transparent !important;
+  color: #00000050 !important
+}
+
+.formkit-modal .formkit-close:hover {
+  color: #000 !important;
 }
 
 .formkit-submit {
@@ -1580,4 +1570,8 @@ html {
 
 .button-primary {
   background: #6ee7B7;
+}
+
+.confirmation__content {
+  box-shadow: none !important;
 }
