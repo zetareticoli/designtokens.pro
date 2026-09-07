@@ -658,8 +658,20 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 2rem;
 }
 
+.mt-0 {
+  margin-top: 0px;
+}
+
+.mt-0\.5 {
+  margin-top: 0.125rem;
+}
+
 .mt-1 {
   margin-top: 0.25rem;
+}
+
+.mt-1\.5 {
+  margin-top: 0.375rem;
 }
 
 .mt-12 {
@@ -672,18 +684,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .mt-4 {
   margin-top: 1rem;
-}
-
-.mt-0 {
-  margin-top: 0px;
-}
-
-.mt-0\.5 {
-  margin-top: 0.125rem;
-}
-
-.mt-1\.5 {
-  margin-top: 0.375rem;
 }
 
 .mt-6 {
@@ -802,6 +802,10 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 540px;
 }
 
+.max-w-\[80\%\] {
+  max-width: 80%;
+}
+
 .max-w-md {
   max-width: 28rem;
 }
@@ -822,12 +826,12 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
 }
 
-.grid-cols-12 {
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-}
-
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-12 {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -893,16 +897,16 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: calc(4rem * var(--tw-space-y-reverse));
 }
 
-.space-y-3 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
-}
-
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden {
@@ -915,6 +919,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
 }
 
 .border {
@@ -1079,6 +1095,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -1236,13 +1257,13 @@ h1, h2, h3, h4, h5, h6 {
   color: rgb(10 10 10 / var(--tw-text-opacity));
 }
 
+.text-signal\/70 {
+  color: rgb(255 71 19 / 0.7);
+}
+
 .text-slate-800 {
   --tw-text-opacity: 1;
   color: rgb(30 41 59 / var(--tw-text-opacity));
-}
-
-.text-signal\/70 {
-  color: rgb(255 71 19 / 0.7);
 }
 
 .underline {
@@ -1499,24 +1520,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media (min-width: 1280px) {
-  .xl\:col-start-2 {
-    grid-column-start: 2;
-  }
-
-  .xl\:col-start-7 {
-    grid-column-start: 7;
-  }
-
-  .xl\:col-end-12 {
-    grid-column-end: 12;
-  }
-
-  .xl\:col-end-6 {
-    grid-column-end: 6;
-  }
-}
-
 /* ========================================
    DESIGN TOKENS — Neo-Industrialism
    ======================================== */
@@ -1736,7 +1739,9 @@ html.js .learn-item.visible {
 
 @media (prefers-reduced-motion: reduce) {
   html.js .animate-in,
-  html.js .learn-item {
+  html.js .learn-item,
+  html.js .module-card-panel,
+  html.js .module-card-panel-inner > .grid {
     opacity: 1;
     transform: none;
     animation: none;
@@ -1809,9 +1814,38 @@ html.js .learn-item.visible {
   transform: translateX(-50%);
 }
 
-.module-card details[open] .module-card-toggle::after {
+.module-card details[open] .module-card-toggle::after,
+.module-card details.is-expanded .module-card-toggle::after {
   opacity: 0;
   transform: translateX(-50%) scaleY(0);
+}
+
+.module-card-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s linear;
+}
+
+.module-card-panel-inner {
+  overflow: hidden;
+  min-height: 0;
+}
+
+.module-card-panel-inner > .grid {
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.35s linear, transform 0.35s linear;
+}
+
+html.no-js .module-card details[open] .module-card-panel,
+html.js .module-card details.is-expanded .module-card-panel {
+  grid-template-rows: 1fr;
+}
+
+html.no-js .module-card details[open] .module-card-panel-inner > .grid,
+html.js .module-card details.is-expanded .module-card-panel-inner > .grid {
+  opacity: 1;
+  transform: none;
 }
 
 /* ========================================

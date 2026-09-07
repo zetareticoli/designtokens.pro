@@ -51,4 +51,63 @@ document.addEventListener("DOMContentLoaded", function () {
       item.classList.add("visible");
     });
   }
+
+  // ── Chapter cards expand / collapse ──
+  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var chapterDetails = document.querySelectorAll(".module-card details");
+
+  function openChapter(details) {
+    details.open = true;
+    if (reduceMotion) {
+      details.classList.add("is-expanded");
+      return;
+    }
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        details.classList.add("is-expanded");
+      });
+    });
+  }
+
+  function closeChapter(details) {
+    var panel = details.querySelector(".module-card-panel");
+    details.classList.remove("is-expanded");
+
+    if (reduceMotion || !panel) {
+      details.open = false;
+      return;
+    }
+
+    var finished = false;
+    function finish() {
+      if (finished) return;
+      finished = true;
+      panel.removeEventListener("transitionend", onEnd);
+      if (!details.classList.contains("is-expanded")) {
+        details.open = false;
+      }
+    }
+
+    function onEnd(event) {
+      if (event.target !== panel || event.propertyName !== "grid-template-rows") return;
+      finish();
+    }
+
+    panel.addEventListener("transitionend", onEnd);
+    window.setTimeout(finish, 400);
+  }
+
+  chapterDetails.forEach(function (details) {
+    var summary = details.querySelector("summary");
+    if (!summary) return;
+
+    summary.addEventListener("click", function (event) {
+      event.preventDefault();
+      if (details.classList.contains("is-expanded")) {
+        closeChapter(details);
+      } else {
+        openChapter(details);
+      }
+    });
+  });
 });

@@ -203,7 +203,9 @@ html.js .learn-item.visible {
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   html.js .animate-in,
-  html.js .learn-item {
+  html.js .learn-item,
+  html.js .module-card-panel,
+  html.js .module-card-panel-inner > .grid {
     opacity: 1;
     transform: none;
     animation: none;
@@ -276,9 +278,38 @@ html.js .learn-item.visible {
   transform: translateX(-50%);
 }
 
-.module-card details[open] .module-card-toggle::after {
+.module-card details[open] .module-card-toggle::after,
+.module-card details.is-expanded .module-card-toggle::after {
   opacity: 0;
   transform: translateX(-50%) scaleY(0);
+}
+
+.module-card-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s linear;
+}
+
+.module-card-panel-inner {
+  overflow: hidden;
+  min-height: 0;
+}
+
+.module-card-panel-inner > .grid {
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.35s linear, transform 0.35s linear;
+}
+
+html.no-js .module-card details[open] .module-card-panel,
+html.js .module-card details.is-expanded .module-card-panel {
+  grid-template-rows: 1fr;
+}
+
+html.no-js .module-card details[open] .module-card-panel-inner > .grid,
+html.js .module-card details.is-expanded .module-card-panel-inner > .grid {
+  opacity: 1;
+  transform: none;
 }
 
 /* ========================================
