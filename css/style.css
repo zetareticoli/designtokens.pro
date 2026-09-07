@@ -169,14 +169,15 @@
 
 /* ========================================
    ANIMATIONS — Load sequence
+   (hidden only when JS is available)
    ======================================== */
 
-.animate-in {
+html.js .animate-in {
   opacity: 0;
   transform: translateY(12px);
 }
 
-.animate-in.revealed {
+html.js .animate-in.revealed {
   animation: revealIn 0.4s linear forwards;
 }
 
@@ -188,21 +189,21 @@
 }
 
 /* Scroll-triggered items */
-.learn-item {
+html.js .learn-item {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.4s linear, transform 0.4s linear;
 }
 
-.learn-item.visible {
+html.js .learn-item.visible {
   opacity: 1;
   transform: translateY(0);
 }
 
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
-  .animate-in,
-  .learn-item {
+  html.js .animate-in,
+  html.js .learn-item {
     opacity: 1;
     transform: none;
     animation: none;
@@ -260,11 +261,4 @@
 ::selection {
   background-color: var(--color-signal);
   color: var(--color-signal-ink);
-}
-
-}
-}
-}
-}
-}
 }

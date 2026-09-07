@@ -1,3 +1,6 @@
+document.documentElement.classList.remove('no-js');
+document.documentElement.classList.add('js');
+
 document.addEventListener("DOMContentLoaded", function () {
 
   // ── Header scroll state ──
@@ -5,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const scrollThreshold = 80;
 
   function updateHeader() {
+    if (!header) return;
     if (window.scrollY > scrollThreshold) {
       header.classList.add("scrolled");
     } else {
