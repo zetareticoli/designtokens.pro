@@ -220,8 +220,65 @@ html.js .learn-item.visible {
   transition: border-color 0.15s linear, background-color 0.15s linear;
 }
 
-.module-card:hover {
+.module-card:hover,
+.module-card:has(details[open]) {
   background-color: rgba(255,255,255,0.03);
+}
+
+.module-card:has(details[open]) {
+  border-color: rgba(255, 71, 19, 0.4);
+}
+
+.module-card summary {
+  list-style: none;
+}
+
+.module-card summary::-webkit-details-marker {
+  display: none;
+}
+
+.module-card summary:focus {
+  outline: none;
+}
+
+.module-card summary:focus-visible {
+  outline: 1px solid var(--color-signal);
+  outline-offset: 4px;
+}
+
+.module-card-toggle {
+  position: relative;
+  width: 14px;
+  height: 14px;
+}
+
+.module-card-toggle::before,
+.module-card-toggle::after {
+  content: '';
+  position: absolute;
+  background-color: var(--color-signal);
+  transition: opacity 0.15s linear, transform 0.15s linear;
+}
+
+.module-card-toggle::before {
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1.5px;
+  transform: translateY(-50%);
+}
+
+.module-card-toggle::after {
+  top: 0;
+  left: 50%;
+  width: 1.5px;
+  height: 100%;
+  transform: translateX(-50%);
+}
+
+.module-card details[open] .module-card-toggle::after {
+  opacity: 0;
+  transform: translateX(-50%) scaleY(0);
 }
 
 /* ========================================

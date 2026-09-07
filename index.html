@@ -65,7 +65,7 @@
           <a href="#section-media" class="text-muted hover:text-ink transition-colors hidden md:block">Preview</a>
           <a href="#section-faq" class="text-muted hover:text-ink transition-colors hidden md:block">FAQ</a>
           <a href="https://francescoimprota.kit.com/products/design-tokens-pro?step=checkout"
-             class="bg-signal text-signal-ink px-5 py-2 text-[11px] tracking-[0.15em] uppercase font-bold hover:brightness-110 transition-all">
+             class="border border-signal text-ink px-5 py-2 text-[11px] tracking-[0.15em] uppercase font-bold hover:bg-signal transition-all">
             Get the guide
           </a>
         </div>
@@ -97,6 +97,9 @@
             <span class="block">Learn everything</span>
             <span class="block lg:pl-[8.33%]">about design tokens</span>
           </h1>
+          <p class="text-lg md:text-xl text-muted leading-relaxed max-w-[540px] animate-in mt-4" data-delay="400">
+          Learn how to effectively create, manage, and adopt design tokens in your Design System with proven methodologies for UI consistency across platforms.
+        </p>
         </div>
 
         <!-- Guide image + reticle + data chips — right of headline -->
@@ -111,19 +114,12 @@
             <span class="absolute bottom-0 right-0 w-6 h-6 border-b-2 border-r-2 border-signal" aria-hidden="true"></span>
           </div>
           <div class="chip chip--outline">10 chapters</div>
-          <div class="chip chip--outline">ONLINE / PDF</div>
+          <div class="chip chip--outline">Online + PDF</div>
         </div>
       </div>
 
-      <!-- Lede text -->
-      <div class="col-span-12 lg:col-span-7 mt-8 animate-in" data-delay="400">
-        <p class="text-lg md:text-xl text-muted leading-relaxed max-w-[540px]">
-          Learn how to effectively create, manage, and adopt design tokens in your Design System with proven methodologies for UI consistency across platforms.
-        </p>
-      </div>
-
       <!-- CTA cluster -->
-      <div class="col-span-12 lg:col-span-7 flex flex-wrap items-center gap-4 mt-2 animate-in" data-delay="500">
+      <div class="col-span-12 lg:col-span-7 flex flex-wrap items-center gap-4 animate-in" data-delay="500">
         <a class="inline-flex items-center bg-signal text-signal-ink px-8 py-4 text-sm md:text-base font-bold tracking-[0.1em] uppercase hover:brightness-110 transition-all"
            href="https://francescoimprota.kit.com/products/design-tokens-pro?step=checkout">
           Get the guide — $39
@@ -255,89 +251,367 @@
 
   <!-- CHAPTERS -->
   <section id="section-chapters" class="bg-void px-6 md:px-10 py-16 md:py-24">
-    <div class="max-w-[1440px] mx-auto">
+    <div class="max-w-5xl mx-auto">
       <!-- Section header -->
-      <div class="grid grid-cols-12 gap-6 mb-16 md:mb-24">
-        <div class="col-span-12 lg:col-span-4">
+      <div class="flex flex-col gap-6 mb-16 md:mb-24">
+        <div class="col-span-12 lg:col-span-6">
           <span class="font-mono text-[10px] tracking-[0.2em] uppercase text-signal block mb-3">Topics & Chapters</span>
-          <h2 class="font-display text-4xl md:text-5xl uppercase tracking-tight leading-[0.95]">What's<br>inside</h2>
+          <h2 class="font-display text-4xl md:text-6xl uppercase tracking-tight leading-[0.95]">What's inside</h2>
         </div>
-        <div class="col-span-12 lg:col-start-6 lg:col-end-12 flex items-end">
+        <div class="col-span-12 lg:col-span-6 flex items-end">
           <p class="text-lg md:text-xl text-muted leading-relaxed">
             From basics to advanced topics, this guide covers all you need to know for creating and managing any kind of token set.
           </p>
         </div>
       </div>
 
-      <div class="grid grid-cols-12 gap-6">
-        <!-- Chapter list -->
-        <div class="col-span-12 lg:col-span-7 xl:col-start-2 xl:col-end-9 space-y-2">
-          <article class="module-card group flex items-start gap-4 p-5 md:p-6 border border-white/10 hover:border-signal/40 transition-colors">
-            <span class="font-mono text-signal text-sm shrink-0 mt-1">01</span>
-            <div>
-              <h3 class="text-lg md:text-xl font-bold mb-1 group-hover:text-signal transition-colors">Basics</h3>
-              <p class="text-sm md:text-base text-muted leading-relaxed">Learn the design tokens foundations: what they are, their function, their appearance, and the advantages they bring to a project or design system.</p>
+      <!-- Chapter list -->
+      <div class="flex flex-col gap-4">
+        <article class="module-card group p-5 md:p-6 border border-white/10 hover:border-signal/40 transition-colors">
+          <details>
+            <summary class="flex items-start gap-4 cursor-pointer">
+              <span class="font-mono text-signal text-sm shrink-0 mt-1">01</span>
+              <div class="flex-1 min-w-0">
+                <h3 class="text-lg md:text-2xl font-bold mb-1 group-hover:text-signal transition-colors">Basics</h3>
+                <p class="text-sm md:text-base text-muted leading-relaxed">Learn the design tokens foundations: what they are, their function, their appearance, and the advantages they bring to a project or design system.</p>
+              </div>
+              <span class="module-card-toggle shrink-0 mt-1.5" aria-hidden="true"></span>
+            </summary>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 pt-6 mt-6 border-t border-white/10">
+              <div>
+                <h4 class="font-mono text-[10px] tracking-[0.2em] uppercase text-signal block mb-4">Chapter index</h4>
+                <ol class="space-y-2 text-sm text-muted">
+                  <li class="flex items-start gap-3">
+                    <span class="font-mono text-signal/70 text-xs shrink-0 mt-0.5">1.1</span>
+                    What is a design token
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="font-mono text-signal/70 text-xs shrink-0 mt-0.5">1.2</span>
+                    Tokens, variables, and styles
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="font-mono text-signal/70 text-xs shrink-0 mt-0.5">1.3</span>
+                    Anatomy of a token
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="font-mono text-signal/70 text-xs shrink-0 mt-0.5">1.4</span>
+                    Why tokens exist
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="font-mono text-signal/70 text-xs shrink-0 mt-0.5">1.5</span>
+                    Benefits for a design system
+                  </li>
+                </ol>
+              </div>
+              <div>
+                <h4 class="font-mono text-[10px] tracking-[0.2em] uppercase text-signal block mb-4">What you'll learn</h4>
+                <p class="text-sm md:text-base text-muted leading-relaxed">You'll get a clear mental model of what a token is, why it exists, and how it differs from a style or a variable. By the end you can explain tokens to your team and recognize them in any file or tool.</p>
+              </div>
             </div>
-          </article>
-          <article class="module-card group flex items-start gap-4 p-5 md:p-6 border border-white/10 hover:border-signal/40 transition-colors">
-            <span class="font-mono text-signal text-sm shrink-0 mt-1">02</span>
-            <div>
-              <h3 class="text-lg md:text-xl font-bold mb-1 group-hover:text-signal transition-colors">Elements of Token Name</h3>
-              <p class="text-sm md:text-base text-muted leading-relaxed">What are the elements that make up the name of a token, being careful to choose only those that are needed.</p>
+          </details>
+        </article>
+        <article class="module-card group p-5 md:p-6 border border-white/10 hover:border-signal/40 transition-colors">
+          <details>
+            <summary class="flex items-start gap-4 cursor-pointer">
+              <span class="font-mono text-signal text-sm shrink-0 mt-1">02</span>
+              <div class="flex-1 min-w-0">
+                <h3 class="text-lg md:text-2xl font-bold mb-1 group-hover:text-signal transition-colors">Elements of Token Name</h3>
+                <p class="text-sm md:text-base text-muted leading-relaxed">What are the elements that make up the name of a token, being careful to choose only those that are needed.</p>
+              </div>
+              <span class="module-card-toggle shrink-0 mt-1.5" aria-hidden="true"></span>
+            </summary>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 pt-6 mt-6 border-t border-white/10">
+              <div>
+                <h4 class="font-mono text-[10px] tracking-[0.2em] uppercase text-signal block mb-4">Chapter index</h4>
+                <ol class="space-y-2 text-sm text-muted">
+                  <li class="flex items-start gap-3">
+                    <span class="font-mono text-signal/70 text-xs shrink-0 mt-0.5">2.1</span>
+                    Category
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="font-mono text-signal/70 text-xs shrink-0 mt-0.5">2.2</span>
+                    Property
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="font-mono text-signal/70 text-xs shrink-0 mt-0.5">2.3</span>
+                    Concept and purpose
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="font-mono text-signal/70 text-xs shrink-0 mt-0.5">2.4</span>
+                    Scale and variant
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="font-mono text-signal/70 text-xs shrink-0 mt-0.5">2.5</span>
+                    Choosing only what you need
+                  </li>
+                </ol>
+              </div>
+              <div>
+                <h4 class="font-mono text-[10px] tracking-[0.2em] uppercase text-signal block mb-4">What you'll learn</h4>
+                <p class="text-sm md:text-base text-muted leading-relaxed">You'll learn the building blocks of a token name and how to pick only the parts that carry meaning—so names stay short, predictable, and useful.</p>
+              </div>
             </div>
-          </article>
-          <article class="module-card group flex items-start gap-4 p-5 md:p-6 border border-white/10 hover:border-signal/40 transition-colors">
-            <span class="font-mono text-signal text-sm shrink-0 mt-1">03</span>
-            <div>
-              <h3 class="text-lg md:text-xl font-bold mb-1 group-hover:text-signal transition-colors">Tokens Architecture</h3>
-              <p class="text-sm md:text-base text-muted leading-relaxed">Learn how to structure and organize design tokens for scalable design systems.</p>
+          </details>
+        </article>
+        <article class="module-card group p-5 md:p-6 border border-white/10 hover:border-signal/40 transition-colors">
+          <details>
+            <summary class="flex items-start gap-4 cursor-pointer">
+              <span class="font-mono text-signal text-sm shrink-0 mt-1">03</span>
+              <div class="flex-1 min-w-0">
+                <h3 class="text-lg md:text-2xl font-bold mb-1 group-hover:text-signal transition-colors">Tokens Architecture</h3>
+                <p class="text-sm md:text-base text-muted leading-relaxed">Learn how to structure and organize design tokens for scalable design systems.</p>
+              </div>
+              <span class="module-card-toggle shrink-0 mt-1.5" aria-hidden="true"></span>
+            </summary>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 pt-6 mt-6 border-t border-white/10">
+              <div>
+                <h4 class="font-mono text-[10px] tracking-[0.2em] uppercase text-signal block mb-4">Chapter index</h4>
+                <ol class="space-y-2 text-sm text-muted">
+                  <li class="flex items-start gap-3">
+                    <span class="font-mono text-signal/70 text-xs shrink-0 mt-0.5">3.1</span>
+                    Token tiers and layers
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="font-mono text-signal/70 text-xs shrink-0 mt-0.5">3.2</span>
+                    Primitive, semantic, and component tokens
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="font-mono text-signal/70 text-xs shrink-0 mt-0.5">3.3</span>
+                    References and aliases
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="font-mono text-signal/70 text-xs shrink-0 mt-0.5">3.4</span>
+                    Organizing token files
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="font-mono text-signal/70 text-xs shrink-0 mt-0.5">3.5</span>
+                    Scaling the architecture
+                  </li>
+                </ol>
+              </div>
+              <div>
+                <h4 class="font-mono text-[10px] tracking-[0.2em] uppercase text-signal block mb-4">What you'll learn</h4>
+                <p class="text-sm md:text-base text-muted leading-relaxed">You'll learn how to layer tokens so a change in one place updates products without breaking them. You'll know when to use primitives, aliases, and component tokens.</p>
+              </div>
             </div>
-          </article>
-          <article class="module-card group flex items-start gap-4 p-5 md:p-6 border border-white/10 hover:border-signal/40 transition-colors">
-            <span class="font-mono text-signal text-sm shrink-0 mt-1">04</span>
-            <div>
-              <h3 class="text-lg md:text-xl font-bold mb-1 group-hover:text-signal transition-colors">Taxonomy & Naming Convention</h3>
-              <p class="text-sm md:text-base text-muted leading-relaxed">Learn how to create a taxonomy, why it's important, and how to set up a shared naming convention with your team and stakeholders.</p>
+          </details>
+        </article>
+        <article class="module-card group p-5 md:p-6 border border-white/10 hover:border-signal/40 transition-colors">
+          <details>
+            <summary class="flex items-start gap-4 cursor-pointer">
+              <span class="font-mono text-signal text-sm shrink-0 mt-1">04</span>
+              <div class="flex-1 min-w-0">
+                <h3 class="text-lg md:text-2xl font-bold mb-1 group-hover:text-signal transition-colors">Taxonomy & Naming Convention</h3>
+                <p class="text-sm md:text-base text-muted leading-relaxed">Learn how to create a taxonomy, why it's important, and how to set up a shared naming convention with your team and stakeholders.</p>
+              </div>
+              <span class="module-card-toggle shrink-0 mt-1.5" aria-hidden="true"></span>
+            </summary>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 pt-6 mt-6 border-t border-white/10">
+              <div>
+                <h4 class="font-mono text-[10px] tracking-[0.2em] uppercase text-signal block mb-4">Chapter index</h4>
+                <ol class="space-y-2 text-sm text-muted">
+                  <li class="flex items-start gap-3">
+                    <span class="font-mono text-signal/70 text-xs shrink-0 mt-0.5">4.1</span>
+                    Why taxonomy matters
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="font-mono text-signal/70 text-xs shrink-0 mt-0.5">4.2</span>
+                    Building a shared vocabulary
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="font-mono text-signal/70 text-xs shrink-0 mt-0.5">4.3</span>
+                    Naming patterns that scale
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="font-mono text-signal/70 text-xs shrink-0 mt-0.5">4.4</span>
+                    Working with your team
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="font-mono text-signal/70 text-xs shrink-0 mt-0.5">4.5</span>
+                    Evolving the convention
+                  </li>
+                </ol>
+              </div>
+              <div>
+                <h4 class="font-mono text-[10px] tracking-[0.2em] uppercase text-signal block mb-4">What you'll learn</h4>
+                <p class="text-sm md:text-base text-muted leading-relaxed">You'll learn how to build a shared taxonomy and a naming convention your team can actually follow—including how to align designers, engineers, and stakeholders.</p>
+              </div>
             </div>
-          </article>
-          <article class="module-card group flex items-start gap-4 p-5 md:p-6 border border-white/10 hover:border-signal/40 transition-colors">
-            <span class="font-mono text-signal text-sm shrink-0 mt-1">05</span>
-            <div>
-              <h3 class="text-lg md:text-xl font-bold mb-1 group-hover:text-signal transition-colors">Compound Tokens</h3>
-              <p class="text-sm md:text-base text-muted leading-relaxed">Dive into the topic of compound tokens. Understand what they are, how they differ from single tokens, and their role in complex designs.</p>
+          </details>
+        </article>
+        <article class="module-card group p-5 md:p-6 border border-white/10 hover:border-signal/40 transition-colors">
+          <details>
+            <summary class="flex items-start gap-4 cursor-pointer">
+              <span class="font-mono text-signal text-sm shrink-0 mt-1">05</span>
+              <div class="flex-1 min-w-0">
+                <h3 class="text-lg md:text-2xl font-bold mb-1 group-hover:text-signal transition-colors">Compound Tokens</h3>
+                <p class="text-sm md:text-base text-muted leading-relaxed">Dive into the topic of compound tokens. Understand what they are, how they differ from single tokens, and their role in complex designs.</p>
+              </div>
+              <span class="module-card-toggle shrink-0 mt-1.5" aria-hidden="true"></span>
+            </summary>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 pt-6 mt-6 border-t border-white/10">
+              <div>
+                <h4 class="font-mono text-[10px] tracking-[0.2em] uppercase text-signal block mb-4">Chapter index</h4>
+                <ol class="space-y-2 text-sm text-muted">
+                  <li class="flex items-start gap-3">
+                    <span class="font-mono text-signal/70 text-xs shrink-0 mt-0.5">5.1</span>
+                    Single vs compound tokens
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="font-mono text-signal/70 text-xs shrink-0 mt-0.5">5.2</span>
+                    Typography tokens
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="font-mono text-signal/70 text-xs shrink-0 mt-0.5">5.3</span>
+                    Shadow and effect tokens
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="font-mono text-signal/70 text-xs shrink-0 mt-0.5">5.4</span>
+                    When to use a compound token
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="font-mono text-signal/70 text-xs shrink-0 mt-0.5">5.5</span>
+                    Platform considerations
+                  </li>
+                </ol>
+              </div>
+              <div>
+                <h4 class="font-mono text-[10px] tracking-[0.2em] uppercase text-signal block mb-4">What you'll learn</h4>
+                <p class="text-sm md:text-base text-muted leading-relaxed">You'll learn what compound tokens are, when a single token is not enough, and how grouped values like typography or shadow stay consistent across platforms.</p>
+              </div>
             </div>
-          </article>
-          <article class="module-card group flex items-start gap-4 p-5 md:p-6 border border-white/10 hover:border-signal/40 transition-colors">
-            <span class="font-mono text-signal text-sm shrink-0 mt-1">06</span>
-            <div>
-              <h3 class="text-lg md:text-xl font-bold mb-1 group-hover:text-signal transition-colors">Themes and Color Modes</h3>
-              <p class="text-sm md:text-base text-muted leading-relaxed">Learn the strategies for managing themes within either a single project or across multiple projects. Gain insights into organizing these themes and implementing them effectively.</p>
+          </details>
+        </article>
+        <article class="module-card group p-5 md:p-6 border border-white/10 hover:border-signal/40 transition-colors">
+          <details>
+            <summary class="flex items-start gap-4 cursor-pointer">
+              <span class="font-mono text-signal text-sm shrink-0 mt-1">06</span>
+              <div class="flex-1 min-w-0">
+                <h3 class="text-lg md:text-2xl font-bold mb-1 group-hover:text-signal transition-colors">Themes and Color Modes</h3>
+                <p class="text-sm md:text-base text-muted leading-relaxed">Learn the strategies for managing themes within either a single project or across multiple projects. Gain insights into organizing these themes and implementing them effectively.</p>
+              </div>
+              <span class="module-card-toggle shrink-0 mt-1.5" aria-hidden="true"></span>
+            </summary>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 pt-6 mt-6 border-t border-white/10">
+              <div>
+                <h4 class="font-mono text-[10px] tracking-[0.2em] uppercase text-signal block mb-4">Chapter index</h4>
+                <ol class="space-y-2 text-sm text-muted">
+                  <li class="flex items-start gap-3">
+                    <span class="font-mono text-signal/70 text-xs shrink-0 mt-0.5">6.1</span>
+                    Theme vs color mode
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="font-mono text-signal/70 text-xs shrink-0 mt-0.5">6.2</span>
+                    Light and dark
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="font-mono text-signal/70 text-xs shrink-0 mt-0.5">6.3</span>
+                    Multi-brand theming
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="font-mono text-signal/70 text-xs shrink-0 mt-0.5">6.4</span>
+                    Organizing theme files
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="font-mono text-signal/70 text-xs shrink-0 mt-0.5">6.5</span>
+                    Implementation strategies
+                  </li>
+                </ol>
+              </div>
+              <div>
+                <h4 class="font-mono text-[10px] tracking-[0.2em] uppercase text-signal block mb-4">What you'll learn</h4>
+                <p class="text-sm md:text-base text-muted leading-relaxed">You'll learn how to structure themes and color modes so light, dark, and multi-brand setups stay maintainable instead of exploding into duplicate files.</p>
+              </div>
             </div>
-          </article>
-          <article class="module-card group flex items-start gap-4 p-5 md:p-6 border border-white/10 hover:border-signal/40 transition-colors">
-            <span class="font-mono text-signal text-sm shrink-0 mt-1">07</span>
-            <div>
-              <h3 class="text-lg md:text-xl font-bold mb-1 group-hover:text-signal transition-colors">Lifecycle of a Token</h3>
-              <p class="text-sm md:text-base text-muted leading-relaxed">Explore the lifecycle, storage, and usage of design tokens across tools, vital for their effective management and a streamlined design process.</p>
+          </details>
+        </article>
+        <article class="module-card group p-5 md:p-6 border border-white/10 hover:border-signal/40 transition-colors">
+          <details>
+            <summary class="flex items-start gap-4 cursor-pointer">
+              <span class="font-mono text-signal text-sm shrink-0 mt-1">07</span>
+              <div class="flex-1 min-w-0">
+                <h3 class="text-lg md:text-2xl font-bold mb-1 group-hover:text-signal transition-colors">Lifecycle of a Token</h3>
+                <p class="text-sm md:text-base text-muted leading-relaxed">Explore the lifecycle, storage, and usage of design tokens across tools, vital for their effective management and a streamlined design process.</p>
+              </div>
+              <span class="module-card-toggle shrink-0 mt-1.5" aria-hidden="true"></span>
+            </summary>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 pt-6 mt-6 border-t border-white/10">
+              <div>
+                <h4 class="font-mono text-[10px] tracking-[0.2em] uppercase text-signal block mb-4">Chapter index</h4>
+                <ol class="space-y-2 text-sm text-muted">
+                  <li class="flex items-start gap-3">
+                    <span class="font-mono text-signal/70 text-xs shrink-0 mt-0.5">7.1</span>  
+                    Creating a token
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="font-mono text-signal/70 text-xs shrink-0 mt-0.5">7.2</span>
+                    Storage and source of truth
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="font-mono text-signal/70 text-xs shrink-0 mt-0.5">7.3</span>
+                    Transformation and delivery
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="font-mono text-signal/70 text-xs shrink-0 mt-0.5">7.4</span>
+                    Consumption across tools
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="font-mono text-signal/70 text-xs shrink-0 mt-0.5">7.5</span>
+                    Change and deprecation
+                  </li>
+                </ol>
+              </div>
+              <div>
+                <h4 class="font-mono text-[10px] tracking-[0.2em] uppercase text-signal block mb-4">What you'll learn</h4>
+                <p class="text-sm md:text-base text-muted leading-relaxed">You'll follow a token from creation to production: where it lives, how it is transformed, how tools consume it, and how to retire it without breaking the system.</p>
+              </div>
             </div>
-          </article>
-          <article class="module-card group flex items-start gap-4 p-5 md:p-6 border border-white/10 hover:border-signal/40 transition-colors">
-            <span class="font-mono text-signal text-sm shrink-0 mt-1">08</span>
-            <div>
-              <h3 class="text-lg md:text-xl font-bold mb-1 group-hover:text-signal transition-colors">Documenting Tokens</h3>
-              <p class="text-sm md:text-base text-muted leading-relaxed">Learn how to document design tokens effectively. Record and track how each token is used and changed, ensuring your team can use them effectively.</p>
+          </details>
+        </article>
+        <article class="module-card group p-5 md:p-6 border border-white/10 hover:border-signal/40 transition-colors">
+          <details>
+            <summary class="flex items-start gap-4 cursor-pointer">
+              <span class="font-mono text-signal text-sm shrink-0 mt-1">08</span>
+              <div class="flex-1 min-w-0">
+                <h3 class="text-lg md:text-2xl font-bold mb-1 group-hover:text-signal transition-colors">Documenting Tokens</h3>
+                <p class="text-sm md:text-base text-muted leading-relaxed">Learn how to document design tokens effectively. Record and track how each token is used and changed, ensuring your team can use them effectively.</p>
+              </div>
+              <span class="module-card-toggle shrink-0 mt-1.5" aria-hidden="true"></span>
+            </summary>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 pt-6 mt-6 border-t border-white/10">
+              <div>
+                <h4 class="font-mono text-[10px] tracking-[0.2em] uppercase text-signal block mb-4">Chapter index</h4>
+                <ol class="space-y-2 text-sm text-muted">
+                  <li class="flex items-start gap-3">
+                    <span class="font-mono text-signal/70 text-xs shrink-0 mt-0.5">8.1</span>
+                    What to document
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="font-mono text-signal/70 text-xs shrink-0 mt-0.5">8.2</span>
+                    Where documentation lives
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="font-mono text-signal/70 text-xs shrink-0 mt-0.5">8.3</span>
+                    Usage guidelines
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="font-mono text-signal/70 text-xs shrink-0 mt-0.5">8.4</span>
+                    Tracking changes
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="font-mono text-signal/70 text-xs shrink-0 mt-0.5">8.5</span>
+                    Helping teams adopt tokens
+                  </li>
+                </ol>
+              </div>
+              <div>
+                <h4 class="font-mono text-[10px] tracking-[0.2em] uppercase text-signal block mb-4">What you'll learn</h4>
+                <p class="text-sm md:text-base text-muted leading-relaxed">You'll learn what to document, where it should live, and how to keep docs in sync so the team can find, use, and update tokens with confidence.</p>
+              </div>
             </div>
-          </article>
-
-          <div class="pt-8 text-center">
-            <a class="inline-flex items-center bg-signal text-signal-ink px-8 py-4 text-sm md:text-base font-bold tracking-[0.1em] uppercase hover:brightness-110 transition-all"
-               href="https://francescoimprota.kit.com/products/design-tokens-pro?step=checkout">Get the guide — $39</a>
-          </div>
-        </div>
-
-        <!-- Sidebar -->
-        <aside class="col-span-12 lg:col-start-9 lg:col-end-13">
-          <span class="font-mono text-[10px] tracking-[0.2em] uppercase text-signal block mb-4">Manifest</span>
+          </details>
+        </article>
+        <div class="col-span-12 lg:col-span-4">
           <h4 class="text-sm font-bold uppercase tracking-[0.1em] mb-6">Guide Materials</h4>
           <ul class="space-y-3 mb-10 text-sm text-muted">
             <li class="flex items-center gap-3">
@@ -357,15 +631,22 @@
               Support on specific topic
             </li>
           </ul>
-          <div class="border-t border-white/10 pt-6">
-            <h4 class="text-sm font-bold uppercase tracking-[0.1em] mb-3">Any doubts?</h4>
-            <a class="text-signal hover:text-ink transition-colors text-sm font-medium tracking-wide"
-               data-formkit-toggle="b8a4c3bfea" href="https://francesco-improta.ck.page/b8a4c3bfea">
-              Download first chapter free →
-            </a>
-          </div>
-        </aside>
+          
+        </div>
       </div>
+
+      <div class="col-span-12">
+        <a class="inline-flex items-center bg-signal text-signal-ink px-8 py-4 text-sm md:text-base font-bold tracking-[0.1em] uppercase hover:brightness-110 transition-all"
+             href="https://francescoimprota.kit.com/products/design-tokens-pro?step=checkout">Get the guide — $39</a>
+        <div class="border-t border-white/10 pt-6">
+          <h4 class="text-sm font-bold uppercase tracking-[0.1em] mb-3">Any doubts?</h4>
+          <a class="text-signal hover:text-ink transition-colors text-sm font-medium tracking-wide"
+             data-formkit-toggle="b8a4c3bfea" href="https://francesco-improta.ck.page/b8a4c3bfea">
+            Download first chapter free →
+          </a>
+        </div>
+      </div>
+
     </div>
   </section>
 
