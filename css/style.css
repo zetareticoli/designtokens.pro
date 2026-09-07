@@ -3,7 +3,26 @@
 @tailwind components;
 @tailwind variants;
 
-/* CUSTOM */
+/* ========================================
+   DESIGN TOKENS — Neo-Industrialism
+   ======================================== */
+
+:root {
+  --color-void: #0A0A0A;
+  --color-surface: #141414;
+  --color-paper: #F4F3EF;
+  --color-ink: #FFFFFF;
+  --color-ink-inverse: #0A0A0A;
+  --color-muted: #9A9A94;
+  --color-grid-line: rgba(255,255,255,0.18);
+  --color-grid-tick: rgba(255,255,255,0.45);
+  --color-signal: #FF4713;
+  --color-signal-ink: #0A0A0A;
+}
+
+/* ========================================
+   FONTS
+   ======================================== */
 
 @font-face {
   font-family: 'Hubot Sans';
@@ -15,117 +34,237 @@
   font-display: swap;
 }
 
+/* ========================================
+   BASE
+   ======================================== */
+
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Hubot Sans', system-ui, -apple-system, sans-serif;
+  }
+
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Hubot Sans', 'system-ui', monospace;
+    font-family: 'Hubot Sans', system-ui, monospace;
   }
 }
 
-html {
-  scroll-behavior: smooth;
-}
+/* ========================================
+   TYPOGRAPHY UTILITIES
+   ======================================== */
 
-.md\:-mt-30 {
-  margin-top: -128px;
-}
-
-.offset {
-  margin-top: -80px;
-
-  @media screen and (min-width: 768px) {
-    margin-top: -120px;
-    
-  }
-
-  @media screen and (min-width: 1280px) {
-    margin-top: -160px;
-    
-  }
-}
-
-.underline {
-  text-decoration-color: color-mix(in srgb, currentColor 50%, transparent);
-  text-underline-offset: 6px;
-}
-
-.underline:hover {
-  text-decoration-color: color-mix(in srgb, currentColor 100%, transparent);
-}
-
-.background-image{
-  background-image: url(/img/hero-background.svg) bottom left no-repeat;
-}
-
-.heading {
+.font-display {
+  font-family: 'Hubot Sans', system-ui, monospace;
   font-stretch: 75%;
   font-weight: 900;
 }
 
-.eyebrow {
-  font-family: 'Hubot Sans', 'system-ui', monospace;
+.font-body {
+  font-family: 'Hubot Sans', system-ui, -apple-system, sans-serif;
 }
 
-.animate {
+/* ========================================
+   COLOR UTILITIES
+   ======================================== */
+
+.bg-void { background-color: var(--color-void); }
+.bg-surface { background-color: var(--color-surface); }
+.bg-paper { background-color: var(--color-paper); }
+.bg-signal { background-color: var(--color-signal); }
+
+.text-ink { color: var(--color-ink); }
+.text-ink-inverse { color: var(--color-ink-inverse); }
+.text-muted { color: var(--color-muted); }
+.text-signal { color: var(--color-signal); }
+.text-signal-ink { color: var(--color-signal-ink); }
+
+.border-signal { border-color: var(--color-signal); }
+
+/* ========================================
+   HERO GRID OVERLAY
+   ======================================== */
+
+.hero-grid {
+  background-image:
+    linear-gradient(to right, var(--color-grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--color-grid-line) 1px, transparent 1px);
+  background-size: calc(100% / 12) 80px;
+  mask-image: linear-gradient(to top, transparent 0%, rgba(0,0,0,0.6) 25%, rgba(0,0,0,0.35) 100%);
+  -webkit-mask-image: linear-gradient(to top, transparent 0%, rgba(0,0,0,0.6) 25%, rgba(0,0,0,0.35) 100%);
+}
+
+.hero-grid::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle, var(--color-grid-tick) 1.5px, transparent 1.5px);
+  background-size: calc(100% / 12) 80px;
+  background-position: -0.75px -0.75px;
+}
+
+.cta-grid {
+  background-image:
+    linear-gradient(to right, var(--color-grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--color-grid-line) 1px, transparent 1px);
+  background-size: calc(100% / 12) 80px;
+  mask-image: linear-gradient(to top, transparent 0%, rgba(0,0,0,0.6) 25%, rgba(0,0,0,0.35) 100%);
+  -webkit-mask-image: linear-gradient(to top, transparent 0%, rgba(0,0,0,0.6) 25%, rgba(0,0,0,0.35) 100%);
+}
+
+.cta-grid::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle, var(--color-grid-tick) 1.5px, transparent 1.5px);
+  background-size: calc(100% / 12) 80px;
+  background-position: -0.75px -0.75px;
+}
+
+/* ========================================
+   RETICLE
+   ======================================== */
+
+.reticle {
+  position: relative;
+}
+
+/* ========================================
+   DATA CHIPS
+   ======================================== */
+
+.chip {
+  font-family: 'Hubot Sans', monospace;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 6px 12px;
+  display: inline-block;
+}
+
+.chip--outline {
+  border: 1px solid rgba(255,255,255,0.3);
+  color: var(--color-muted);
+}
+
+.chip--signal {
+  background-color: var(--color-signal);
+  color: var(--color-signal-ink);
+  font-weight: 700;
+}
+
+/* ========================================
+   HEADER
+   ======================================== */
+
+.js-header.scrolled {
+  background-color: rgba(10, 10, 10, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* ========================================
+   ANIMATIONS — Load sequence
+   ======================================== */
+
+.animate-in {
   opacity: 0;
+  transform: translateY(12px);
 }
 
-.slide {
-  animation: .3s slideIn ease-out forwards;
+.animate-in.revealed {
+  animation: revealIn 0.4s linear forwards;
 }
 
-@keyframes slideIn {
-  0% {
-    opacity: 0;
-    transform: translateY(20%);
-  }
-  100% {
+@keyframes revealIn {
+  to {
     opacity: 1;
-    transform: translateY(0%);
+    transform: translateY(0);
   }
 }
+
+/* Scroll-triggered items */
+.learn-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s linear, transform 0.4s linear;
+}
+
+.learn-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-in,
+  .learn-item {
+    opacity: 1;
+    transform: none;
+    animation: none;
+    transition: none;
+  }
+}
+
+/* ========================================
+   MODULE CARDS
+   ======================================== */
+
+.module-card {
+  background: transparent;
+  transition: border-color 0.15s linear, background-color 0.15s linear;
+}
+
+.module-card:hover {
+  background-color: rgba(255,255,255,0.03);
+}
+
+/* ========================================
+   FORMKIT OVERRIDES
+   ======================================== */
 
 .seva-overlay,
 .formkit-overlay {
-  background-color: rgba(30,41,59, .75) !important;
+  background-color: rgba(10, 10, 10, 0.85) !important;
 }
 
 .seva-modal {
-  background-color: #fff;
+  background-color: #1a1a1a;
 }
 
 .formkit-modal .formkit-close {
   background-color: transparent !important;
-  color: #00000050 !important
+  color: rgba(255,255,255,0.5) !important;
 }
 
 .formkit-modal .formkit-close:hover {
-  color: #000 !important;
+  color: #fff !important;
 }
 
 .formkit-submit {
-  background-color: rgb(110 231 183) !important;
+  background-color: var(--color-signal) !important;
 }
 
 .formkit-submit > span {
-  color: rgb(30 41 59);
+  color: var(--color-signal-ink);
 }
 
-.bg-orange-50 {
-  background-color:#FFF5E9;
+/* ========================================
+   SELECTION
+   ======================================== */
+
+::selection {
+  background-color: var(--color-signal);
+  color: var(--color-signal-ink);
 }
 
-.bg-orange-500 {
-  background-color: #FB7643;
 }
-
-.text-orange-500 {
-  color: #FB7643;
 }
-
-.button-primary {
-  background: #6ee7B7;
 }
-
-.confirmation__content {
-  box-shadow: none !important;
+}
+}
 }

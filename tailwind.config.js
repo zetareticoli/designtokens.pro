@@ -2,24 +2,30 @@
 module.exports = {
   content: ["./*.html"],
   theme: {
-    extend: {},
     screens: {
       'sm': '640px',
-      // => @media (min-width: 640px) { ... }
-
       'md': '768px',
-      // => @media (min-width: 768px) { ... }
-
       'lg': '1024px',
-      // => @media (min-width: 1024px) { ... }
-
       'xl': '1280px',
-      // => @media (min-width: 1280px) { ... }
-
       '2xl': '1440px',
-      // => @media (min-width: 1536px) { ... }
-    }
+    },
+    extend: {
+      colors: {
+        void: '#0A0A0A',
+        surface: '#141414',
+        paper: '#F4F3EF',
+        ink: '#FFFFFF',
+        'ink-inverse': '#0A0A0A',
+        muted: '#9A9A94',
+        signal: '#FF4713',
+        'signal-ink': '#0A0A0A',
+      },
+      fontFamily: {
+        display: ['"Hubot Sans"', 'system-ui', 'monospace'],
+        body: ['"Hubot Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+        mono: ['ui-monospace', 'SFMono-Regular', '"SF Mono"', 'Menlo', 'monospace'],
+      },
+    },
   },
   plugins: [],
 }
-
