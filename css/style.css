@@ -313,6 +313,28 @@ html.js .module-card details.is-expanded .module-card-panel-inner > .grid {
 }
 
 /* ========================================
+   GUIDE PREVIEW GALLERY
+   ======================================== */
+
+.guide-preview-gallery {
+  -webkit-overflow-scrolling: touch;
+  scrollbar-color: rgba(255, 255, 255, 0.25) transparent;
+}
+
+.guide-preview-gallery::-webkit-scrollbar {
+  height: 6px;
+}
+
+.guide-preview-gallery::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.guide-preview-gallery::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 999px;
+}
+
+/* ========================================
    FORMKIT OVERRIDES
    ======================================== */
 
