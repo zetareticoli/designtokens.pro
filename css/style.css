@@ -88,10 +88,12 @@
    ======================================== */
 
 .hero-grid {
+  /* Square-ish cells: percentage resolves per axis; /6 widens columns vs former /12 */
+  --hero-grid-cell: clamp(40px, calc(100% / 6), 80px);
   background-image:
     linear-gradient(to right, var(--color-grid-line) 1px, transparent 1px),
     linear-gradient(to bottom, var(--color-grid-line) 1px, transparent 1px);
-  background-size: calc(100% / 12) 80px;
+  background-size: var(--hero-grid-cell) var(--hero-grid-cell);
   mask-image: linear-gradient(to top, transparent 0%, rgba(0,0,0,0.6) 25%, rgba(0,0,0,0.35) 100%);
   -webkit-mask-image: linear-gradient(to top, transparent 0%, rgba(0,0,0,0.6) 25%, rgba(0,0,0,0.35) 100%);
 }
@@ -102,15 +104,16 @@
   inset: 0;
   background-image:
     radial-gradient(circle, var(--color-grid-tick) 1.5px, transparent 1.5px);
-  background-size: calc(100% / 12) 80px;
+  background-size: var(--hero-grid-cell) var(--hero-grid-cell);
   background-position: -0.75px -0.75px;
 }
 
 .cta-grid {
+  --hero-grid-cell: clamp(40px, calc(100% / 6), 80px);
   background-image:
     linear-gradient(to right, var(--color-grid-line) 1px, transparent 1px),
     linear-gradient(to bottom, var(--color-grid-line) 1px, transparent 1px);
-  background-size: calc(100% / 12) 80px;
+  background-size: var(--hero-grid-cell) var(--hero-grid-cell);
   mask-image: linear-gradient(to top, transparent 0%, rgba(0,0,0,0.6) 25%, rgba(0,0,0,0.35) 100%);
   -webkit-mask-image: linear-gradient(to top, transparent 0%, rgba(0,0,0,0.6) 25%, rgba(0,0,0,0.35) 100%);
 }
@@ -121,7 +124,7 @@
   inset: 0;
   background-image:
     radial-gradient(circle, var(--color-grid-tick) 1.5px, transparent 1.5px);
-  background-size: calc(100% / 12) 80px;
+  background-size: var(--hero-grid-cell) var(--hero-grid-cell);
   background-position: -0.75px -0.75px;
 }
 

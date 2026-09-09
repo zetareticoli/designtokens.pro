@@ -103,9 +103,9 @@
         </div>
 
         <!-- Guide image + reticle + data chips — right of headline -->
-        <div class="col-span-12 lg:col-span-5 flex flex-col items-end gap-3 animate-in" data-delay="600">
-          <div class="reticle relative w-full max-w-md">
-            <img class="max-w-md" src="/img/guide-perspective-wrapper@1x.webp"
+        <div class="col-span-12 lg:col-span-5 flex flex-col items-center lg:items-end gap-3 animate-in" data-delay="600">
+          <div class="reticle relative w-full max-w-[240px] sm:max-w-[280px] lg:max-w-md">
+            <img class="w-full h-auto" src="/img/guide-perspective-wrapper@1x.webp"
               alt="Design Tokens Pro guide preview in perspective" title="Design Tokens Pro digital guide">
             <span class="absolute top-0 left-0 w-6 h-6 border-t-2 border-l-2 border-signal" aria-hidden="true"></span>
             <span class="absolute top-0 right-0 w-6 h-6 border-t-2 border-r-2 border-signal" aria-hidden="true"></span>
@@ -120,16 +120,18 @@
       </div>
 
       <!-- CTA cluster -->
-      <div class="col-span-12 lg:col-span-7 flex flex-wrap items-center gap-4 animate-in" data-delay="500">
+      <div class="col-span-12 lg:col-span-7 flex flex-col items-center lg:items-start gap-3 animate-in" data-delay="500">
         <a class="inline-flex items-center bg-signal text-signal-ink px-8 py-4 text-lg font-bold hover:brightness-110 transition-all"
           href="https://francescoimprota.kit.com/products/design-tokens-pro?step=checkout">
           Buy the guide — $39
         </a>
-        <span class="text-muted">or</span>
-        <a class="text-signal underline underline-offset-2 transition-colors text-lg font-medium tracking-wide"
-          data-formkit-toggle="b8a4c3bfea" href="https://francesco-improta.ck.page/b8a4c3bfea">
-          Get two free chapters
-        </a>
+        <p class="text-muted text-lg">
+          or
+          <a class="text-signal underline underline-offset-2 transition-colors font-medium tracking-wide"
+            data-formkit-toggle="b8a4c3bfea" href="https://francesco-improta.ck.page/b8a4c3bfea">
+            Get two free chapters
+          </a>
+        </p>
       </div>
     </div>
   </section>
@@ -163,35 +165,40 @@
       </div>
     </div>
 
-    <div class="guide-preview-gallery mt-10 md:mt-14 flex snap-x snap-mandatory overflow-x-auto py-8 md:py-10 space-x-4 md:space-x-8 scroll-pl-[max(1.5rem,calc((100vw-1440px)/2+1.5rem))] md:scroll-pl-[max(2.5rem,calc((100vw-1440px)/2+2.5rem))]"
+    <div
+      class="guide-preview-gallery mt-10 md:mt-14 flex overflow-x-auto py-8 md:py-10 space-x-4 md:space-x-8 scroll-pl-[max(1.5rem,calc((100vw-1440px)/2+1.5rem))] md:scroll-pl-[max(2.5rem,calc((100vw-1440px)/2+2.5rem))] lg:snap-x lg:snap-mandatory"
       role="list" aria-label="Guide page previews">
-      <div class="flex-none snap-start pl-[max(1.5rem,calc((100vw-1440px)/2+1.5rem))] md:pl-[max(2.5rem,calc((100vw-1440px)/2+2.5rem))] w-[calc(85vw+max(1.5rem,calc((100vw-1440px)/2+1.5rem)))] md:w-[calc(48rem+max(2.5rem,calc((100vw-1440px)/2+2.5rem)))]" role="listitem">
-        <img class="w-[85vw] md:w-[48rem] bg-white shadow-lg"
+      <div
+        class="flex-none pl-[max(1.5rem,calc((100vw-1440px)/2+1.5rem))] md:pl-[max(2.5rem,calc((100vw-1440px)/2+2.5rem))] lg:snap-start lg:w-[calc(48rem+max(2.5rem,calc((100vw-1440px)/2+2.5rem)))]"
+        role="listitem">
+        <img class="h-[240px] w-auto lg:h-auto lg:w-[48rem] bg-white shadow-lg border border-[#D4D4D4]"
           src="/img/guide-preview-01@1x.webp" alt="Design Tokens Pro guide preview — page 1" width="3360" height="1736"
           loading="lazy" decoding="async">
       </div>
-      <div class="flex-none snap-start w-[85vw] md:w-[48rem]" role="listitem">
-        <img class="w-full bg-white shadow-lg" src="/img/guide-preview-02@1x.webp"
+      <div class="flex-none lg:snap-start lg:w-[48rem]" role="listitem">
+        <img class="h-[240px] w-auto lg:h-auto lg:w-full bg-white shadow-lg border border-[#D4D4D4]" src="/img/guide-preview-02@1x.webp"
           alt="Design Tokens Pro guide preview — page 2" width="3360" height="1736" loading="lazy" decoding="async">
       </div>
-      <div class="flex-none snap-start w-[85vw] md:w-[48rem]" role="listitem">
-        <img class="w-full bg-white shadow-lg" src="/img/guide-preview-03@1x.webp"
+      <div class="flex-none lg:snap-start lg:w-[48rem]" role="listitem">
+        <img class="h-[240px] w-auto lg:h-auto lg:w-full bg-white shadow-lg border border-[#D4D4D4]" src="/img/guide-preview-03@1x.webp"
           alt="Design Tokens Pro guide preview — page 3" width="3360" height="1736" loading="lazy" decoding="async">
       </div>
-      <div class="flex-none snap-start w-[85vw] md:w-[48rem]" role="listitem">
-        <img class="w-full bg-white shadow-lg" src="/img/guide-preview-04@1x.webp"
+      <div class="flex-none lg:snap-start lg:w-[48rem]" role="listitem">
+        <img class="h-[240px] w-auto lg:h-auto lg:w-full bg-white shadow-lg border border-[#D4D4D4]" src="/img/guide-preview-04@1x.webp"
           alt="Design Tokens Pro guide preview — page 4" width="3360" height="1736" loading="lazy" decoding="async">
       </div>
-      <div class="flex-none snap-start w-[85vw] md:w-[48rem]" role="listitem">
-        <img class="w-full bg-white shadow-lg" src="/img/guide-preview-05@1x.webp"
+      <div class="flex-none lg:snap-start lg:w-[48rem]" role="listitem">
+        <img class="h-[240px] w-auto lg:h-auto lg:w-full bg-white shadow-lg border border-[#D4D4D4]" src="/img/guide-preview-05@1x.webp"
           alt="Design Tokens Pro guide preview — page 5" width="3360" height="1736" loading="lazy" decoding="async">
       </div>
-      <div class="flex-none snap-start w-[85vw] md:w-[48rem]" role="listitem">
-        <img class="w-full bg-white shadow-lg" src="/img/guide-preview-06@1x.webp"
+      <div class="flex-none lg:snap-start lg:w-[48rem]" role="listitem">
+        <img class="h-[240px] w-auto lg:h-auto lg:w-full bg-white shadow-lg border border-[#D4D4D4]" src="/img/guide-preview-06@1x.webp"
           alt="Design Tokens Pro guide preview — page 6" width="3360" height="1736" loading="lazy" decoding="async">
       </div>
-      <div class="flex-none snap-start pr-[max(1.5rem,calc((100vw-1440px)/2+1.5rem))] md:pr-[max(2.5rem,calc((100vw-1440px)/2+2.5rem))] w-[calc(85vw+max(1.5rem,calc((100vw-1440px)/2+1.5rem)))] md:w-[calc(48rem+max(2.5rem,calc((100vw-1440px)/2+2.5rem)))]" role="listitem">
-        <img class="w-[85vw] md:w-[48rem] bg-white shadow-lg"
+      <div
+        class="flex-none pr-[max(1.5rem,calc((100vw-1440px)/2+1.5rem))] md:pr-[max(2.5rem,calc((100vw-1440px)/2+2.5rem))] lg:snap-start lg:w-[calc(48rem+max(2.5rem,calc((100vw-1440px)/2+2.5rem)))]"
+        role="listitem">
+        <img class="h-[240px] w-auto lg:h-auto lg:w-[48rem] bg-white shadow-lg border border-[#D4D4D4]"
           src="/img/guide-preview-07@1x.webp" alt="Design Tokens Pro guide preview — page 7" width="3360" height="1736"
           loading="lazy" decoding="async">
       </div>
