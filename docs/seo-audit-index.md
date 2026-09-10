@@ -289,7 +289,7 @@ Cadenza consigliata: review GSC settimanale per 4–6 settimane dopo il deploy d
 - [x] A5 WebP immagini pesanti
 - [x] A6 Sezione video rimossa (per richiesta)
 - [x] A7 Brand in nav
-- [ ] A8 Chip capitoli (8) — in attesa conferma 8 vs 10
+- [x] A8 Chip capitoli (8) — confermato dal maintainer
 - [x] A9 Copyright year
 - [x] A10 Guide Materials sezione autonoma
 - [x] A11 Alt preview
