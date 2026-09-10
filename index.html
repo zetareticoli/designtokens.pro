@@ -4,34 +4,40 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Design Tokens Guide – From Basics to Advanced Topics</title>
+  <title>Design Tokens Pro — Naming, Architecture & Themes Guide</title>
 
   <link rel="stylesheet" href="css/style.compiled.css">
   <link rel="canonical" href="https://www.designtokens.pro/" />
   <link rel="alternate" type="text/markdown" href="https://www.designtokens.pro/index.md" title="Markdown version">
 
   <meta name="description"
-    content="A comprehensive guide to design tokens taxonomy, design tokens naming conventions and design tokens architecture. Designed for designers and developers.">
+    content="Practical design tokens guide for designers and developers: taxonomy, naming conventions, architecture, themes, and tooling. Online + PDF — $39.">
 
   <meta property="og:url" content="https://www.designtokens.pro/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Design Tokens Guide – From Basics to Advanced Topics">
+  <meta property="og:site_name" content="Design Tokens Pro">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Design Tokens Pro — Naming, Architecture & Themes Guide">
   <meta property="og:description"
-    content="A comprehensive guide to design tokens taxonomy, design tokens naming conventions and design tokens architecture. Designed for designers and developers.">
+    content="Practical design tokens guide for designers and developers: taxonomy, naming conventions, architecture, themes, and tooling. Online + PDF — $39.">
   <meta property="og:image" content="https://www.designtokens.pro/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Design Tokens Pro — digital guide cover">
 
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@zetareticoli">
   <meta name="twitter:url" content="https://www.designtokens.pro/">
-  <meta name="twitter:title" content="Design Tokens Guide – From Basics to Advanced Topics">
+  <meta name="twitter:title" content="Design Tokens Pro — Naming, Architecture & Themes Guide">
   <meta name="twitter:description"
-    content="A comprehensive guide to design tokens taxonomy, design tokens naming conventions and design tokens architecture. Designed for designers and developers.">
+    content="Practical design tokens guide for designers and developers: taxonomy, naming conventions, architecture, themes, and tooling. Online + PDF — $39.">
   <meta name="twitter:image" content="https://www.designtokens.pro/img/og-image.png">
+  <meta name="twitter:image:alt" content="Design Tokens Pro — digital guide cover">
 
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#0A0A0A">
@@ -41,15 +47,97 @@
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "CreativeWork",
-      "name": "Design Tokens Pro",
-      "description": "Complete digital guide to build scalable design systems with design tokens.",
-      "author": {
-        "@type": "Person",
-        "name": "Francesco Improta"
-      },
-      "inLanguage": "en",
-      "url": "https://www.designtokens.pro/"
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://www.designtokens.pro/#webpage",
+          "url": "https://www.designtokens.pro/",
+          "name": "Design Tokens Pro — Naming, Architecture & Themes Guide",
+          "description": "Practical design tokens guide for designers and developers: taxonomy, naming conventions, architecture, themes, and tooling.",
+          "isPartOf": { "@id": "https://www.designtokens.pro/#website" },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://www.designtokens.pro/img/og-image.png",
+            "width": 1200,
+            "height": 630
+          },
+          "about": { "@id": "https://www.designtokens.pro/#product" }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.designtokens.pro/#website",
+          "url": "https://www.designtokens.pro/",
+          "name": "Design Tokens Pro",
+          "publisher": { "@id": "https://www.designtokens.pro/#author" }
+        },
+        {
+          "@type": "Product",
+          "@id": "https://www.designtokens.pro/#product",
+          "name": "Design Tokens Pro",
+          "description": "Complete digital guide to build scalable design systems with design tokens. Online access and printable PDF.",
+          "image": "https://www.designtokens.pro/img/og-image.png",
+          "brand": {
+            "@type": "Brand",
+            "name": "Design Tokens Pro"
+          },
+          "author": { "@id": "https://www.designtokens.pro/#author" },
+          "offers": {
+            "@type": "Offer",
+            "url": "https://francescoimprota.kit.com/products/design-tokens-pro?step=checkout",
+            "price": "39",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://www.designtokens.pro/#author",
+          "name": "Francesco Improta",
+          "url": "https://francescoimprota.com/about",
+          "sameAs": [
+            "https://twitter.com/zetareticoli",
+            "https://francescoimprota.com/about"
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://www.designtokens.pro/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Is it suitable for beginners?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, the guide is written in a clear and easy-to-understand manner for those starting from scratch. Even experienced designers will find new insights and tips in the guide."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What problems will this guide help me overcome?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This guide makes it easier for you to use design tokens. It helps keep your digital projects consistent, understand how to use design tokens, and simplify your design process. It also offers tips for managing design tokens across different tools or files."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I do the lessons when I have time?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, this is a digital and self-paced guide, you can take as long as you want to complete it."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Should I know to code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "While knowing how to code can enhance your understanding of design tokens, it's not a requirement for this guide. The guide is designed to be accessible for both designers and developers, with practical examples that don't require coding expertise."
+              }
+            }
+          ]
+        }
+      ]
     }
   </script>
 </head>
@@ -59,13 +147,12 @@
   <!-- NAV -->
   <header class="fixed top-0 left-0 right-0 z-50 js-header transition-colors duration-200">
     <div class="max-w-[1440px] mx-auto px-6 md:px-10">
-      <nav class="flex items-center h-16 justify-end md:h-20" aria-label="Global">
-        <!-- <a href="#" class="font-mono text-xs tracking-[0.2em] uppercase text-muted hover:text-ink transition-colors">
+      <nav class="flex items-center h-16 justify-between md:h-20" aria-label="Global">
+        <a href="/" class="font-mono text-xs tracking-[0.2em] uppercase text-muted hover:text-ink transition-colors">
           DT–PRO
-        </a> -->
-        <div class="w-full flex items-center gap-6 md:gap-10 text-xs md:text-xs tracking-wide uppercase font-medium">
+        </a>
+        <div class="flex items-center gap-6 md:gap-10 text-xs md:text-xs tracking-wide uppercase font-medium">
           <a href="#section-chapters" class="text-muted hover:text-ink transition-colors hidden md:block">Chapters</a>
-          <a href="#section-media" class="text-muted hover:text-ink transition-colors hidden md:block">Preview</a>
           <a href="#section-faq" class="text-muted hover:text-ink transition-colors hidden md:block">FAQ</a>
           <a href="https://francescoimprota.kit.com/products/design-tokens-pro?step=checkout"
             class="border border-signal text-ink px-5 py-2 text-xs tracking-wide uppercase font-bold hover:bg-signal transition-all">
@@ -106,7 +193,8 @@
         <div class="col-span-12 lg:col-span-5 flex flex-col items-center lg:items-end gap-3 animate-in" data-delay="600">
           <div class="reticle relative w-full max-w-[240px] sm:max-w-[280px] lg:max-w-md">
             <img class="w-full h-auto" src="/img/guide-perspective-wrapper@1x.webp"
-              alt="Design Tokens Pro guide preview in perspective" title="Design Tokens Pro digital guide">
+              alt="Design Tokens Pro guide preview in perspective" title="Design Tokens Pro digital guide"
+              width="694" height="837" fetchpriority="high" decoding="async">
             <span class="absolute top-0 left-0 w-6 h-6 border-t-2 border-l-2 border-signal" aria-hidden="true"></span>
             <span class="absolute top-0 right-0 w-6 h-6 border-t-2 border-r-2 border-signal" aria-hidden="true"></span>
             <span class="absolute bottom-0 left-0 w-6 h-6 border-b-2 border-l-2 border-signal"
@@ -172,34 +260,36 @@
         class="flex-none pl-[max(1.5rem,calc((100vw-1440px)/2+1.5rem))] md:pl-[max(2.5rem,calc((100vw-1440px)/2+2.5rem))] lg:snap-start lg:w-[calc(48rem+max(2.5rem,calc((100vw-1440px)/2+2.5rem)))]"
         role="listitem">
         <img class="h-[240px] w-auto lg:h-auto lg:w-[48rem] bg-white shadow-lg border border-[#D4D4D4]"
-          src="/img/guide-preview-01@1x.webp" alt="Design Tokens Pro guide preview — page 1" width="3360" height="1736"
+          src="/img/guide-preview-01@1x.webp" alt="Design Tokens Pro — guide spread on token foundations and overview"
+          width="3360" height="1736"
           loading="lazy" decoding="async">
       </div>
       <div class="flex-none lg:snap-start lg:w-[48rem]" role="listitem">
         <img class="h-[240px] w-auto lg:h-auto lg:w-full bg-white shadow-lg border border-[#D4D4D4]" src="/img/guide-preview-02@1x.webp"
-          alt="Design Tokens Pro guide preview — page 2" width="3360" height="1736" loading="lazy" decoding="async">
+          alt="Design Tokens Pro — guide spread on token name elements" width="3360" height="1736" loading="lazy" decoding="async">
       </div>
       <div class="flex-none lg:snap-start lg:w-[48rem]" role="listitem">
         <img class="h-[240px] w-auto lg:h-auto lg:w-full bg-white shadow-lg border border-[#D4D4D4]" src="/img/guide-preview-03@1x.webp"
-          alt="Design Tokens Pro guide preview — page 3" width="3360" height="1736" loading="lazy" decoding="async">
+          alt="Design Tokens Pro — guide spread on tokens architecture" width="3360" height="1736" loading="lazy" decoding="async">
       </div>
       <div class="flex-none lg:snap-start lg:w-[48rem]" role="listitem">
         <img class="h-[240px] w-auto lg:h-auto lg:w-full bg-white shadow-lg border border-[#D4D4D4]" src="/img/guide-preview-04@1x.webp"
-          alt="Design Tokens Pro guide preview — page 4" width="3360" height="1736" loading="lazy" decoding="async">
+          alt="Design Tokens Pro — guide spread on taxonomy and naming" width="3360" height="1736" loading="lazy" decoding="async">
       </div>
       <div class="flex-none lg:snap-start lg:w-[48rem]" role="listitem">
         <img class="h-[240px] w-auto lg:h-auto lg:w-full bg-white shadow-lg border border-[#D4D4D4]" src="/img/guide-preview-05@1x.webp"
-          alt="Design Tokens Pro guide preview — page 5" width="3360" height="1736" loading="lazy" decoding="async">
+          alt="Design Tokens Pro — guide spread on compound tokens" width="3360" height="1736" loading="lazy" decoding="async">
       </div>
       <div class="flex-none lg:snap-start lg:w-[48rem]" role="listitem">
         <img class="h-[240px] w-auto lg:h-auto lg:w-full bg-white shadow-lg border border-[#D4D4D4]" src="/img/guide-preview-06@1x.webp"
-          alt="Design Tokens Pro guide preview — page 6" width="3360" height="1736" loading="lazy" decoding="async">
+          alt="Design Tokens Pro — guide spread on themes and color modes" width="3360" height="1736" loading="lazy" decoding="async">
       </div>
       <div
         class="flex-none pr-[max(1.5rem,calc((100vw-1440px)/2+1.5rem))] md:pr-[max(2.5rem,calc((100vw-1440px)/2+2.5rem))] lg:snap-start lg:w-[calc(48rem+max(2.5rem,calc((100vw-1440px)/2+2.5rem)))]"
         role="listitem">
         <img class="h-[240px] w-auto lg:h-auto lg:w-[48rem] bg-white shadow-lg border border-[#D4D4D4]"
-          src="/img/guide-preview-07@1x.webp" alt="Design Tokens Pro guide preview — page 7" width="3360" height="1736"
+          src="/img/guide-preview-07@1x.webp" alt="Design Tokens Pro — guide spread on token lifecycle and documentation"
+          width="3360" height="1736"
           loading="lazy" decoding="async">
       </div>
     </div>
@@ -226,9 +316,10 @@
             </p>
           </div>
           <div class="col-span-12 lg:col-span-6">
-            <img class="w-full rounded-2xl" src="/img/tokens-vocabulary.png"
+            <img class="w-full rounded-2xl" src="/img/tokens-vocabulary.webp"
               alt="A list of vocabulary terms used for design tokens naming"
-              title="Design tokens taxonomy is made of a shared naming convention">
+              title="Design tokens taxonomy is made of a shared naming convention"
+              width="1672" height="941" loading="lazy" decoding="async">
           </div>
         </article>
 
@@ -242,9 +333,10 @@
             </p>
           </div>
           <div class="col-span-12 lg:col-span-6">
-            <img class="w-full rounded-2xl" src="/img/tokens-decisions.png"
+            <img class="w-full rounded-2xl" src="/img/tokens-decisions.webp"
               alt="Example of design tokens application, using appropriate terms to make design decisions"
-              title="Design tokens levels increase specificity, from a raw value to a design decision">
+              title="Design tokens levels increase specificity, from a raw value to a design decision"
+              width="1200" height="675" loading="lazy" decoding="async">
           </div>
         </article>
 
@@ -258,9 +350,10 @@
             </p>
           </div>
           <div class="col-span-12 lg:col-span-6">
-            <img class="w-full rounded-2xl" src="/img/tokens-purpose.png"
+            <img class="w-full rounded-2xl" src="/img/tokens-purpose.webp"
               alt="Example of design tokens application, using appropriate terms to use design tokens with purpose"
-              title="The do's and dont's in design tokens usage">
+              title="The do's and dont's in design tokens usage"
+              width="1672" height="941" loading="lazy" decoding="async">
           </div>
         </article>
 
@@ -275,9 +368,10 @@
             </p>
           </div>
           <div class="col-span-12 lg:col-span-6">
-            <img class="w-full rounded-2xl" src="/img/tokens-process.png"
+            <img class="w-full rounded-2xl" src="/img/tokens-process.webp"
               alt="The design tokens lifecycle across different tools and technologies"
-              title="The design tokens lifecycle is technologically agnostic">
+              title="The design tokens lifecycle is technologically agnostic"
+              width="1672" height="941" loading="lazy" decoding="async">
           </div>
         </article>
       </div>
@@ -734,35 +828,32 @@
             </div>
           </details>
         </article>
-        <div class="col-span-12 lg:col-span-4">
-          <h4 class="text-sm font-bold uppercase tracking-[0.1em] mb-6">Guide Materials</h4>
-          <ul class="space-y-3 mb-10 text-sm text-muted">
-            <li class="flex items-center gap-3">
-              <span class="w-1.5 h-1.5 bg-signal rounded-full shrink-0"></span>
-              Self-paced digital guide
-            </li>
-            <li class="flex items-center gap-3">
-              <span class="w-1.5 h-1.5 bg-signal rounded-full shrink-0"></span>
-              Printable PDF
-            </li>
-            <li class="flex items-center gap-3">
-              <span class="w-1.5 h-1.5 bg-signal rounded-full shrink-0"></span>
-              Lifetime access
-            </li>
-            <li class="flex items-center gap-3">
-              <span class="w-1.5 h-1.5 bg-signal rounded-full shrink-0"></span>
-              Support on specific topic
-            </li>
-          </ul>
-
-        </div>
       </div>
 
-      <div class="col-span-12">
+      <div class="mt-16 md:mt-20 pt-10 border-t border-white/10">
+        <h2 class="font-display text-2xl md:text-3xl uppercase tracking-tight leading-[0.95] mb-6">Guide materials</h2>
+        <ul class="space-y-3 mb-10 text-sm md:text-base text-muted max-w-xl">
+          <li class="flex items-center gap-3">
+            <span class="w-1.5 h-1.5 bg-signal rounded-full shrink-0" aria-hidden="true"></span>
+            Self-paced digital guide
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="w-1.5 h-1.5 bg-signal rounded-full shrink-0" aria-hidden="true"></span>
+            Printable PDF
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="w-1.5 h-1.5 bg-signal rounded-full shrink-0" aria-hidden="true"></span>
+            Lifetime access
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="w-1.5 h-1.5 bg-signal rounded-full shrink-0" aria-hidden="true"></span>
+            Support on specific topic
+          </li>
+        </ul>
         <a class="inline-flex items-center bg-signal text-signal-ink px-8 py-4 text-sm md:text-base font-bold tracking-[0.1em] uppercase hover:brightness-110 transition-all"
           href="https://francescoimprota.kit.com/products/design-tokens-pro?step=checkout">Get the guide — $39</a>
-        <div class="border-t border-white/10 pt-6">
-          <h4 class="text-sm font-bold uppercase tracking-[0.1em] mb-3">Any doubts?</h4>
+        <div class="border-t border-white/10 pt-6 mt-8">
+          <h3 class="text-sm font-bold uppercase tracking-[0.1em] mb-3">Any doubts?</h3>
           <a class="text-signal hover:text-ink transition-colors text-sm font-medium tracking-wide"
             data-formkit-toggle="b8a4c3bfea" href="https://francesco-improta.ck.page/b8a4c3bfea">
             Download first chapter free →
@@ -773,36 +864,15 @@
     </div>
   </section>
 
-  <!-- SNEAK PEEK -->
-  <section id="section-media" class="bg-surface px-6 md:px-10 py-16 md:py-24">
-    <div class="max-w-[1440px] mx-auto">
-      <div class="grid grid-cols-12 gap-6 mb-12">
-        <div class="col-span-12 lg:col-span-5">
-          <span class="font-mono text-[10px] tracking-[0.2em] uppercase text-signal block mb-3">Sneak Peek</span>
-          <h2 class="font-display text-4xl md:text-5xl uppercase tracking-tight leading-[0.95]">Preview<br>the guide
-          </h2>
-        </div>
-      </div>
-      <div class="max-w-4xl mx-auto">
-        <video controls autoplay loop muted playsinline poster="video-poster.png" width="800" class="w-full">
-          <source src="media/video.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="text-center mt-12">
-        <a class="inline-flex items-center bg-signal text-signal-ink px-8 py-4 text-sm md:text-base font-bold tracking-[0.1em] uppercase hover:brightness-110 transition-all"
-          href="https://francescoimprota.kit.com/products/design-tokens-pro?step=checkout">Get the guide — $39</a>
-      </div>
-    </div>
-  </section>
-
   <!-- AUTHOR -->
   <section class="bg-void px-6 md:px-10 py-16 md:py-24">
     <div class="max-w-[1440px] mx-auto grid grid-cols-12 gap-6 items-start">
       <div class="col-span-12 lg:col-span-4">
         <span class="font-mono text-[10px] tracking-[0.2em] uppercase text-signal block mb-3">The Author</span>
         <h2 class="font-display text-4xl md:text-5xl uppercase tracking-tight leading-[0.95] mb-8">Who<br>I am</h2>
-        <img class="w-32 md:w-40 rounded" src="img/about.webp"
-          alt="Francesco Improta - Design Token Expert and Guide Author">
+        <img class="w-32 md:w-40 rounded" src="/img/about.webp"
+          alt="Francesco Improta - Design Token Expert and Guide Author"
+          width="400" height="400" loading="lazy" decoding="async">
       </div>
       <div class="col-span-12 lg:col-start-6 lg:col-end-12 lg:pt-12">
         <p class="text-xl md:text-2xl text-muted leading-relaxed mb-4">
@@ -890,7 +960,7 @@
   <footer class="bg-void border-t border-white/10 px-6 md:px-10 py-5">
     <div
       class="max-w-[1440px] mx-auto flex flex-col-reverse items-center md:flex-row md:justify-between text-[11px] tracking-[0.1em] uppercase text-muted/50">
-      <p>Design Tokens Pro &copy; 2024 — Francesco Improta</p>
+      <p>Design Tokens Pro &copy; 2026 — Francesco Improta</p>
       <nav class="flex gap-4 mb-4 md:mb-0">
         <a href="/privacy" class="hover:text-ink transition-colors">Privacy</a>
         <a href="mailto:designtokenspro@francescoimprota.com" class="hover:text-ink transition-colors">Contact</a>

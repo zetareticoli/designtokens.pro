@@ -282,20 +282,20 @@ Cadenza consigliata: review GSC settimanale per 4–6 settimane dopo il deploy d
 ## Checklist
 
 ### Agent
-- [ ] A1 Title + description
-- [ ] A2 OG/Twitter completi
-- [ ] A3 JSON-LD Product + FAQ + Person
-- [ ] A4 width/height + lazy / fetchpriority
-- [ ] A5 WebP immagini pesanti
-- [ ] A6 Video senza autoplay + preload none
-- [ ] A7 Brand in nav
-- [ ] A8 Chip capitoli (8)
-- [ ] A9 Copyright year
-- [ ] A10 Guide Materials sezione autonoma
-- [ ] A11 Alt preview
-- [ ] A12 Cache headers `vercel.json`
-- [ ] A13 `site.webmanifest` colori
-- [ ] A14 `robots.txt` Sitemap
+- [x] A1 Title + description
+- [x] A2 OG/Twitter completi
+- [x] A3 JSON-LD Product + FAQ + Person
+- [x] A4 width/height + lazy / fetchpriority
+- [x] A5 WebP immagini pesanti
+- [x] A6 Sezione video rimossa (per richiesta)
+- [x] A7 Brand in nav
+- [ ] A8 Chip capitoli (8) — in attesa conferma 8 vs 10
+- [x] A9 Copyright year
+- [x] A10 Guide Materials sezione autonoma
+- [x] A11 Alt preview
+- [x] A12 Cache headers `vercel.json`
+- [x] A13 `site.webmanifest` colori
+- [x] A14 `robots.txt` Sitemap (già presente in repo)
 
 ### Tu
 - [ ] U1 Merge + deploy
