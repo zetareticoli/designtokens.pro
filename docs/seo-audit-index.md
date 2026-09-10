@@ -174,98 +174,158 @@ HTML con `max-age=0` è accettabile; aggiungere header cache lunghi per `/img/*`
 
 ---
 
-## Piano di interventi (priorizzato)
+## Ownership — chi fa cosa
 
-### Fase A — Quick wins tecnici (prima release)
+### Agent (implementabile in codice / PR)
 
-1. **Deploy fix** `robots.txt` (Sitemap), `index.md`, `llms.txt` + verifica HTTP 200.
-2. **Arricchire meta OG/Twitter** (`site_name`, `locale`, image size/alt).
-3. **Rifinire title + meta description** (brand + benefit + prezzo opzionale).
-4. **JSON-LD**: sostituire/estendere con `@graph` contenente `WebPage` + `Product`/`Offer` + `Person` + `FAQPage`.
-5. **Immagini**: convertire `tokens-*.png` pesanti in WebP/AVIF; aggiungere `width`/`height` + `loading="lazy"` (hero: `fetchpriority="high"`, no lazy).
-6. **Video**: rimuovere `autoplay` (o caricare solo su intent/click); comprimere; aggiungere poster ottimizzato; valutare `preload="none"`.
-7. **Brand in nav**: ripristinare link logo/nome → `/`.
-8. **Allineare “10 chapters”** al contenuto reale (o pubblicare i 2 capitoli mancanti).
-9. **Footer year** aggiornato.
-10. **Search Console**: conferma proprietà, submit sitemap, monitoraggio Coverage/CWV.
+Interventi tecnici e on-page che posso applicare direttamente sul repo, senza accessi esterni né decisioni di prodotto/contenuto.
 
-### Fase B — On-page & UX SEO
+| ID | Intervento | Note |
+|----|------------|------|
+| A1 | Meta title + description CTR/brand | Testo proposto; override tuo se preferisci altro wording |
+| A2 | OG/Twitter completi (`site_name`, `locale`, image size/alt) | |
+| A3 | JSON-LD `@graph`: `WebPage` + `Product`/`Offer` + `Person` + `FAQPage` | Niente `aggregateRating` senza review reali |
+| A4 | Attributi `width`/`height`, `loading="lazy"`, `fetchpriority` hero | |
+| A5 | Conversione PNG pesanti → WebP + update `src` in HTML | |
+| A6 | Video: togliere `autoplay`, `preload="none"`, poster più leggero se fattibile | Compressione aggressiva del MP4: meglio se fornisci master |
+| A7 | Brand/logo link in nav → `/` | Ripristino del link commentato |
+| A8 | Chip capitoli allineato agli 8 in pagina | Finché non esistono i 2 mancanti |
+| A9 | Footer year → 2026 (o dinamico) | |
+| A10 | Sezione “Guide Materials” autonoma (H2) | Fix gerarchia DOM |
+| A11 | Alt preview più specifici | Basati sul contenuto visibile delle pagine |
+| A12 | Cache headers statici in `vercel.json` | `/img`, `/fonts`, `/css`, `/js`, `/media` |
+| A13 | Allineare `site.webmanifest` a `theme-color` brand | |
+| A14 | Garantire `robots.txt` con `Sitemap` nel repo | Il 200 live arriva col merge/deploy |
+| A15 | Smoke-check post-merge su `index.md` / `llms.txt` / robots | Dopo il tuo deploy Vercel |
 
-1. Riorganizzare “Guide Materials” come sezione propria (H2).
-2. Aggiungere copy SEO leggero su benefit + audience senza keyword stuffing.
-3. Alt più specifici sulle preview (cosa mostra la pagina, non solo “page N”).
-4. Cache headers per asset statici in `vercel.json`.
-5. Allineare `site.webmanifest` ai colori brand.
-6. Valutare `noindex` su `/join` se non più nel funnel primario; altrimenti includere in sitemap.
+**Fuori dallo scope agent senza tuo go-ahead:** nuovi articoli/pagine pillar, rewrite copy marketing lungo, `noindex` su `/join`, transcript video, backlink outreach.
 
-### Fase C — Crescita ranking (contenuti + authority)
+### Tu (accessi, decisioni, contenuti, authority)
 
-1. Pubblicare 4–6 articoli evergreen (o capitoli free) su URL dedicate, linkate dalla homepage.
-2. Creare hub `/guide` o `/learn` con internal links ai topic.
-3. Guest post / talk / LinkedIn → backlink verso homepage e articoli pillar.
-4. Ottenere citazioni da design-system communities (Sparkbox, Into Design Systems, etc.).
-5. Considerare versioning contenuti + `lastmod` sitemap per segnalare freschezza.
-6. (Opzionale) hreflang solo se uscite edizioni localizzate.
+| ID | Intervento | Perché resta a te |
+|----|------------|-------------------|
+| U1 | Merge PR + deploy Vercel | Controllo release |
+| U2 | Google Search Console: verifica proprietà, submit sitemap, Coverage/CWV | Account Google |
+| U3 | Verificare in GSC/browser che `robots.txt`, `index.md`, `llms.txt` rispondano 200 | Post-deploy |
+| U4 | Decidere destino `/join` (`noindex` vs includere in sitemap) | Decisione funnel |
+| U5 | Confermare se i capitoli sono 8 o 10; se 10, fornire titoli/outline dei 2 mancanti | Contenuto prodotto |
+| U6 | Approvare wording title/description/schema (prezzo in SERP, tone of voice) | Brand |
+| U7 | Validare rich results (Rich Results Test) dopo deploy | Preferibile dal tuo dominio live |
+| U8 | Scrivere/pubblicare 4–6 pezzi evergreen o 1+ capitolo free on-site | Contenuto editoriale |
+| U9 | Hub `/guide` o `/learn` + strategia internal linking | IA del sito / priorità prodotto |
+| U10 | Transcript/captions del video sneak peek | Asset editoriale |
+| U11 | Outreach: guest post, talk, LinkedIn, community DS | Relazioni / personal brand |
+| U12 | Citazioni/backlink (Sparkbox, Into Design Systems, ecc.) | Authority off-site |
+| U13 | Goal Plausible + tracking conversioni Kit | Analytics account |
+| U14 | Review GSC settimanale 4–6 settimane post go-live Fase A | Monitoraggio continuo |
+| U15 | (Opzionale) hreflang / edizioni localizzate | Solo se esce prodotto tradotto |
+| U16 | `aggregateRating` in schema | Solo con recensioni verificabili |
 
-### Fase D — Misurazione
+### Collaborazione tipica
 
-| Metrica | Dove |
-|---------|------|
-| Impressioni / CTR query | Google Search Console |
-| Posizioni brand vs non-brand | GSC |
-| LCP / INP / CLS mobile | PageSpeed Insights + CrUX |
-| Conversioni checkout / lead free chapters | Plausible goals / Kit |
-| Index coverage di nuove URL | GSC |
-
-Cadenza: review GSC settimanale per 4–6 settimane post Fase A; CWV dopo ottimizzazione immagini/video.
+1. **Agent** implementa A1–A14 in PR.
+2. **Tu** fai U1 (merge/deploy) + U6 se vuoi tweak di copy prima del merge.
+3. **Tu** fai U2–U3–U7 (Search Console + verifica live).
+4. **Agent** può supportare U8–U9 in un secondo ciclo *dopo* brief/contenuti da te (outline, tono, URL target).
+5. **Tu** guidi U11–U14 (authority + misura); l’agent non può fare outreach al posto tuo.
 
 ---
 
-## Checklist implementativa (copy-paste)
+## Piano di interventi (priorizzato, con owner)
 
-### Meta & head
-- [ ] Title con brand + primary keyword
-- [ ] Description CTR-oriented ≤155
-- [ ] `og:site_name`, `og:locale`, `og:image:width/height/alt`
-- [ ] `twitter:image:alt`
-- [ ] Verificare alternate `index.md` → 200
-- [ ] Verificare `llms.txt` → 200
+### Fase A — Quick wins tecnici
 
-### Structured data
-- [ ] `Product` + `Offer` ($39 USD)
-- [ ] `FAQPage` (4 Q&A)
-- [ ] `Person` author con `url` / `sameAs`
-- [ ] Validare con Rich Results Test
+| Step | Owner | Ref |
+|------|-------|-----|
+| Meta title/description | Agent | A1 |
+| OG/Twitter | Agent | A2 |
+| JSON-LD Product + FAQ + Person | Agent | A3 |
+| Img attrs + WebP | Agent | A4–A5 |
+| Video autoplay/preload | Agent | A6 |
+| Brand nav + chapters chip + year | Agent | A7–A9 |
+| robots Sitemap in repo | Agent | A14 |
+| Merge/deploy | **Tu** | U1 |
+| Search Console + verify live assets | **Tu** | U2–U3 |
+| Approvare copy SERP | **Tu** | U6 |
 
-### Media / performance
-- [ ] WebP per tokens-vocabulary/purpose/process
-- [ ] width/height su tutte le img
-- [ ] lazy below-the-fold; `fetchpriority` hero
-- [ ] video senza autoplay o lazy-load
-- [ ] cache headers static assets
+### Fase B — On-page & UX SEO
 
-### Content / IA
-- [ ] Brand in header
-- [ ] Fix conteggio capitoli
-- [ ] Sezione Guide Materials autonoma
-- [ ] Copyright year
-- [ ] robots Sitemap live
-- [ ] sitemap policy join/confirm
+| Step | Owner | Ref |
+|------|-------|-----|
+| Guide Materials come sezione H2 | Agent | A10 |
+| Alt preview più specifici | Agent | A11 |
+| Cache headers + webmanifest | Agent | A12–A13 |
+| Policy `/join` in sitemap o noindex | **Tu** (decisione) → Agent applica | U4 |
+| Conteggio 8 vs 10 capitoli | **Tu** (decisione) → Agent applica | U5 |
+
+### Fase C — Crescita ranking
+
+| Step | Owner | Ref |
+|------|-------|-----|
+| Articoli evergreen / capitolo free | **Tu** (+ Agent su scaffold HTML se richiesto) | U8 |
+| Hub `/guide` o `/learn` | **Tu** brief → Agent implementa struttura | U9 |
+| Transcript video | **Tu** | U10 |
+| Backlink / community / guest post | **Tu** | U11–U12 |
+
+### Fase D — Misurazione
+
+| Step | Owner | Ref |
+|------|-------|-----|
+| GSC impressioni/CTR/posizioni | **Tu** | U2, U14 |
+| PageSpeed / CrUX dopo fix media | **Tu** (check) / Agent (re-fix se regressione) | U7 |
+| Conversioni Plausible/Kit | **Tu** | U13 |
+
+Cadenza consigliata: review GSC settimanale per 4–6 settimane dopo il deploy della Fase A.
+
+---
+
+## Checklist
+
+### Agent
+- [ ] A1 Title + description
+- [ ] A2 OG/Twitter completi
+- [ ] A3 JSON-LD Product + FAQ + Person
+- [ ] A4 width/height + lazy / fetchpriority
+- [ ] A5 WebP immagini pesanti
+- [ ] A6 Video senza autoplay + preload none
+- [ ] A7 Brand in nav
+- [ ] A8 Chip capitoli (8)
+- [ ] A9 Copyright year
+- [ ] A10 Guide Materials sezione autonoma
+- [ ] A11 Alt preview
+- [ ] A12 Cache headers `vercel.json`
+- [ ] A13 `site.webmanifest` colori
+- [ ] A14 `robots.txt` Sitemap
+
+### Tu
+- [ ] U1 Merge + deploy
+- [ ] U2 Search Console + submit sitemap
+- [ ] U3 Verifica 200 su robots / index.md / llms.txt
+- [ ] U4 Decisione `/join`
+- [ ] U5 Decisione 8 vs 10 capitoli
+- [ ] U6 Approve copy SERP/schema
+- [ ] U7 Rich Results Test
+- [ ] U8 Contenuti evergreen
+- [ ] U9 Hub contenuti
+- [ ] U10 Transcript video
+- [ ] U11–U12 Outreach / backlink
+- [ ] U13 Goals analytics
+- [ ] U14 Review GSC ricorrente
 
 ---
 
 ## Stima impatto
 
-| Intervento | Impatto ranking | Effort |
-|------------|-----------------|--------|
-| Schema Product + FAQ | Medio (rich results / clarity) | Basso |
-| Fix robots/md/llms deploy | Basso–medio (crawl hygiene) | Basso |
-| Compressione immagini + video | Medio (CWV → ranking/UX) | Medio |
-| Title/description CTR | Medio (CTR SERP) | Basso |
-| Contenuti pillar + internal links | **Alto** (nuove keyword) | Alto |
-| Backlink / authority | **Alto** | Alto / continuo |
+| Intervento | Impatto ranking | Effort | Owner |
+|------------|-----------------|--------|-------|
+| Schema Product + FAQ | Medio | Basso | Agent |
+| Fix robots/md/llms (repo + deploy) | Basso–medio | Basso | Agent + Tu (deploy) |
+| Compressione immagini + video | Medio | Medio | Agent |
+| Title/description CTR | Medio | Basso | Agent (+ Tu approve) |
+| Contenuti pillar + internal links | **Alto** | Alto | **Tu** (+ Agent scaffold) |
+| Backlink / authority | **Alto** | Alto / continuo | **Tu** |
 
-Senza Fase C (contenuti + link), i fix tecnici migliorano qualità e CTR ma **non sbloccano da soli** ranking competitivi su query informative ad alto volume.
+Senza la tua Fase C (contenuti + link), i fix tecnici migliorano qualità e CTR ma **non sbloccano da soli** ranking competitivi su query informative ad alto volume.
 
 ---
 
