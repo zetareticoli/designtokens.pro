@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // ── Scroll-triggered reveals ──
-  var learnItems = document.querySelectorAll(".learn-item");
+  var slideInItems = document.querySelectorAll(".animation-slide-in");
 
   if ("IntersectionObserver" in window) {
     var observer = new IntersectionObserver(
@@ -43,11 +43,11 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       { threshold: 0.15 }
     );
-    learnItems.forEach(function (item) {
+    slideInItems.forEach(function (item) {
       observer.observe(item);
     });
   } else {
-    learnItems.forEach(function (item) {
+    slideInItems.forEach(function (item) {
       item.classList.add("visible");
     });
   }

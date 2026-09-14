@@ -189,13 +189,13 @@ html.js .animate-in.revealed {
 }
 
 /* Scroll-triggered items */
-html.js .learn-item {
+html.js .animation-slide-in {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.4s linear, transform 0.4s linear;
 }
 
-html.js .learn-item.visible {
+html.js .animation-slide-in.visible {
   opacity: 1;
   transform: translateY(0);
 }
@@ -203,7 +203,7 @@ html.js .learn-item.visible {
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   html.js .animate-in,
-  html.js .learn-item,
+  html.js .animation-slide-in,
   html.js .module-card-panel,
   html.js .module-card-panel-inner > .grid {
     opacity: 1;
