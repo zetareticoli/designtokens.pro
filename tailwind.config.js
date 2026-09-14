@@ -22,7 +22,7 @@ module.exports = {
       },
       fontFamily: {
         display: ['"Hubot Sans"', 'system-ui', 'monospace'],
-        body: ['"Hubot Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+        body: ['"Supreme"', 'system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', '"Helvetica Neue"', 'Arial', 'sans-serif'],
         mono: ['ui-monospace', 'SFMono-Regular', '"SF Mono"', 'Menlo', 'monospace'],
       },
     },
