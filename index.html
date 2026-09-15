@@ -149,16 +149,16 @@
   <header class="fixed top-0 left-0 right-0 z-50 js-header transition-colors duration-200">
     <div class="max-w-screen-2xl mx-auto px-6 md:px-10">
       <nav class="flex items-center h-16 justify-between md:h-20" aria-label="Global">
-        <a href="#" class="text-xl font-bold text-ink hover:text-ink transition-colors uppercase tracking-wide">
+        <a href="#" class="text-xl font-bold text-ink hover:text-ink transition-colors uppercase tracking-tight">
           Design Tokens Pro
         </a>
         <div class="flex items-center gap-6 md:gap-10 text-xs md:text-xs tracking-wide font-medium">
-          <a href="#section-guide" class="text-lg text-muted hover:text-ink transition-colors hidden md:block">Guide</a>
-          <a href="#section-what-you-learn" class="text-lg text-muted hover:text-ink transition-colors hidden md:block">What you'll learn</a>
-          <a href="#section-chapters" class="text-lg text-muted hover:text-ink transition-colors hidden md:block">Chapters</a>
-          <a href="#section-faq" class="text-lg text-muted hover:text-ink transition-colors hidden md:block">FAQ</a>
+          <a href="#section-guide" class="text-lg text-muted hover:text-ink transition-colors hidden lg:block">Guide</a>
+          <a href="#section-what-you-learn" class="text-lg text-muted hover:text-ink transition-colors hidden lg:block">What you'll learn</a>
+          <a href="#section-chapters" class="text-lg text-muted hover:text-ink transition-colors hidden lg:block">Chapters</a>
+          <a href="#section-faq" class="text-lg text-muted hover:text-ink transition-colors hidden lg:block">FAQ</a>
           <a href="https://francescoimprota.kit.com/products/design-tokens-pro?step=checkout"
-            class="inline-flex items-center bg-signal text-signal-ink px-5 py-2 text-xs font-bold transition-all rounded-sm hover:shadow-md hover:translate-y-[-2px]">
+            class="inline-flex items-center bg-signal text-signal-ink px-5 py-2 text-md md:text-lg font-bold transition-all rounded-sm hover:shadow-md hover:translate-y-[-2px]">
             Buy the guide
           </a>
         </div>
@@ -194,7 +194,7 @@
 
         <!-- Guide image + reticle + data chips — right of headline -->
         <div class="col-span-12 lg:col-span-5 flex flex-col items-center lg:items-end gap-3 animate-in" data-delay="600">
-          <div class="reticle relative w-full sm:max-w-[280px] lg:max-w-md mb-8">
+          <div class="reticle relative max-w-[360px] lg:max-w-md mb-8">
             <img class="w-full h-auto" src="/img/guide-perspective-wrapper@1x.webp"
               alt="Design Tokens Pro guide preview in perspective" title="Design Tokens Pro digital guide"
               width="694" height="837" fetchpriority="high" decoding="async">
@@ -373,15 +373,15 @@
 
   <!-- CHAPTERS -->
   <section id="section-chapters" class="bg-void px-6 md:px-10 py-16 md:py-24">
-    <div class="max-w-5xl mx-auto">
+    <div class="max-w-4xl mx-auto">
       <!-- Section header -->
-      <div class="flex flex-col gap-6 mb-16 md:mb-24">
+      <div class="flex flex-col gap-6 mb-16 md:mb-20">
         <div class="col-span-12 lg:col-span-6">
           <span class="font-mono text-[10px] tracking-[0.2em] uppercase text-signal block mb-3">Topics & Chapters</span>
-          <h2 class="font-display text-4xl md:text-6xl leading-[0.95] mb-6">What's inside</h2>
+          <h2 class="font-display text-4xl md:text-6xl leading-[0.95] mb-2">What's inside</h2>
         </div>
         <div class="col-span-12 lg:col-span-6 flex items-end">
-          <p class="text-lg md:text-xl text-muted leading-relaxed">
+          <p class="text-lg md:text-2xl text-muted leading-relaxed">
             From basics to advanced topics, this guide covers all you need to know for creating and managing any kind of
             token set.
           </p>
@@ -395,7 +395,7 @@
             <summary class="flex items-start gap-4 cursor-pointer">
               <span class="font-mono text-signal text-sm shrink-0 mt-1">01</span>
               <div class="flex-1 min-w-0">
-                <h3 class="text-lg md:text-2xl font-bold mb-1 group-hover:text-signal transition-colors">Basics</h3>
+                <h3 class="text-lg md:text-2xl font-bold mb-1 group-hover:underline underline-offset-2 transition-colors">Basics</h3>
                 <p class="text-sm md:text-base text-muted leading-relaxed">Learn the design tokens foundations: what
                   they are, their function, their appearance, and the advantages they bring to a project or design
                   system.</p>
@@ -448,7 +448,7 @@
             <summary class="flex items-start gap-4 cursor-pointer">
               <span class="font-mono text-signal text-sm shrink-0 mt-1">02</span>
               <div class="flex-1 min-w-0">
-                <h3 class="text-lg md:text-2xl font-bold mb-1 group-hover:text-signal transition-colors">Elements of
+                <h3 class="text-lg md:text-2xl font-bold mb-1 group-hover:underline underline-offset-2 transition-colors">Elements of
                   Token Name</h3>
                 <p class="text-sm md:text-base text-muted leading-relaxed">What are the elements that make up the name
                   of a token, being careful to choose only those that are needed.</p>
@@ -501,7 +501,7 @@
             <summary class="flex items-start gap-4 cursor-pointer">
               <span class="font-mono text-signal text-sm shrink-0 mt-1">03</span>
               <div class="flex-1 min-w-0">
-                <h3 class="text-lg md:text-2xl font-bold mb-1 group-hover:text-signal transition-colors">Tokens
+                <h3 class="text-lg md:text-2xl font-bold mb-1 group-hover:underline underline-offset-2 transition-colors">Tokens
                   Architecture</h3>
                 <p class="text-sm md:text-base text-muted leading-relaxed">Learn how to structure and organize design
                   tokens for scalable design systems.</p>
@@ -554,7 +554,7 @@
             <summary class="flex items-start gap-4 cursor-pointer">
               <span class="font-mono text-signal text-sm shrink-0 mt-1">04</span>
               <div class="flex-1 min-w-0">
-                <h3 class="text-lg md:text-2xl font-bold mb-1 group-hover:text-signal transition-colors">Taxonomy &
+                <h3 class="text-lg md:text-2xl font-bold mb-1 group-hover:underline underline-offset-2 transition-colors">Taxonomy &
                   Naming Convention</h3>
                 <p class="text-sm md:text-base text-muted leading-relaxed">Learn how to create a taxonomy, why it's
                   important, and how to set up a shared naming convention with your team and stakeholders.</p>
@@ -607,7 +607,7 @@
             <summary class="flex items-start gap-4 cursor-pointer">
               <span class="font-mono text-signal text-sm shrink-0 mt-1">05</span>
               <div class="flex-1 min-w-0">
-                <h3 class="text-lg md:text-2xl font-bold mb-1 group-hover:text-signal transition-colors">Compound Tokens
+                <h3 class="text-lg md:text-2xl font-bold mb-1 group-hover:underline underline-offset-2 transition-colors">Compound Tokens
                 </h3>
                 <p class="text-sm md:text-base text-muted leading-relaxed">Dive into the topic of compound tokens.
                   Understand what they are, how they differ from single tokens, and their role in complex designs.</p>
@@ -660,7 +660,7 @@
             <summary class="flex items-start gap-4 cursor-pointer">
               <span class="font-mono text-signal text-sm shrink-0 mt-1">06</span>
               <div class="flex-1 min-w-0">
-                <h3 class="text-lg md:text-2xl font-bold mb-1 group-hover:text-signal transition-colors">Themes and
+                <h3 class="text-lg md:text-2xl font-bold mb-1 group-hover:underline transition-colors">Themes and
                   Color Modes</h3>
                 <p class="text-sm md:text-base text-muted leading-relaxed">Learn the strategies for managing themes
                   within either a single project or across multiple projects. Gain insights into organizing these themes
@@ -714,7 +714,7 @@
             <summary class="flex items-start gap-4 cursor-pointer">
               <span class="font-mono text-signal text-sm shrink-0 mt-1">07</span>
               <div class="flex-1 min-w-0">
-                <h3 class="text-lg md:text-2xl font-bold mb-1 group-hover:text-signal transition-colors">Lifecycle of a
+                <h3 class="text-lg md:text-2xl font-bold mb-1 group-hover:underline underline-offset-2 transition-colors">Lifecycle of a
                   Token</h3>
                 <p class="text-sm md:text-base text-muted leading-relaxed">Explore the lifecycle, storage, and usage of
                   design tokens across tools, vital for their effective management and a streamlined design process.</p>
@@ -767,7 +767,7 @@
             <summary class="flex items-start gap-4 cursor-pointer">
               <span class="font-mono text-signal text-sm shrink-0 mt-1">08</span>
               <div class="flex-1 min-w-0">
-                <h3 class="text-lg md:text-2xl font-bold mb-1 group-hover:text-signal transition-colors">Documenting
+                <h3 class="text-lg md:text-2xl font-bold mb-1 group-hover:underline underline-offset-2 transition-colors">Documenting
                   Tokens</h3>
                 <p class="text-sm md:text-base text-muted leading-relaxed">Learn how to document design tokens
                   effectively. Record and track how each token is used and changed, ensuring your team can use them
@@ -909,7 +909,7 @@
 
   <!-- FAQ -->
   <section id="section-faq" class="bg-surface px-6 md:px-10 py-16 md:py-24">
-    <div class="max-w-2xl mx-auto">
+    <div class="max-w-4xl mx-auto">
       <header class="mb-16">
         <h2 class="font-display text-4xl md:text-6xl leading-[0.95] mb-6">Frequently Asked Questions</h2>
       </header>

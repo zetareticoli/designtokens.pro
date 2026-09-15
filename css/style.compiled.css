@@ -682,6 +682,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 1.5rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -800,6 +804,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .max-w-screen-2xl {
   max-width: 1440px;
+}
+
+.max-w-\[360px\] {
+  max-width: 360px;
+}
+
+.max-w-4xl {
+  max-width: 56rem;
 }
 
 .flex-1 {
@@ -1266,6 +1278,10 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.025em;
 }
 
+.tracking-tighter {
+  letter-spacing: -0.05em;
+}
+
 .text-emerald-600 {
   --tw-text-opacity: 1;
   color: rgb(5 150 105 / var(--tw-text-opacity));
@@ -1434,9 +1450,17 @@ h1, h2, h3, h4, h5, h6 {
   color: rgb(255 71 19 / var(--tw-text-opacity));
 }
 
+.group:hover .group-hover\:underline {
+  text-decoration-line: underline;
+}
+
 @media (min-width: 640px) {
   .sm\:max-w-\[280px\] {
     max-width: 280px;
+  }
+
+  .sm\:max-w-\[360px\] {
+    max-width: 360px;
   }
 }
 
@@ -1451,6 +1475,10 @@ h1, h2, h3, h4, h5, h6 {
 
   .md\:mt-14 {
     margin-top: 3.5rem;
+  }
+
+  .md\:mb-20 {
+    margin-bottom: 5rem;
   }
 
   .md\:block {
@@ -1607,6 +1635,10 @@ h1, h2, h3, h4, h5, h6 {
 
   .lg\:col-end-12 {
     grid-column-end: 12;
+  }
+
+  .lg\:block {
+    display: block;
   }
 
   .lg\:max-w-\[80\%\] {
