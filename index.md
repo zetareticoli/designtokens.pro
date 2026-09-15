@@ -11,9 +11,7 @@ Author: Francesco Improta
 
 ## Overview
 
-Learn how to effectively create, manage, and adopt design tokens in your Design System with proven methodologies for UI consistency across platforms.
-
-Design Tokens Pro is a comprehensive digital guide that equips designers and engineers with expert knowledge for mastering design token systems and workflows. The guide delivers proven methodologies for implementing effective design tokens across diverse platforms and technologies.
+Practical design tokens guide covering taxonomy, naming conventions, architecture, themes, and tooling.
 
 ## What you'll learn
 
