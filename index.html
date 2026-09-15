@@ -149,14 +149,16 @@
   <header class="fixed top-0 left-0 right-0 z-50 js-header transition-colors duration-200">
     <div class="max-w-screen-2xl mx-auto px-6 md:px-10">
       <nav class="flex items-center h-16 justify-between md:h-20" aria-label="Global">
-        <a href="#" class="text-lg font-bold text-ink hover:text-ink transition-colors">
+        <a href="#" class="text-xl font-bold text-ink hover:text-ink transition-colors uppercase tracking-wide">
           Design Tokens Pro
         </a>
-        <div class="flex items-center gap-6 md:gap-10 text-xs md:text-xs tracking-wide uppercase font-medium">
-          <a href="#section-chapters" class="text-muted hover:text-ink transition-colors hidden md:block">Chapters</a>
-          <a href="#section-faq" class="text-muted hover:text-ink transition-colors hidden md:block">FAQ</a>
+        <div class="flex items-center gap-6 md:gap-10 text-xs md:text-xs tracking-wide font-medium">
+          <a href="#section-guide" class="text-lg text-muted hover:text-ink transition-colors hidden md:block">Guide</a>
+          <a href="#section-what-you-learn" class="text-lg text-muted hover:text-ink transition-colors hidden md:block">What you'll learn</a>
+          <a href="#section-chapters" class="text-lg text-muted hover:text-ink transition-colors hidden md:block">Chapters</a>
+          <a href="#section-faq" class="text-lg text-muted hover:text-ink transition-colors hidden md:block">FAQ</a>
           <a href="https://francescoimprota.kit.com/products/design-tokens-pro?step=checkout"
-            class="border border-signal text-ink px-5 py-2 text-xs tracking-wide uppercase font-bold hover:bg-signal transition-all">
+            class="inline-flex items-center bg-signal text-signal-ink px-5 py-2 text-xs font-bold transition-all rounded-sm hover:shadow-md hover:translate-y-[-2px]">
             Buy the guide
           </a>
         </div>
@@ -174,7 +176,7 @@
     <div class="relative z-10 max-w-[1440px] mx-auto w-full grid grid-cols-12 gap-4 md:gap-6 items-end">
 
       <!-- Title + image row -->
-      <div class="col-span-12 grid grid-cols-12 gap-4 md:gap-6 items-center">
+      <div class="col-span-12 grid grid-cols-12 gap-4 md:gap-6 items-center mb-8">
         <!-- Headline block -->
         <div class="col-span-12 lg:col-span-7 animate-in" data-delay="200">
           <span
@@ -192,7 +194,7 @@
 
         <!-- Guide image + reticle + data chips — right of headline -->
         <div class="col-span-12 lg:col-span-5 flex flex-col items-center lg:items-end gap-3 animate-in" data-delay="600">
-          <div class="reticle relative w-full max-w-[240px] sm:max-w-[280px] lg:max-w-md">
+          <div class="reticle relative w-full sm:max-w-[280px] lg:max-w-md mb-8">
             <img class="w-full h-auto" src="/img/guide-perspective-wrapper@1x.webp"
               alt="Design Tokens Pro guide preview in perspective" title="Design Tokens Pro digital guide"
               width="694" height="837" fetchpriority="high" decoding="async">
@@ -209,16 +211,16 @@
       </div>
 
       <!-- CTA cluster -->
-      <div class="col-span-12 lg:col-span-7 flex flex-col items-center lg:items-start gap-3 animate-in" data-delay="500">
-        <a class="inline-flex items-center bg-signal text-signal-ink px-8 py-4 text-lg font-bold hover:brightness-110 transition-all"
+      <div class="col-span-12 lg:col-span-7 flex flex-col lg:flex-row items-center gap-3 animate-in" data-delay="500">
+        <a class="inline-flex items-center bg-signal text-signal-ink px-8 py-4 text-lg font-bold transition-all rounded-sm hover:shadow-md hover:translate-y-[-2px]"
           href="https://francescoimprota.kit.com/products/design-tokens-pro?step=checkout">
           Buy the guide — $39
         </a>
         <p class="text-muted text-lg">
           or
-          <a class="text-signal underline underline-offset-2 transition-colors font-medium tracking-wide"
+          <a class="text-signal underline underline-offset-2 transition-colors font-medium tracking-wide ml-2"
             data-formkit-toggle="b8a4c3bfea" href="https://francesco-improta.ck.page/b8a4c3bfea">
-            Get two free chapters
+            Get two free chapters <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="inline-block ml-2"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>
           </a>
         </p>
       </div>
@@ -226,8 +228,8 @@
   </section>
 
   <!-- GUIDE DETAILS -->
-  <section class="bg-gradient-to-t from-void via-void/70 py-16 md:py-24">
-    <div class="max-w-[1440px] mx-auto px-6 md:px-10">
+  <section id="section-guide" class="bg-gradient-to-t from-void via-void/70 py-16 md:py-24">
+    <div class="max-w-screen-2xl mx-auto px-6 md:px-10">
       <div class="max-w-3xl mx-auto lg:max-w-[calc((100%-1.5rem)*7/12)]">
         <h2 class="font-display text-4xl md:text-6xl leading-[0.95] mb-6">
           The Guide
@@ -255,69 +257,63 @@
     </div>
 
     <div
-      class="guide-preview-gallery mt-10 md:mt-14 flex overflow-x-auto py-8 md:py-10 space-x-4 md:space-x-8 scroll-pl-[max(1.5rem,calc((100vw-1440px)/2+1.5rem))] md:scroll-pl-[max(2.5rem,calc((100vw-1440px)/2+2.5rem))] lg:snap-x lg:snap-mandatory"
+      class="guide-preview-gallery mt-10 md:mt-14 flex gap-4 py-8 md:py-10 scroll-pl-[max(1.5rem,calc((100vw-1440px)/2+1.5rem))] md:scroll-pl-[max(2.5rem,calc((100vw-1440px)/2+2.5rem))]"
       role="list" aria-label="Guide page previews">
-      <div
-        class="flex-none pl-[max(1.5rem,calc((100vw-1440px)/2+1.5rem))] md:pl-[max(2.5rem,calc((100vw-1440px)/2+2.5rem))] lg:snap-start lg:w-[calc(48rem+max(2.5rem,calc((100vw-1440px)/2+2.5rem)))]"
-        role="listitem">
-        <img class="h-[240px] w-auto lg:h-auto lg:w-[48rem] bg-white shadow-lg border border-[#D4D4D4]"
-          src="/img/guide-preview-01@1x.webp" alt="Design Tokens Pro — guide spread on token foundations and overview"
+      <div class="flex-none w-[max(1.5rem,calc((100vw-1440px)/2+1.5rem))] md:w-[max(2.5rem,calc((100vw-1440px)/2+2.5rem))]" aria-hidden="true"></div>
+      <div class="flex-none" role="listitem">
+        <img class="w-full h-auto bg-white shadow-lg rounded-sm"
+          src="/img/design-tokens-guide-modules-list.webp" alt="Design Tokens Pro — chapters list"
           width="3360" height="1736"
           loading="lazy" decoding="async">
       </div>
-      <div class="flex-none lg:snap-start lg:w-[48rem]" role="listitem">
-        <img class="h-[240px] w-auto lg:h-auto lg:w-full bg-white shadow-lg border border-[#D4D4D4]" src="/img/guide-preview-02@1x.webp"
-          alt="Design Tokens Pro — guide spread on token name elements" width="3360" height="1736" loading="lazy" decoding="async">
+      <div class="flex-none" role="listitem">
+        <img class="w-full h-auto bg-white shadow-lg rounded-sm" src="/img/design-tokens-guide-preview-01.webp"
+          alt="Design Tokens Guide — chapter 1: basics and foundations" width="3360" height="1736" loading="lazy" decoding="async">
       </div>
-      <div class="flex-none lg:snap-start lg:w-[48rem]" role="listitem">
-        <img class="h-[240px] w-auto lg:h-auto lg:w-full bg-white shadow-lg border border-[#D4D4D4]" src="/img/guide-preview-03@1x.webp"
-          alt="Design Tokens Pro — guide spread on tokens architecture" width="3360" height="1736" loading="lazy" decoding="async">
+      <div class="flex-none" role="listitem">
+        <img class="w-full h-auto bg-white shadow-lg rounded-sm" src="/img/design-tokens-guide-preview-02.webp"
+          alt="Design Tokens Guide — how a token looks like" width="3360" height="1736" loading="lazy" decoding="async">
       </div>
-      <div class="flex-none lg:snap-start lg:w-[48rem]" role="listitem">
-        <img class="h-[240px] w-auto lg:h-auto lg:w-full bg-white shadow-lg border border-[#D4D4D4]" src="/img/guide-preview-04@1x.webp"
-          alt="Design Tokens Pro — guide spread on taxonomy and naming" width="3360" height="1736" loading="lazy" decoding="async">
+      <div class="flex-none" role="listitem">
+        <img class="w-full h-auto bg-white shadow-lg rounded-sm" src="/img/design-tokens-guide-preview-03.webp"
+          alt="Design Tokens Guide — the name of a token" width="3360" height="1736" loading="lazy" decoding="async">
       </div>
-      <div class="flex-none lg:snap-start lg:w-[48rem]" role="listitem">
-        <img class="h-[240px] w-auto lg:h-auto lg:w-full bg-white shadow-lg border border-[#D4D4D4]" src="/img/guide-preview-05@1x.webp"
-          alt="Design Tokens Pro — guide spread on compound tokens" width="3360" height="1736" loading="lazy" decoding="async">
+      <div class="flex-none" role="listitem">
+        <img class="w-full h-auto bg-white shadow-lg rounded-sm" src="/img/design-tokens-guide-preview-04.webp"
+          alt="Design Tokens Guide — token name levels" width="3360" height="1736" loading="lazy" decoding="async">
       </div>
-      <div class="flex-none lg:snap-start lg:w-[48rem]" role="listitem">
-        <img class="h-[240px] w-auto lg:h-auto lg:w-full bg-white shadow-lg border border-[#D4D4D4]" src="/img/guide-preview-06@1x.webp"
-          alt="Design Tokens Pro — guide spread on themes and color modes" width="3360" height="1736" loading="lazy" decoding="async">
+      <div class="flex-none" role="listitem">
+        <img class="w-full h-auto bg-white shadow-lg rounded-sm" src="/img/design-tokens-guide-preview-05.webp"
+          alt="Design Tokens Guide — architecture and organization" width="3360" height="1736" loading="lazy" decoding="async">
       </div>
-      <div
-        class="flex-none pr-[max(1.5rem,calc((100vw-1440px)/2+1.5rem))] md:pr-[max(2.5rem,calc((100vw-1440px)/2+2.5rem))] lg:snap-start lg:w-[calc(48rem+max(2.5rem,calc((100vw-1440px)/2+2.5rem)))]"
-        role="listitem">
-        <img class="h-[240px] w-auto lg:h-auto lg:w-[48rem] bg-white shadow-lg border border-[#D4D4D4]"
-          src="/img/guide-preview-07@1x.webp" alt="Design Tokens Pro — guide spread on token lifecycle and documentation"
+      <div class="flex-none" role="listitem">
+        <img class="w-full h-auto bg-white shadow-lg rounded-sm"
+          src="/img/design-tokens-guide-preview-06.webp" alt="Design Tokens Guide — the 3-tier token architecture"
           width="3360" height="1736"
           loading="lazy" decoding="async">
       </div>
+      <div class="flex-none w-[max(1.5rem,calc((100vw-1440px)/2+1.5rem))] md:w-[max(2.5rem,calc((100vw-1440px)/2+2.5rem))]" aria-hidden="true"></div>
     </div>
   </section>
 
   <!-- WHAT YOU LEARN -->
-  <section class="bg-paper text-ink-inverse px-6 md:px-10 py-16 md:py-24">
+  <section id="section-what-you-learn" class="bg-paper text-ink-inverse px-6 md:px-10 py-16 md:py-24">
     <div class="max-w-[1440px] mx-auto">
       <!-- Section header -->
       <div class="mb-16 md:mb-24">
-        <span class="font-mono text-[10px] tracking-[0.2em] uppercase text-signal block mb-3">What you learn</span>
-        <h2 class="font-display text-4xl md:text-6xl leading-[0.95] mb-6">The Practical Path</h2>
+        <h2 class="font-display text-4xl md:text-6xl leading-[0.95] mb-6">What you'll learn</h2>
       </div>
 
       <!-- Learning items -->
       <div class="max-w-[1440px] mx-auto space-y-16 md:space-y-24">
         <article class="grid grid-cols-12 gap-6 md:gap-10 items-start animation-slide-in">
           <div class="col-span-12 lg:col-span-6">
-            <span class="font-mono text-xs tracking-[0.2em] uppercase text-muted block mb-2">Vocabulary</span>
-            <p class="text-xl md:text-2xl text-ink-inverse/80 leading-relaxed max-w-[80%]">
-              <strong class="text-signal font-bold text-2xl">Speak the same language.</strong>
-              A shared vocabulary with clear naming conventions is vital. It organizes information, enhances
-              clarity, and promotes teamwork and efficiency.
+            <p class="text-2xl md:text-3xl text-zinc-600 lg:max-w-[80%] font-medium">
+              <strong class="text-signal font-medium">Create effective names.</strong> Because naming things is hard. A shared vocabulary with clear naming conventions organizes information, enhances clarity, and promotes teamwork and efficiency.
             </p>
           </div>
           <div class="col-span-12 lg:col-span-6">
-            <img class="w-full rounded-2xl" src="/img/tokens-vocabulary.webp"
+            <img class="w-full rounded-3xl" src="/img/tokens-vocabulary.webp"
               alt="A list of vocabulary terms used for design tokens naming"
               title="Design tokens taxonomy is made of a shared naming convention"
               width="1672" height="941" loading="lazy" decoding="async">
@@ -326,9 +322,8 @@
 
         <article class="grid grid-cols-12 gap-6 md:gap-10 items-start animation-slide-in">
           <div class="col-span-12 lg:col-span-6">
-            <span class="font-mono text-xs tracking-[0.2em] uppercase text-muted block mb-2">Decisions</span>
-            <p class="text-xl md:text-2xl text-ink-inverse/80 leading-relaxed max-w-[80%]">
-              <strong class="text-signal font-bold">Translate values into design decisions.</strong>
+            <p class="text-2xl md:text-3xl text-zinc-600 font-medium lg:max-w-[80%]">
+              <strong class="text-signal font-medium">Translate values into design decisions.</strong>
               Every token you make is a careful choice, not just a random number. As you learn more,
               you'll see how and when you make these important choices and use this understanding in real situations.
             </p>
@@ -343,9 +338,8 @@
 
         <article class="grid grid-cols-12 gap-6 md:gap-10 items-start animation-slide-in">
           <div class="col-span-12 lg:col-span-6">
-            <span class="font-mono text-xs tracking-[0.2em] uppercase text-muted block mb-2">Purpose</span>
-            <p class="text-xl md:text-2xl text-ink-inverse/80 leading-relaxed max-w-[80%]">
-              <strong class="text-signal font-bold">Use tokens with purpose.</strong>
+            <p class="text-2xl md:text-3xl text-zinc-600 font-medium lg:max-w-[80%]">
+              <strong class="text-signal">Use tokens with purpose.</strong>
               Choosing the right token is vital for different use cases, as it ensures functionality. Make careful
               choices on specific use being flexible and aware of any potential implications.
             </p>
@@ -360,12 +354,9 @@
 
         <article class="grid grid-cols-12 gap-6 md:gap-10 items-start animation-slide-in">
           <div class="col-span-12 lg:col-span-6">
-            <span class="font-mono text-xs tracking-[0.2em] uppercase text-muted block mb-2">Process</span>
-            <p class="text-xl md:text-2xl text-ink-inverse/80 leading-relaxed max-w-[80%]">
-              <strong class="text-signal font-bold">Optimize management process.</strong>
-              Understanding the tools for efficient design token updates is key. As products evolve, so must these
-              tokens.
-              Developing skills to manage and update these tokens can greatly enhance the design process.
+            <p class="text-2xl md:text-3xl text-zinc-600 font-medium lg:max-w-[80%]">
+              <strong class="text-signal">Optimize management process.</strong>
+              You'll follow a token from creation to production: where it lives, how it is transformed, how tools consume it, and how to retire it without breaking the system.
             </p>
           </div>
           <div class="col-span-12 lg:col-span-6">
@@ -377,10 +368,6 @@
         </article>
       </div>
 
-      <div class="text-center mt-16 md:mt-24">
-        <a class="inline-flex items-center bg-signal text-signal-ink px-8 py-4 text-lg font-bold hover:brightness-110 transition-all"
-          href="https://francescoimprota.kit.com/products/design-tokens-pro?step=checkout">Buy the guide — $39</a>
-      </div>
     </div>
   </section>
 
@@ -391,7 +378,7 @@
       <div class="flex flex-col gap-6 mb-16 md:mb-24">
         <div class="col-span-12 lg:col-span-6">
           <span class="font-mono text-[10px] tracking-[0.2em] uppercase text-signal block mb-3">Topics & Chapters</span>
-          <h2 class="font-display text-4xl md:text-6xl uppercase tracking-tight leading-[0.95]">What's inside</h2>
+          <h2 class="font-display text-4xl md:text-6xl leading-[0.95] mb-6">What's inside</h2>
         </div>
         <div class="col-span-12 lg:col-span-6 flex items-end">
           <p class="text-lg md:text-xl text-muted leading-relaxed">
@@ -829,48 +816,73 @@
             </div>
           </details>
         </article>
-      </div>
-
-      <div class="mt-16 md:mt-20 pt-10 border-t border-white/10">
-        <h2 class="font-display text-2xl md:text-3xl uppercase tracking-tight leading-[0.95] mb-6">Guide materials</h2>
-        <ul class="space-y-3 mb-10 text-sm md:text-base text-muted max-w-xl">
-          <li class="flex items-center gap-3">
-            <span class="w-1.5 h-1.5 bg-signal rounded-full shrink-0" aria-hidden="true"></span>
-            Self-paced digital guide
-          </li>
-          <li class="flex items-center gap-3">
-            <span class="w-1.5 h-1.5 bg-signal rounded-full shrink-0" aria-hidden="true"></span>
-            Printable PDF
-          </li>
-          <li class="flex items-center gap-3">
-            <span class="w-1.5 h-1.5 bg-signal rounded-full shrink-0" aria-hidden="true"></span>
-            Lifetime access
-          </li>
-          <li class="flex items-center gap-3">
-            <span class="w-1.5 h-1.5 bg-signal rounded-full shrink-0" aria-hidden="true"></span>
-            Support on specific topic
-          </li>
-        </ul>
-        <a class="inline-flex items-center bg-signal text-signal-ink px-8 py-4 text-sm md:text-base font-bold tracking-[0.1em] uppercase hover:brightness-110 transition-all"
-          href="https://francescoimprota.kit.com/products/design-tokens-pro?step=checkout">Get the guide — $39</a>
-        <div class="border-t border-white/10 pt-6 mt-8">
-          <h3 class="text-sm font-bold uppercase tracking-[0.1em] mb-3">Any doubts?</h3>
-          <a class="text-signal hover:text-ink transition-colors text-sm font-medium tracking-wide"
-            data-formkit-toggle="b8a4c3bfea" href="https://francesco-improta.ck.page/b8a4c3bfea">
-            Download first chapter free →
-          </a>
-        </div>
+        <article class="module-card module-card--wip animation-slide-in group p-5 md:p-6 border border-white/5 transition-colors opacity-55">
+          <details>
+            <summary class="flex items-start gap-4 cursor-pointer">
+              <span class="font-mono text-muted text-sm shrink-0 mt-1">09</span>
+              <div class="flex-1 min-w-0">
+                <div class="flex flex-wrap items-center gap-x-3 gap-y-1 mb-1">
+                  <h3 class="text-lg md:text-2xl font-bold text-muted">Design Tokens and AI</h3>
+                  <span class="font-mono text-[10px] tracking-[0.2em] uppercase text-muted/70 border border-white/10 px-2 py-0.5">Coming soon</span>
+                </div>
+                <p class="text-sm md:text-base text-muted/70 leading-relaxed">How design tokens become the structured language AI needs to stay on-brand — and how to use AI to create, audit, and ship tokens without losing control.</p>
+              </div>
+              <span class="module-card-toggle shrink-0 mt-1.5" aria-hidden="true"></span>
+            </summary>
+            <div class="module-card-panel">
+              <div class="module-card-panel-inner">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 pt-6 mt-6 border-t border-white/5">
+                  <div>
+                    <h4 class="font-mono text-[10px] tracking-[0.2em] uppercase text-muted block mb-4">Chapter index
+                    </h4>
+                    <ol class="space-y-2 text-sm text-muted/70">
+                      <li class="flex items-start gap-3">
+                        <span class="font-mono text-muted/50 text-xs shrink-0 mt-0.5">9.1</span>
+                        Why tokens matter for AI
+                      </li>
+                      <li class="flex items-start gap-3">
+                        <span class="font-mono text-muted/50 text-xs shrink-0 mt-0.5">9.2</span>
+                        Tokens as context for prompts and agents
+                      </li>
+                      <li class="flex items-start gap-3">
+                        <span class="font-mono text-muted/50 text-xs shrink-0 mt-0.5">9.3</span>
+                        Generating and refining tokens with AI
+                      </li>
+                      <li class="flex items-start gap-3">
+                        <span class="font-mono text-muted/50 text-xs shrink-0 mt-0.5">9.4</span>
+                        Auditing systems and catching drift
+                      </li>
+                      <li class="flex items-start gap-3">
+                        <span class="font-mono text-muted/50 text-xs shrink-0 mt-0.5">9.5</span>
+                        Guardrails and human review
+                      </li>
+                      <li class="flex items-start gap-3">
+                        <span class="font-mono text-muted/50 text-xs shrink-0 mt-0.5">9.6</span>
+                        Workflows of the near future
+                      </li>
+                    </ol>
+                  </div>
+                  <div>
+                    <h4 class="font-mono text-[10px] tracking-[0.2em] uppercase text-muted block mb-4">What you'll
+                      learn</h4>
+                    <p class="text-sm md:text-base text-muted/70 leading-relaxed">You'll learn how to feed tokens into AI tools so outputs stay consistent, how to use AI to draft and validate token sets, and how to keep humans in the loop so automation never outruns your system.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </details>
+        </article>
       </div>
 
     </div>
   </section>
 
-  <!-- AUTHOR -->
+  <!-- AUTHOR
   <section class="bg-void px-6 md:px-10 py-16 md:py-24">
     <div class="max-w-[1440px] mx-auto grid grid-cols-12 gap-6 items-start">
       <div class="col-span-12 lg:col-span-4">
         <span class="font-mono text-[10px] tracking-[0.2em] uppercase text-signal block mb-3">The Author</span>
-        <h2 class="font-display text-4xl md:text-5xl uppercase tracking-tight leading-[0.95] mb-8">Who<br>I am</h2>
+        <h2 class="font-display text-4xl md:text-6xl leading-[0.95] mb-6">About me</h2>
         <img class="w-32 md:w-40 rounded" src="/img/about.webp"
           alt="Francesco Improta - Design Token Expert and Guide Author"
           width="400" height="400" loading="lazy" decoding="async">
@@ -887,21 +899,19 @@
           I enjoy guiding and enlightening teams about the use of design tokens, empowering them
           to develop scalable designs across different platforms.
         </p>
-        <a class="text-signal hover:text-ink transition-colors text-sm font-medium tracking-[0.1em] uppercase"
+        <a class="text-signal hover:text-ink transition-colors font-medium underline underline-offset-2"
           href="https://francescoimprota.com/about">
           More about me →
         </a>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- FAQ -->
   <section id="section-faq" class="bg-surface px-6 md:px-10 py-16 md:py-24">
     <div class="max-w-2xl mx-auto">
       <header class="mb-16">
-        <span class="font-mono text-[10px] tracking-[0.2em] uppercase text-signal block mb-3">Support</span>
-        <h2 class="font-display text-4xl md:text-5xl uppercase tracking-tight leading-[0.95]">Questions<br><span
-            class="text-muted/30">+</span> Answers</h2>
+        <h2 class="font-display text-4xl md:text-6xl leading-[0.95] mb-6">Frequently Asked Questions</h2>
       </header>
 
       <div class="flex flex-col gap-12">
@@ -928,31 +938,85 @@
             design tokens, it's not a requirement for this guide. The guide is designed to be accessible for both
             designers and developers, with practical examples that don't require coding expertise.</p>
         </article>
+        <article>
+          <article>
+          <h3 class="text-lg md:text-xl font-bold mb-3">What if I decide it’s not for me?</h3>
+          <p class="text-base text-muted leading-relaxed">If you decide the guide is not for you, you can get a refund within 30 days of purchase. Email us at <a href="mailto:designtokenspro@francescoimprota.com" class="text-muted hover:text-ink transition-colors font-medium underline underline-offset-2">designtokenspro@francescoimprota.com</a> and we'll refund you in full.</p>
+        </article>
+        </article>
       </div>
 
       <p class="text-muted/50 border-t border-white/10 pt-6 mt-12 text-sm">
-        Still have questions? <a class="text-signal hover:text-ink transition-colors font-medium"
-          href="mailto:designtokenspro@francescoimprota.com">Contact me</a> — I'll be pleased to answer them.
+        Still have questions? <a class="text-muted hover:text-ink transition-colors font-medium underline underline-offset-2"
+          href="mailto:designtokenspro@francescoimprota.com">Contact us</a> — I'll be pleased to answer them.
       </p>
     </div>
   </section>
 
   <!-- FINAL CTA -->
   <section class="bg-void px-6 md:px-10 py-20 md:py-32 relative overflow-hidden">
-    <!-- Subtle grid echo -->
-    <div class="cta-grid absolute inset-0 pointer-events-none" aria-hidden="true"></div>
-    <div class="relative z-10 max-w-[1440px] mx-auto text-center">
-      <h2 class="font-display text-4xl md:text-6xl lg:text-7xl uppercase tracking-tight leading-[0.9] mb-10">
-        Advance your skills<br>in design tokens
-      </h2>
-      <div class="flex flex-col md:flex-row items-center justify-center gap-4">
-        <a class="text-signal hover:text-ink transition-colors text-sm font-medium tracking-wide uppercase"
-          data-formkit-toggle="b8a4c3bfea" href="https://francesco-improta.ck.page/b8a4c3bfea">
-          Free first chapter →
+    <h2 class="relative z-10 font-display text-4xl md:text-6xl lg:text-7xl leading-[0.9] mb-10 text-center">
+     Get the guide today
+    </h2>
+    <div class="hero-grid absolute inset-0 pointer-events-none" aria-hidden="true"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-void via-void/70 to-transparent pointer-events-none"></div>
+    <div class="relative z-10 max-w-lg mx-auto">
+      <div class="bg-surface rounded-3xl p-8 md:p-10 border border-white/[0.06] shadow-2xl shadow-black/40">
+
+        <div class="flex items-start gap-2 mb-8">
+          <span class="font-display text-5xl md:text-6xl leading-none tracking-tight">$39</span>
+          <span class="flex flex-col pt-1.5 text-muted leading-tight">
+            <span class="text-base md:text-lg font-semibold text-ink/70">USD</span>
+            <span class="text-xs md:text-sm">plus local taxes</span>
+          </span>
+        </div>
+
+        <a class="flex items-center justify-center w-full bg-signal text-signal-ink rounded-sm px-8 py-4 text-base md:text-lg font-bold transition-all hover:shadow-md hover:translate-y-[-2px] mb-10"
+          href="https://francescoimprota.kit.com/products/design-tokens-pro?step=checkout">
+          Buy now
         </a>
-        <span class="text-muted/30 text-sm">or</span>
-        <a class="inline-flex items-center bg-signal text-signal-ink px-8 py-4 text-sm md:text-base font-bold tracking-[0.1em] uppercase hover:brightness-110 transition-all"
-          href="https://francescoimprota.kit.com/products/design-tokens-pro?step=checkout">Get the guide — $39</a>
+
+        <ul class="space-y-5 text-sm md:text-base text-ink/90 leading-relaxed">
+          <li class="flex items-start gap-3">
+            <span class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-signal" aria-hidden="true">
+              <svg class="h-3 w-3 text-signal-ink" viewBox="0 0 12 12" fill="none"><path d="M2.5 6.5 4.5 8.5 9.5 3.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span>The <strong class="font-semibold text-ink">8-chapter guide</strong> with 100+ pages of content</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-signal" aria-hidden="true">
+              <svg class="h-3 w-3 text-signal-ink" viewBox="0 0 12 12" fill="none"><path d="M2.5 6.5 4.5 8.5 9.5 3.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span><strong class="font-semibold text-ink">Online access</strong> and a printable PDF</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-signal" aria-hidden="true">
+              <svg class="h-3 w-3 text-signal-ink" viewBox="0 0 12 12" fill="none"><path d="M2.5 6.5 4.5 8.5 9.5 3.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span>Practical <strong class="font-semibold text-ink">JSON examples and code snippets</strong> you can reuse</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-signal" aria-hidden="true">
+              <svg class="h-3 w-3 text-signal-ink" viewBox="0 0 12 12" fill="none"><path d="M2.5 6.5 4.5 8.5 9.5 3.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span><strong class="font-semibold text-ink">Lifetime access</strong> to all future updates</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-signal" aria-hidden="true">
+              <svg class="h-3 w-3 text-signal-ink" viewBox="0 0 12 12" fill="none"><path d="M2.5 6.5 4.5 8.5 9.5 3.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span>Self-paced learning with <strong class="font-semibold text-ink">support on specific topics</strong></span>
+          </li>
+        </ul>
+
+        <p class="mt-10 rounded-full bg-white/[0.04] px-5 py-3.5 text-center text-sm text-muted">
+          Want a taste first?
+          <a class="font-semibold text-muted hover:text-ink underline underline-offset-2 transition-colors"
+            data-formkit-toggle="b8a4c3bfea"
+            href="https://francesco-improta.ck.page/b8a4c3bfea">
+            Get two free chapters.
+          </a>
+        </p>
       </div>
     </div>
   </section>

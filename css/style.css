@@ -122,30 +122,9 @@
   content: '';
   position: absolute;
   inset: 0;
-  background-image:
-    radial-gradient(circle, var(--color-grid-tick) 1.5px, transparent 1.5px);
+  background-image: url('/img/token-grid-icon.svg');
   background-size: var(--hero-grid-cell) var(--hero-grid-cell);
-  background-position: -0.75px -0.75px;
-}
-
-.cta-grid {
-  --hero-grid-cell: clamp(40px, calc(100% / 6), 80px);
-  background-image:
-    linear-gradient(to right, var(--color-grid-line) 1px, transparent 1px),
-    linear-gradient(to bottom, var(--color-grid-line) 1px, transparent 1px);
-  background-size: var(--hero-grid-cell) var(--hero-grid-cell);
-  mask-image: linear-gradient(to top, transparent 0%, rgba(0,0,0,0.6) 25%, rgba(0,0,0,0.35) 100%);
-  -webkit-mask-image: linear-gradient(to top, transparent 0%, rgba(0,0,0,0.6) 25%, rgba(0,0,0,0.35) 100%);
-}
-
-.cta-grid::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image:
-    radial-gradient(circle, var(--color-grid-tick) 1.5px, transparent 1.5px);
-  background-size: var(--hero-grid-cell) var(--hero-grid-cell);
-  background-position: -0.75px -0.75px;
+  background-repeat: repeat;
 }
 
 /* ========================================
@@ -184,10 +163,14 @@
    HEADER
    ======================================== */
 
-.js-header.scrolled {
-  background-color: rgba(10, 10, 10, 0.92);
+.js-header {
+  background-color: rgba(10, 10, 10, 0.72);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
+}
+
+.js-header.scrolled {
+  background-color: rgba(10, 10, 10, 0.92);
 }
 
 /* ========================================
@@ -252,6 +235,21 @@ html.js .animation-slide-in.visible {
 
 .module-card:has(details[open]) {
   border-color: rgba(255, 71, 19, 0.4);
+}
+
+.module-card--wip:hover,
+.module-card--wip:has(details[open]) {
+  background-color: rgba(255, 255, 255, 0.02);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.module-card--wip .module-card-toggle::before,
+.module-card--wip .module-card-toggle::after {
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+.module-card--wip summary:focus-visible {
+  outline-color: rgba(255, 255, 255, 0.35);
 }
 
 .module-card summary {
@@ -340,8 +338,43 @@ html.js .module-card details.is-expanded .module-card-panel-inner > .grid {
    ======================================== */
 
 .guide-preview-gallery {
-  -webkit-overflow-scrolling: touch;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: auto; /* override html { scroll-behavior: smooth } — breaks snap */
   scrollbar-color: rgba(255, 255, 255, 0.25) transparent;
+}
+
+.guide-preview-gallery > [role="listitem"] {
+  width: 85vw;
+}
+
+@media (max-width: 1023px) {
+  .guide-preview-gallery {
+    scroll-snap-type: x mandatory;
+  }
+
+  .guide-preview-gallery > [role="listitem"] {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+}
+
+@media (min-width: 640px) {
+  .guide-preview-gallery > [role="listitem"] {
+    width: 72vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .guide-preview-gallery > [role="listitem"] {
+    width: 58vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .guide-preview-gallery > [role="listitem"] {
+    width: 26rem;
+  }
 }
 
 .guide-preview-gallery::-webkit-scrollbar {
