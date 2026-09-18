@@ -1,0 +1,21 @@
+# Design Tokens Pro
+
+> Digital guide for building scalable design systems with design tokens.
+> For designers and developers. Author: Francesco Improta.
+> Formats: online + printable PDF.
+
+Design Tokens Pro covers taxonomy, naming conventions, token architecture,
+themes/color modes, lifecycle management, and documentation.
+
+## Pages
+
+- [Home](https://www.designtokens.pro/): Guide overview, chapters, FAQ, pricing
+- [Home (Markdown)](https://www.designtokens.pro/index.md): Same content as plain Markdown
+- [Privacy Policy](https://www.designtokens.pro/privacy): Data handling and cookies
+- [Privacy (Markdown)](https://www.designtokens.pro/privacy.md): Same content as plain Markdown
+
+## Optional
+
+- [Join waitlist](https://www.designtokens.pro/join): Email signup form
+- [Join (Markdown)](https://www.designtokens.pro/join.md): Brief description of the waitlist
+- [Confirmation](https://www.designtokens.pro/confirm): Post-signup thank-you page
