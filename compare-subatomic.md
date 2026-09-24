@@ -30,3 +30,5 @@ Use Subatomic to watch how an enterprise architecture is built; use Design Token
 
 - Checkout: https://francescoimprota.kit.com/products/design-tokens-pro?step=checkout
 - Other comparisons: https://www.designtokens.pro/compare
+- vs Design Tokens Mastery: https://www.designtokens.pro/compare/design-systems-guide
+- vs Design Tokens 101: https://www.designtokens.pro/compare/design-tokens-101

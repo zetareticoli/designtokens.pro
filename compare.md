@@ -2,13 +2,11 @@
 
 Design Tokens Pro is a self-paced digital guide ($39, online + printable PDF) for designers and developers who need a shared vocabulary, a token architecture that scales, and a way to manage tokens across tools.
 
-These articles explain how the guide differs from other popular resources:
+These articles explain how the guide differs from other popular courses:
 
 - [vs Subatomic (Brad Frost)](https://www.designtokens.pro/compare/subatomic) — $900 video course vs $39 written reference
-- [vs Figma Variables](https://www.designtokens.pro/compare/figma-variables) — Figma-native variables vs tool-agnostic naming and architecture
-- [vs Style Dictionary](https://www.designtokens.pro/compare/style-dictionary) — open-source transformer vs deciding what to put in the JSON
-- [vs Tokens Studio](https://www.designtokens.pro/compare/tokens-studio) — Figma plugin vs the model you author in it
-- [vs the DTCG specification](https://www.designtokens.pro/compare/dtcg-spec) — interchange format vs team process
+- [vs Design Tokens Mastery (The Design System Guide)](https://www.designtokens.pro/compare/design-systems-guide) — hands-on Figma / Tokens Studio course vs tool-agnostic written guide
+- [vs Design Tokens 101 (Udemy)](https://www.designtokens.pro/compare/design-tokens-101) — one-hour beginner video vs eight-chapter reference
 
 ## What the guide is for
 

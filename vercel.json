@@ -1,4 +1,26 @@
 {
+  "redirects": [
+    {
+      "source": "/compare/figma-variables",
+      "destination": "/compare",
+      "permanent": true
+    },
+    {
+      "source": "/compare/style-dictionary",
+      "destination": "/compare",
+      "permanent": true
+    },
+    {
+      "source": "/compare/tokens-studio",
+      "destination": "/compare",
+      "permanent": true
+    },
+    {
+      "source": "/compare/dtcg-spec",
+      "destination": "/compare",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/privacy",
@@ -13,20 +35,12 @@
       "destination": "/compare-subatomic.html"
     },
     {
-      "source": "/compare/figma-variables",
-      "destination": "/compare-figma-variables.html"
+      "source": "/compare/design-systems-guide",
+      "destination": "/compare-design-systems-guide.html"
     },
     {
-      "source": "/compare/style-dictionary",
-      "destination": "/compare-style-dictionary.html"
-    },
-    {
-      "source": "/compare/tokens-studio",
-      "destination": "/compare-tokens-studio.html"
-    },
-    {
-      "source": "/compare/dtcg-spec",
-      "destination": "/compare-dtcg-spec.html"
+      "source": "/compare/design-tokens-101",
+      "destination": "/compare-design-tokens-101.html"
     },
     {
       "source": "/confirm",
