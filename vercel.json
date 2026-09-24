@@ -54,6 +54,10 @@
       "source": "/join",
       "headers": [
         {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        },
+        {
           "key": "Link",
           "value": "</llms.txt>; rel=\"describedby\"; type=\"text/markdown\""
         }
@@ -63,14 +67,31 @@
       "source": "/join.html",
       "headers": [
         {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        },
+        {
           "key": "Link",
           "value": "</llms.txt>; rel=\"describedby\"; type=\"text/markdown\""
         }
       ]
     },
     {
+      "source": "/join.md",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
       "source": "/confirm",
       "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        },
         {
           "key": "Link",
           "value": "</llms.txt>; rel=\"describedby\"; type=\"text/markdown\""
@@ -80,6 +101,10 @@
     {
       "source": "/confirm.html",
       "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        },
         {
           "key": "Link",
           "value": "</llms.txt>; rel=\"describedby\"; type=\"text/markdown\""

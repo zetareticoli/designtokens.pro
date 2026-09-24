@@ -34,6 +34,7 @@ From basics to advanced topics, this guide covers all you need to know for creat
 6. **Themes and Color Modes** — Strategies for managing themes within a single project or across multiple projects.
 7. **Lifecycle of a Token** — Lifecycle, storage, and usage of design tokens across tools for effective management.
 8. **Documenting Tokens** — How to document design tokens effectively so your team can use them consistently.
+9. **Design Tokens and AI** *(coming soon)* — How design tokens become the structured language AI needs to stay on-brand, and how to use AI to create, audit, and ship tokens without losing control.
 
 ## Guide materials
 
