@@ -66,4 +66,8 @@ Yes, this is a digital and self-paced guide, you can take as long as you want to
 
 While knowing how to code can enhance your understanding of design tokens, it's not a requirement for this guide. The guide is designed to be accessible for both designers and developers, with practical examples that don't require coding expertise.
 
+### What if I decide it's not for me?
+
+If you decide the guide is not for you, you can get a refund within 30 days of purchase. Email us at designtokenspro@francescoimprota.com and we'll refund you in full.
+
 Contact: designtokenspro@francescoimprota.com
