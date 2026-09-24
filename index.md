@@ -8,6 +8,7 @@ Author: Francesco Improta
 - Checkout: https://francescoimprota.kit.com/products/design-tokens-pro?step=checkout
 - Free chapters: https://francesco-improta.ck.page/b8a4c3bfea
 - Site: https://www.designtokens.pro/
+- Comparisons: https://www.designtokens.pro/compare
 
 ## Overview
 

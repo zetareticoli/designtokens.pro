@@ -5,6 +5,30 @@
       "destination": "/privacy.html"
     },
     {
+      "source": "/compare",
+      "destination": "/compare.html"
+    },
+    {
+      "source": "/compare/subatomic",
+      "destination": "/compare-subatomic.html"
+    },
+    {
+      "source": "/compare/figma-variables",
+      "destination": "/compare-figma-variables.html"
+    },
+    {
+      "source": "/compare/style-dictionary",
+      "destination": "/compare-style-dictionary.html"
+    },
+    {
+      "source": "/compare/tokens-studio",
+      "destination": "/compare-tokens-studio.html"
+    },
+    {
+      "source": "/compare/dtcg-spec",
+      "destination": "/compare-dtcg-spec.html"
+    },
+    {
       "source": "/confirm",
       "destination": "/confirm.html"
     },
@@ -43,6 +67,42 @@
     },
     {
       "source": "/privacy.html",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "</llms.txt>; rel=\"describedby\"; type=\"text/markdown\""
+        }
+      ]
+    },
+    {
+      "source": "/compare",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "</llms.txt>; rel=\"describedby\"; type=\"text/markdown\""
+        }
+      ]
+    },
+    {
+      "source": "/compare.html",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "</llms.txt>; rel=\"describedby\"; type=\"text/markdown\""
+        }
+      ]
+    },
+    {
+      "source": "/compare/:path*",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "</llms.txt>; rel=\"describedby\"; type=\"text/markdown\""
+        }
+      ]
+    },
+    {
+      "source": "/compare-:path*.html",
       "headers": [
         {
           "key": "Link",

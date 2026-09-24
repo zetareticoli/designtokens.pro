@@ -21,6 +21,18 @@ export default function middleware(request) {
     '/privacy.html': '/privacy.md',
     '/join': '/join.md',
     '/join.html': '/join.md',
+    '/compare': '/compare.md',
+    '/compare.html': '/compare.md',
+    '/compare/subatomic': '/compare-subatomic.md',
+    '/compare-subatomic.html': '/compare-subatomic.md',
+    '/compare/figma-variables': '/compare-figma-variables.md',
+    '/compare-figma-variables.html': '/compare-figma-variables.md',
+    '/compare/style-dictionary': '/compare-style-dictionary.md',
+    '/compare-style-dictionary.html': '/compare-style-dictionary.md',
+    '/compare/tokens-studio': '/compare-tokens-studio.md',
+    '/compare-tokens-studio.html': '/compare-tokens-studio.md',
+    '/compare/dtcg-spec': '/compare-dtcg-spec.md',
+    '/compare-dtcg-spec.html': '/compare-dtcg-spec.md',
   };
 
   const mdPath = mdMap[pathname];
@@ -40,5 +52,24 @@ export default function middleware(request) {
 }
 
 export const config = {
-  matcher: ['/', '/index.html', '/privacy', '/privacy.html', '/join', '/join.html'],
+  matcher: [
+    '/',
+    '/index.html',
+    '/privacy',
+    '/privacy.html',
+    '/join',
+    '/join.html',
+    '/compare',
+    '/compare.html',
+    '/compare/subatomic',
+    '/compare/figma-variables',
+    '/compare/style-dictionary',
+    '/compare/tokens-studio',
+    '/compare/dtcg-spec',
+    '/compare-subatomic.html',
+    '/compare-figma-variables.html',
+    '/compare-style-dictionary.html',
+    '/compare-tokens-studio.html',
+    '/compare-dtcg-spec.html',
+  ],
 };

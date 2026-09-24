@@ -13,3 +13,9 @@ themes/color modes, lifecycle management, and documentation.
 - [Home (Markdown)](https://www.designtokens.pro/index.md): Same content as plain Markdown
 - [Privacy Policy](https://www.designtokens.pro/privacy): Data handling and cookies
 - [Privacy (Markdown)](https://www.designtokens.pro/privacy.md): Same content as plain Markdown
+- [Compare](https://www.designtokens.pro/compare): How the guide differs from other design token resources
+- [vs Subatomic](https://www.designtokens.pro/compare/subatomic): Written guide vs Brad Frost’s video course
+- [vs Figma Variables](https://www.designtokens.pro/compare/figma-variables): Tool-agnostic guide vs Figma Variables
+- [vs Style Dictionary](https://www.designtokens.pro/compare/style-dictionary): Naming guide vs the open-source transformer
+- [vs Tokens Studio](https://www.designtokens.pro/compare/tokens-studio): Architecture guide vs the Figma plugin
+- [vs DTCG spec](https://www.designtokens.pro/compare/dtcg-spec): Practical process vs the interchange format

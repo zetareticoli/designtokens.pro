@@ -1,0 +1,195 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Design Tokens Pro vs Figma Variables — tool docs or a full guide?</title>
+
+  <link rel="stylesheet" href="/css/style.compiled.css">
+  <link rel="canonical" href="https://www.designtokens.pro/compare/figma-variables" />
+  <link rel="alternate" type="text/markdown" href="https://www.designtokens.pro/compare-figma-variables.md" title="Markdown version">
+
+  <meta name="description"
+    content="Figma Variables implement tokens inside Figma. Design Tokens Pro is a $39 guide to taxonomy, architecture, and themes that still apply when you leave Figma.">
+
+  <meta property="og:url" content="https://www.designtokens.pro/compare/figma-variables">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Design Tokens Pro">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Design Tokens Pro vs Figma Variables — tool docs or a full guide?">
+  <meta property="og:description"
+    content="Figma Variables implement tokens inside Figma. Design Tokens Pro is a $39 guide to taxonomy, architecture, and themes that still apply when you leave Figma.">
+  <meta property="og:image" content="https://www.designtokens.pro/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Design Tokens Pro — digital guide cover">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@zetareticoli">
+  <meta name="twitter:url" content="https://www.designtokens.pro/compare/figma-variables">
+  <meta name="twitter:title" content="Design Tokens Pro vs Figma Variables — tool docs or a full guide?">
+  <meta name="twitter:description"
+    content="Figma Variables implement tokens inside Figma. Design Tokens Pro is a $39 guide to taxonomy, architecture, and themes that still apply when you leave Figma.">
+  <meta name="twitter:image" content="https://www.designtokens.pro/img/og-image.png">
+  <meta name="twitter:image:alt" content="Design Tokens Pro — digital guide cover">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#0A0A0A">
+
+  <script defer data-domain="designtokens.pro" src="https://plausible.io/js/script.js"></script>
+  <link rel="preload" href="/fonts/HubotSans-variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/Supreme-Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Design Tokens Pro vs Figma Variables — tool docs or a full guide?",
+      "description": "A comparison of Design Tokens Pro and Figma Variables documentation.",
+      "url": "https://www.designtokens.pro/compare/figma-variables",
+      "author": {
+        "@type": "Person",
+        "name": "Francesco Improta",
+        "url": "https://francescoimprota.com/about"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Design Tokens Pro",
+        "url": "https://www.designtokens.pro/"
+      },
+      "image": "https://www.designtokens.pro/img/og-image.png",
+      "mainEntityOfPage": "https://www.designtokens.pro/compare/figma-variables"
+    }
+  </script>
+</head>
+
+<body class="bg-void text-ink font-body antialiased">
+
+  <header class="border-b border-white/10 px-6">
+    <div class="max-w-screen-2xl mx-auto">
+      <nav class="flex items-center h-16 md:h-20 justify-between" aria-label="Global">
+        <a href="/" class="text-xl font-bold text-ink uppercase tracking-tight">Design Tokens Pro</a>
+        <a href="https://francescoimprota.kit.com/products/design-tokens-pro?step=checkout"
+          class="inline-flex items-center bg-signal text-signal-ink px-5 py-2 text-md md:text-lg font-bold transition-all rounded-sm hover:shadow-md hover:translate-y-[-2px]">
+          Buy the guide
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-6 py-10 md:py-16">
+    <p class="article-kicker"><a href="/compare">Compare</a> / Figma Variables</p>
+
+    <article class="article-prose">
+      <h1>Design Tokens Pro vs Figma Variables</h1>
+
+      <p>Figma Variables are how most product teams first <em>touch</em> design tokens. Figma’s own material — help articles on <a href="https://help.figma.com/hc/en-us/articles/18490793776023-Update-1-Tokens-variables-and-styles">tokens, variables, and styles</a>, plus pieces on <a href="https://www.figma.com/resource-library/design-token-architecture/">token architecture</a> — is the right place to learn the panels, modes, aliases, and scopes in that tool.</p>
+
+      <p>It is the wrong place to stop if tokens have to survive code, other platforms, or a team that does not live in one Figma library.</p>
+
+      <h2>What Figma gives you</h2>
+
+      <p>Variables can store color, number, string, and boolean values. They support modes (light/dark, brand, density), aliases from primitive to semantic collections, scoping so a token only appears in the right picker, and code syntax for Dev Mode. Styles still exist for type and effects that variables do not fully replace. Figma’s docs explain that split, and they offer sensible naming tips: full words, consistent prefixes, no brand names baked into tokens.</p>
+
+      <p>That is implementation help for <strong>one design tool</strong>. It assumes your source of truth is Figma, and that “architecture” means collections and modes in the Variables window.</p>
+
+      <h2>What the guide adds</h2>
+
+      <p><strong>Design Tokens Pro</strong> treats tokens as design decisions that outlive any single UI. The chapters on elements of a token name, taxonomy, and three-tier architecture (primitive, semantic, component) are about language your engineers, iOS, Android, and web can share — not only slash-separated names in a Figma collection.</p>
+
+      <p>You also get topics Figma’s help center is not trying to cover:</p>
+
+      <ul>
+        <li><strong>Compound tokens</strong> — typography and shadow as grouped values, and when a single variable is not enough</li>
+        <li><strong>Themes and color modes</strong> across a project or several products, including how files stay maintainable</li>
+        <li><strong>Lifecycle</strong> — where the source of truth lives, how values are transformed, how to deprecate without breaking production</li>
+        <li><strong>Documentation</strong> — what to write down so the next person uses the token instead of a raw hex</li>
+      </ul>
+
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Design Tokens Pro</th>
+            <th>Figma Variables &amp; docs</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>What it is</td>
+            <td>$39 written guide</td>
+            <td>A product feature + free help articles</td>
+          </tr>
+          <tr>
+            <td>Scope</td>
+            <td>Naming, architecture, themes, process</td>
+            <td>How to create and apply variables in Figma</td>
+          </tr>
+          <tr>
+            <td>Tool lock-in</td>
+            <td>Agnostic JSON and examples</td>
+            <td>Figma-first by design</td>
+          </tr>
+          <tr>
+            <td>Formats</td>
+            <td>Online + printable PDF</td>
+            <td>In-app UI and web docs</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>When Figma docs are enough</h2>
+
+      <p>If you only need light and dark in one Figma file, aliases from <code>blue/500</code> to <code>color/bg/primary</code>, and a library publish, start with Figma. The feature is free with your seat; the docs match the current UI.</p>
+
+      <h2>When the guide is the better next step</h2>
+
+      <p>Use Design Tokens Pro when variables start to multiply and nobody agrees on names; when developers receive hex instead of tokens; when you need dark mode <em>and</em> a second brand without duplicating the whole set; or when tokens must exist as JSON that Style Dictionary, Tokens Studio, or a custom pipeline can consume.</p>
+
+      <p>The guide does not replace Variables. It tells you <strong>which variables to create, how to name them, and how they should behave once they leave Figma</strong> — which is the part that usually fails.</p>
+
+      <h2>Other comparisons</h2>
+      <ul>
+        <li><a href="/compare/subatomic">vs Subatomic</a></li>
+        <li><a href="/compare/style-dictionary">vs Style Dictionary</a></li>
+        <li><a href="/compare/tokens-studio">vs Tokens Studio</a></li>
+        <li><a href="/compare/dtcg-spec">vs the DTCG specification</a></li>
+      </ul>
+    </article>
+  </main>
+
+  <section class="px-6 pb-20 md:pb-28">
+    <div class="max-w-3xl mx-auto border-t border-white/10 pt-16">
+      <h2 class="font-display text-4xl md:text-5xl leading-[0.95] mb-4">Get the guide today</h2>
+      <p class="text-lg text-muted leading-relaxed mb-8">Learn the naming and architecture Figma Variables cannot decide for you — $39, online + PDF.</p>
+      <a class="inline-flex items-center bg-signal text-signal-ink px-8 py-4 text-lg font-bold transition-all rounded-sm hover:shadow-md hover:translate-y-[-2px]"
+        href="https://francescoimprota.kit.com/products/design-tokens-pro?step=checkout">
+        Buy the guide — $39
+      </a>
+      <p class="text-muted text-lg mt-6">
+        or
+        <a class="text-signal underline underline-offset-2 font-medium ml-2" data-formkit-toggle="b8a4c3bfea"
+          href="https://francesco-improta.ck.page/b8a4c3bfea">Get two free chapters</a>
+      </p>
+    </div>
+  </section>
+
+  <footer class="bg-void border-t border-white/10 px-6 md:px-10 py-5">
+    <div class="max-w-[1440px] mx-auto flex flex-col-reverse items-center md:flex-row md:justify-between text-[11px] tracking-[0.1em] uppercase text-muted/50">
+      <p>Design Tokens Pro &copy; 2026 — Francesco Improta</p>
+      <nav class="flex gap-4 mb-4 md:mb-0">
+        <a href="/compare" class="hover:text-ink transition-colors">Compare</a>
+        <a href="/privacy" class="hover:text-ink transition-colors">Privacy</a>
+        <a href="mailto:designtokenspro@francescoimprota.com" class="hover:text-ink transition-colors">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script async data-uid="b8a4c3bfea" src="https://francesco-improta.ck.page/b8a4c3bfea/index.js"></script>
+</body>
+
+</html>

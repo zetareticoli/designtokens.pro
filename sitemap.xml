@@ -7,13 +7,43 @@
 
 <url>
   <loc>https://www.designtokens.pro/</loc>
-  <lastmod>2026-09-10</lastmod>
+  <lastmod>2026-09-24</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.designtokens.pro/privacy</loc>
   <lastmod>2026-09-10</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.designtokens.pro/compare</loc>
+  <lastmod>2026-09-24</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.designtokens.pro/compare/subatomic</loc>
+  <lastmod>2026-09-24</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.designtokens.pro/compare/figma-variables</loc>
+  <lastmod>2026-09-24</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.designtokens.pro/compare/style-dictionary</loc>
+  <lastmod>2026-09-24</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.designtokens.pro/compare/tokens-studio</loc>
+  <lastmod>2026-09-24</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.designtokens.pro/compare/dtcg-spec</loc>
+  <lastmod>2026-09-24</lastmod>
+  <priority>0.70</priority>
 </url>
 
 </urlset>
