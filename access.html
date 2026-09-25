@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Open the guide – Design Tokens Pro</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="/css/style.compiled.css">
+  <link rel="stylesheet" href="/css/guide.css">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/icon.png">
+  <meta name="theme-color" content="#F4F3EF">
+</head>
+<body class="guide-body">
+  <header class="guide-header">
+    <a class="guide-logo" href="/"><img src="/img/logo.svg" alt="Design Tokens Pro"></a>
+  </header>
+  <main class="guide-access">
+    <p class="guide-kicker">Ready to get started?</p>
+    <h1>Access the guide</h1>
+    <p class="guide-lede">Use the email from your Kit receipt.</p>
+    <form class="guide-access-form" method="post" action="/api/access">
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" autocomplete="email" required>
+      <button type="submit">Continue</button>
+    </form>
+    <p class="guide-access-error" data-error hidden></p>
+  </main>
+  <script>
+    const messages = {
+      email: 'Enter a valid email address.',
+      purchase: 'That email does not have a purchase for this guide.',
+      unavailable: 'Access cannot be checked right now. Try again in a moment.',
+    };
+    const code = new URLSearchParams(location.search).get('error');
+    const node = document.querySelector('[data-error]');
+    if (messages[code]) {
+      node.textContent = messages[code];
+      node.hidden = false;
+    }
+  </script>
+</body>
+</html>
