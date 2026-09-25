@@ -1,0 +1,11 @@
+{
+  "name": "designtokens.pro",
+  "install": "npm ci && (npx --yes serve --version >/dev/null 2>&1 || true)",
+  "terminals": [
+    {
+      "name": "web",
+      "command": "npm run serve"
+    }
+  ],
+  "ports": [3000]
+}
