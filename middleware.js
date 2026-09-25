@@ -1,8 +1,22 @@
+import { hasGuideCookie } from './lib/guide-session.mjs';
+
 /**
  * Content negotiation: serve Markdown when Accept includes text/markdown.
  * Discovery Link headers for llms.txt are set in vercel.json.
+ * /guide is served only after /api/access sets a signed cookie.
  */
-export default function middleware(request) {
+export default async function middleware(request) {
+  const url = new URL(request.url);
+  const pathname = url.pathname.replace(/\/$/, '') || '/';
+  const guidePath = pathname === '/guide' || pathname.startsWith('/guide/') || pathname.startsWith('/content/guide');
+
+  if (guidePath) {
+    const allowed = await hasGuideCookie(request.headers.get('cookie') || '', process.env.GUIDE_ACCESS_SECRET || '');
+    if (!allowed) {
+      return Response.redirect(new URL('/access', url), 302);
+    }
+  }
+
   const accept = request.headers.get('accept') || '';
   const wantsMarkdown =
     accept.includes('text/markdown') || accept.includes('text/x-markdown');
@@ -10,9 +24,6 @@ export default function middleware(request) {
   if (!wantsMarkdown) {
     return;
   }
-
-  const url = new URL(request.url);
-  const pathname = url.pathname.replace(/\/$/, '') || '/';
 
   const mdMap = {
     '/': '/index.md',
@@ -40,5 +51,15 @@ export default function middleware(request) {
 }
 
 export const config = {
-  matcher: ['/', '/index.html', '/privacy', '/privacy.html', '/join', '/join.html'],
+  matcher: [
+    '/',
+    '/index.html',
+    '/privacy',
+    '/privacy.html',
+    '/join',
+    '/join.html',
+    '/guide',
+    '/guide/:path*',
+    '/content/guide/:path*',
+  ],
 };

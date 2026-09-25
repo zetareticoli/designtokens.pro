@@ -1,0 +1,183 @@
+/* Graphic style for the downloadable PDF.
+   Edit this file, then run: npm run build:guide */
+
+@page {
+  size: A4;
+  margin: 18mm 16mm 20mm;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #f4f3ef;
+  color: #0a0a0a;
+  font-family: Supreme, "Iowan Old Style", Palatino, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+}
+
+@font-face {
+  font-family: "Hubot Sans";
+  font-stretch: 75% 115%;
+  font-weight: 400 900;
+  src: url("../fonts/HubotSans-variable.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Supreme;
+  font-weight: 100 800;
+  font-style: normal;
+  src: url("../fonts/Supreme-Variable.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Supreme;
+  font-weight: 100 800;
+  font-style: italic;
+  src: url("../fonts/Supreme-VariableItalic.woff2") format("woff2");
+}
+
+.pdf-cover {
+  page-break-after: always;
+  min-height: 250mm;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 12mm 0 8mm;
+}
+
+.pdf-kicker {
+  margin: 0 0 8mm;
+  font-family: "Hubot Sans", sans-serif;
+  font-size: 9pt;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #ff4713;
+}
+
+.pdf-cover h1 {
+  margin: 0;
+  font-family: "Hubot Sans", sans-serif;
+  font-size: 42pt;
+  line-height: 0.92;
+  font-weight: 650;
+}
+
+.pdf-cover p {
+  max-width: 120mm;
+  margin: 8mm 0 0;
+  font-size: 13pt;
+}
+
+.pdf-toc {
+  page-break-after: always;
+}
+
+.pdf-toc h2,
+.pdf-chapter h2,
+.pdf-body h2,
+.pdf-body h3 {
+  font-family: "Hubot Sans", sans-serif;
+  line-height: 1.15;
+}
+
+.pdf-toc h2 {
+  margin: 0 0 8mm;
+  font-size: 22pt;
+}
+
+.pdf-toc ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pdf-toc > ol > li {
+  margin: 0 0 5mm;
+  page-break-inside: avoid;
+}
+
+.pdf-toc a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.pdf-toc-title {
+  font-family: "Hubot Sans", sans-serif;
+  font-size: 14pt;
+}
+
+.pdf-toc-num {
+  color: #ff4713;
+  margin-right: 3mm;
+  font-family: ui-monospace, monospace;
+  font-size: 9pt;
+}
+
+.pdf-toc-sections {
+  margin: 2mm 0 0 8mm;
+  padding: 0;
+  list-style: none;
+}
+
+.pdf-toc-sections li {
+  margin: 1mm 0;
+  font-size: 10pt;
+}
+
+.pdf-chapter {
+  page-break-before: always;
+}
+
+.pdf-chapter h2 {
+  margin: 0 0 6mm;
+  font-size: 26pt;
+}
+
+.pdf-body h2 {
+  margin: 8mm 0 3mm;
+  font-size: 16pt;
+  page-break-after: avoid;
+}
+
+.pdf-body h3 {
+  margin: 6mm 0 2mm;
+  font-size: 13pt;
+  page-break-after: avoid;
+}
+
+.pdf-body p,
+.pdf-body ul,
+.pdf-body ol {
+  margin: 0 0 4mm;
+}
+
+.pdf-body a {
+  color: #ff4713;
+}
+
+.pdf-body code {
+  font-family: ui-monospace, monospace;
+  font-size: 0.9em;
+  background: rgba(10, 10, 10, 0.06);
+  padding: 0 1mm;
+}
+
+.pdf-body pre {
+  margin: 0 0 5mm;
+  padding: 4mm;
+  background: #0a0a0a;
+  color: #f4f3ef;
+  white-space: pre-wrap;
+}
+
+.pdf-body pre code {
+  background: transparent;
+  color: inherit;
+  padding: 0;
+}

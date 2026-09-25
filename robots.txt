@@ -1,7 +1,7 @@
 # www.robotstxt.org/
 
-# Allow crawling of all content
+# Allow crawling of public pages. The guide is not for indexing.
 User-agent: *
-Disallow:
+Disallow: /guide/
 
 Sitemap: https://www.designtokens.pro/sitemap.xml

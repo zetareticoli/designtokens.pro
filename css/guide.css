@@ -1,0 +1,333 @@
+.guide-body {
+  margin: 0;
+  background: #f4f3ef;
+  color: #0a0a0a;
+  font-family: Supreme, system-ui, sans-serif;
+}
+
+.guide-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid rgba(10, 10, 10, 0.12);
+}
+
+.guide-logo img {
+  height: 2rem;
+  width: auto;
+}
+
+.guide-contents-link,
+.guide-prose a,
+.guide-sections a,
+.guide-index-sections a,
+.guide-pager a {
+  color: #ff4713;
+}
+
+.guide-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.guide-contents-link {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.guide-pdf-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 0.8rem;
+  background: #0a0a0a;
+  color: #f4f3ef;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 650;
+}
+
+.guide-access {
+  max-width: 32rem;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 6rem;
+}
+
+.guide-access h1 {
+  font-family: "Hubot Sans", system-ui, sans-serif;
+  font-size: clamp(2.4rem, 5vw, 3.5rem);
+  line-height: 0.95;
+  margin: 0 0 1rem;
+}
+
+.guide-access-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-top: 1.5rem;
+}
+
+.guide-access-form label {
+  font-size: 0.85rem;
+  font-weight: 650;
+}
+
+.guide-access-form input {
+  border: 1px solid rgba(10, 10, 10, 0.2);
+  background: #fff;
+  color: #0a0a0a;
+  font: inherit;
+  padding: 0.7rem 0.8rem;
+}
+
+.guide-access-form button {
+  margin-top: 0.4rem;
+  border: 0;
+  background: #0a0a0a;
+  color: #f4f3ef;
+  font: inherit;
+  font-weight: 650;
+  padding: 0.7rem 0.9rem;
+  cursor: pointer;
+}
+
+.guide-access-error {
+  color: #ff4713;
+  margin-top: 1rem;
+}
+
+.guide-shell {
+  display: grid;
+  grid-template-columns: 16rem minmax(0, 42rem);
+  justify-content: center;
+  gap: 3rem;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.guide-sidebar {
+  position: sticky;
+  top: 1.5rem;
+  align-self: start;
+}
+
+.guide-nav-disclosure summary {
+  cursor: pointer;
+  font-family: "Hubot Sans", system-ui, sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.guide-nav,
+.guide-index,
+.guide-sections ol,
+.guide-index-sections {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.guide-nav-item a,
+.guide-nav-item.is-soon {
+  display: flex;
+  gap: 0.75rem;
+  align-items: baseline;
+  padding: 0.4rem 0;
+  color: inherit;
+  text-decoration: none;
+}
+
+.guide-nav-item a[aria-current="page"] {
+  color: #ff4713;
+  font-weight: 650;
+}
+
+.guide-nav-num {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.75rem;
+  color: #ff4713;
+}
+
+.guide-soon {
+  margin-left: auto;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #9a9a94;
+}
+
+.guide-main h1 {
+  font-family: "Hubot Sans", system-ui, sans-serif;
+  font-size: clamp(2.4rem, 5vw, 3.5rem);
+  line-height: 0.95;
+  margin: 0 0 1.5rem;
+}
+
+.guide-kicker {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #ff4713;
+  margin: 0 0 0.75rem;
+}
+
+.guide-lede {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-top: 0;
+}
+
+.guide-sections {
+  margin: 0 0 2rem;
+  padding: 1rem 0;
+  border-top: 1px solid rgba(10, 10, 10, 0.12);
+  border-bottom: 1px solid rgba(10, 10, 10, 0.12);
+}
+
+.guide-section-item {
+  margin: 0.35rem 0;
+}
+
+.guide-section-item.depth-3 {
+  margin-left: 1rem;
+}
+
+.guide-prose {
+  font-size: 1.125rem;
+  line-height: 1.65;
+}
+
+.guide-prose h2,
+.guide-prose h3 {
+  font-family: "Hubot Sans", system-ui, sans-serif;
+  line-height: 1.15;
+  margin: 2rem 0 0.75rem;
+}
+
+.guide-prose h2 {
+  font-size: 1.7rem;
+}
+
+.guide-prose p,
+.guide-prose ul,
+.guide-prose ol {
+  margin: 0 0 1rem;
+}
+
+.guide-prose ul,
+.guide-prose ol {
+  padding-left: 1.25rem;
+}
+
+.guide-prose code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.9em;
+  background: rgba(10, 10, 10, 0.06);
+  padding: 0.1em 0.35em;
+}
+
+.guide-prose pre {
+  overflow: auto;
+  padding: 1rem;
+  background: #0a0a0a;
+  color: #f4f3ef;
+}
+
+.guide-prose pre code {
+  background: transparent;
+  padding: 0;
+  color: inherit;
+}
+
+.guide-pager {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(10, 10, 10, 0.12);
+}
+
+.guide-pager-link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  text-decoration: none;
+  max-width: 16rem;
+}
+
+.guide-pager-link.is-next {
+  text-align: right;
+  margin-left: auto;
+}
+
+.guide-pager-link span {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #9a9a94;
+}
+
+.guide-pager-link strong {
+  font-weight: 650;
+}
+
+.guide-index {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.guide-index-item {
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(10, 10, 10, 0.12);
+}
+
+.guide-index-title {
+  display: flex;
+  gap: 0.9rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.guide-index-title h2,
+.guide-index-item h2 {
+  font-family: "Hubot Sans", system-ui, sans-serif;
+  font-size: 1.6rem;
+  margin: 0 0 0.35rem;
+}
+
+.guide-index-title p,
+.guide-index-item p {
+  margin: 0;
+  color: #3f3f3a;
+}
+
+.guide-index-sections {
+  margin: 0.75rem 0 0 2rem;
+}
+
+.guide-index-sections li {
+  margin: 0.25rem 0;
+}
+
+@media (max-width: 800px) {
+  .guide-shell {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .guide-sidebar {
+    position: static;
+  }
+
+  .guide-nav-disclosure:not([open]) + .guide-main,
+  .guide-nav-disclosure {
+    border-bottom: 1px solid rgba(10, 10, 10, 0.12);
+    padding-bottom: 0.5rem;
+  }
+}
