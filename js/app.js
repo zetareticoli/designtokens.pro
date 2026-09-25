@@ -18,6 +18,83 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", updateHeader, { passive: true });
   updateHeader();
 
+  // ── Hero / CTA grid cell hover ──
+  // Each cell lights up independently when the pointer enters it
+  function resolveGridCellSize(grid) {
+    var width = grid.clientWidth;
+    return Math.min(80, Math.max(40, width / 6));
+  }
+
+  function initGridHover(grid) {
+    var section = grid.parentElement;
+    if (!section) return;
+
+    var wrap = document.createElement("div");
+    wrap.className = "hero-grid__cells";
+    grid.appendChild(wrap);
+
+    var cols = 0;
+    var rows = 0;
+    var cellSize = 0;
+    var lit = null;
+
+    function buildCells() {
+      cellSize = resolveGridCellSize(grid);
+      var nextCols = Math.max(1, Math.ceil(grid.clientWidth / cellSize));
+      var nextRows = Math.max(1, Math.ceil(grid.clientHeight / cellSize));
+      if (nextCols === cols && nextRows === rows) return;
+
+      cols = nextCols;
+      rows = nextRows;
+      lit = null;
+      wrap.style.gridTemplateColumns = "repeat(" + cols + ", " + cellSize + "px)";
+      wrap.style.gridTemplateRows = "repeat(" + rows + ", " + cellSize + "px)";
+      wrap.replaceChildren();
+
+      var fragment = document.createDocumentFragment();
+      var total = cols * rows;
+      for (var i = 0; i < total; i++) {
+        var cell = document.createElement("div");
+        cell.className = "hero-grid__cell";
+        fragment.appendChild(cell);
+      }
+      wrap.appendChild(fragment);
+    }
+
+    function cellAt(x, y) {
+      if (x < 0 || y < 0 || x >= cols * cellSize || y >= rows * cellSize) return null;
+      var col = Math.min(cols - 1, Math.floor(x / cellSize));
+      var row = Math.min(rows - 1, Math.floor(y / cellSize));
+      return wrap.children[row * cols + col] || null;
+    }
+
+    function onMove(event) {
+      var rect = grid.getBoundingClientRect();
+      var next = cellAt(event.clientX - rect.left, event.clientY - rect.top);
+      if (next === lit) return;
+      if (lit) lit.classList.remove("is-lit");
+      lit = next;
+      if (lit) lit.classList.add("is-lit");
+    }
+
+    function onLeave() {
+      if (lit) lit.classList.remove("is-lit");
+      lit = null;
+    }
+
+    buildCells();
+    if (typeof ResizeObserver !== "undefined") {
+      new ResizeObserver(buildCells).observe(grid);
+    } else {
+      window.addEventListener("resize", buildCells);
+    }
+
+    section.addEventListener("mousemove", onMove, { passive: true });
+    section.addEventListener("mouseleave", onLeave);
+  }
+
+  document.querySelectorAll(".hero-grid").forEach(initGridHover);
+
   // ── Hero load sequence ──
   // Staggered reveal based on data-delay
   const heroItems = document.querySelectorAll(".animate-in");
