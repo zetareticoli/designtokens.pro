@@ -125,6 +125,43 @@
   background-image: url('/img/token-grid-icon.svg');
   background-size: var(--hero-grid-cell) var(--hero-grid-cell);
   background-repeat: repeat;
+  pointer-events: none;
+}
+
+/* Interactive cells — each lights up on its own */
+.hero-grid__cells {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  pointer-events: none;
+}
+
+.hero-grid__cell {
+  position: relative;
+}
+
+.hero-grid__cell::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.14) 0%,
+    rgba(255, 255, 255, 0.05) 45%,
+    rgba(255, 255, 255, 0.02) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.hero-grid__cell.is-lit::before {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-grid__cell::before {
+    transition: opacity 0.15s linear;
+  }
 }
 
 /* ========================================
