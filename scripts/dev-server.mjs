@@ -49,12 +49,27 @@ function loadEnv(file) {
 loadEnv(path.join(root, '.env.local'));
 loadEnv(path.join(root, '.env'));
 
+const vercel = JSON.parse(fs.readFileSync(path.join(root, 'vercel.json'), 'utf8'));
+
+function normalizePathname(urlPath) {
+  const decoded = decodeURIComponent(urlPath.split('?')[0] || '/');
+  if (decoded.length > 1 && decoded.endsWith('/')) return decoded.slice(0, -1);
+  return decoded || '/';
+}
+
+function findRoute(routes, pathname) {
+  return (routes || []).find((route) => route.source === pathname) || null;
+}
+
+function toRelativePath(urlPath) {
+  const decoded = normalizePathname(urlPath);
+  return decoded.replace(/^\/+/, '') || '.';
+}
+
 function resolveFile(urlPath) {
-  const decoded = decodeURIComponent(urlPath.split('?')[0]);
-  const relative = path.normalize(decoded).replace(/^(\.\.(\/|\\|$))+/, '');
-  let file = path.join(root, relative);
-  if (!file.startsWith(root)) return null;
-  if (decoded.endsWith('/')) file = path.join(file, 'index.html');
+  const relative = toRelativePath(urlPath);
+  let file = path.resolve(root, relative);
+  if (file !== root && !file.startsWith(`${root}${path.sep}`)) return null;
   if (fs.existsSync(file) && fs.statSync(file).isDirectory()) file = path.join(file, 'index.html');
   if (!fs.existsSync(file) && fs.existsSync(`${file}.html`)) file = `${file}.html`;
   if (!fs.existsSync(file) || !fs.statSync(file).isFile()) return null;
@@ -103,7 +118,7 @@ const server = http.createServer(async (req, res) => {
       return;
     }
 
-    const pathname = url.pathname.replace(/\/$/, '') || '/';
+    const pathname = normalizePathname(url.pathname);
     const guidePath = pathname === '/guide' || pathname.startsWith('/guide/') || pathname.startsWith('/content/guide');
     if (guidePath) {
       const allowed = await hasGuideCookie(request.headers.get('cookie') || '', process.env.GUIDE_ACCESS_SECRET || '');
@@ -114,7 +129,15 @@ const server = http.createServer(async (req, res) => {
       }
     }
 
-    const file = resolveFile(url.pathname);
+    const redirect = findRoute(vercel.redirects, pathname);
+    if (redirect) {
+      res.writeHead(redirect.permanent ? 301 : 302, { Location: redirect.destination });
+      res.end();
+      return;
+    }
+
+    const rewrite = findRoute(vercel.rewrites, pathname);
+    const file = resolveFile(rewrite ? rewrite.destination : pathname);
     if (!file) {
       const missing = resolveFile('/404.html');
       res.writeHead(404, { 'Content-Type': 'text/html; charset=utf-8' });
