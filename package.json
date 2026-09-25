@@ -1,4 +1,12 @@
 {
+  "name": "designtokens.pro",
+  "private": true,
+  "scripts": {
+    "build": "tailwindcss -i css/style.css -o css/style.compiled.css",
+    "watch": "tailwindcss -i css/style.css -o css/style.compiled.css --watch",
+    "serve": "npx --yes serve -l 3000",
+    "dev": "npx --yes serve -l 3000"
+  },
   "dependencies": {
     "html5-boilerplate": "^9.0.0"
   },
