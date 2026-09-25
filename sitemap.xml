@@ -7,13 +7,33 @@
 
 <url>
   <loc>https://www.designtokens.pro/</loc>
-  <lastmod>2026-09-10</lastmod>
+  <lastmod>2026-09-24</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.designtokens.pro/privacy</loc>
   <lastmod>2026-09-10</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.designtokens.pro/compare</loc>
+  <lastmod>2026-09-24</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.designtokens.pro/compare/subatomic</loc>
+  <lastmod>2026-09-24</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.designtokens.pro/compare/design-systems-guide</loc>
+  <lastmod>2026-09-24</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.designtokens.pro/compare/design-tokens-101</loc>
+  <lastmod>2026-09-24</lastmod>
+  <priority>0.70</priority>
 </url>
 
 </urlset>

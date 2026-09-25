@@ -8,6 +8,7 @@ Author: Francesco Improta
 - Checkout: https://francescoimprota.kit.com/products/design-tokens-pro?step=checkout
 - Free chapters: https://francesco-improta.ck.page/b8a4c3bfea
 - Site: https://www.designtokens.pro/
+- Comparisons: https://www.designtokens.pro/compare
 
 ## Overview
 
@@ -66,6 +67,10 @@ Yes, this is a digital and self-paced guide, you can take as long as you want to
 ### Should I know to code?
 
 While knowing how to code can enhance your understanding of design tokens, it's not a requirement for this guide. The guide is designed to be accessible for both designers and developers, with practical examples that don't require coding expertise.
+
+### How does this compare to other design token courses?
+
+Design Tokens Pro is a written $39 guide you can finish in a couple of hours. Other popular options are video courses. See: https://www.designtokens.pro/compare
 
 ### What if I decide it's not for me?
 

@@ -1,9 +1,47 @@
 {
   "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/compare/figma-variables",
+      "destination": "/compare",
+      "permanent": true
+    },
+    {
+      "source": "/compare/style-dictionary",
+      "destination": "/compare",
+      "permanent": true
+    },
+    {
+      "source": "/compare/tokens-studio",
+      "destination": "/compare",
+      "permanent": true
+    },
+    {
+      "source": "/compare/dtcg-spec",
+      "destination": "/compare",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/privacy",
       "destination": "/privacy.html"
+    },
+    {
+      "source": "/compare",
+      "destination": "/compare.html"
+    },
+    {
+      "source": "/compare/subatomic",
+      "destination": "/compare-subatomic.html"
+    },
+    {
+      "source": "/compare/design-systems-guide",
+      "destination": "/compare-design-systems-guide.html"
+    },
+    {
+      "source": "/compare/design-tokens-101",
+      "destination": "/compare-design-tokens-101.html"
     },
     {
       "source": "/confirm",
@@ -44,6 +82,42 @@
     },
     {
       "source": "/privacy.html",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "</llms.txt>; rel=\"describedby\"; type=\"text/markdown\""
+        }
+      ]
+    },
+    {
+      "source": "/compare",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "</llms.txt>; rel=\"describedby\"; type=\"text/markdown\""
+        }
+      ]
+    },
+    {
+      "source": "/compare.html",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "</llms.txt>; rel=\"describedby\"; type=\"text/markdown\""
+        }
+      ]
+    },
+    {
+      "source": "/compare/:path*",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "</llms.txt>; rel=\"describedby\"; type=\"text/markdown\""
+        }
+      ]
+    },
+    {
+      "source": "/compare-:path*.html",
       "headers": [
         {
           "key": "Link",
