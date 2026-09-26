@@ -34,12 +34,6 @@ export default async function middleware(request) {
     '/join.html': '/join.md',
     '/compare': '/compare.md',
     '/compare.html': '/compare.md',
-    '/compare/subatomic': '/compare-subatomic.md',
-    '/compare-subatomic.html': '/compare-subatomic.md',
-    '/compare/design-systems-guide': '/compare-design-systems-guide.md',
-    '/compare-design-systems-guide.html': '/compare-design-systems-guide.md',
-    '/compare/design-tokens-101': '/compare-design-tokens-101.md',
-    '/compare-design-tokens-101.html': '/compare-design-tokens-101.md',
   };
 
   const mdPath = mdMap[pathname];
@@ -68,12 +62,6 @@ export const config = {
     '/join.html',
     '/compare',
     '/compare.html',
-    '/compare/subatomic',
-    '/compare/design-systems-guide',
-    '/compare/design-tokens-101',
-    '/compare-subatomic.html',
-    '/compare-design-systems-guide.html',
-    '/compare-design-tokens-101.html',
     '/guide',
     '/guide/:path*',
     '/content/guide/:path*',

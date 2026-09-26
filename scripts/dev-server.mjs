@@ -7,6 +7,7 @@ import { hasGuideCookie } from '../lib/guide-session.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const port = Number(process.env.PORT) || 3000;
+const { redirects = [] } = JSON.parse(fs.readFileSync(path.join(root, 'vercel.json'), 'utf8'));
 
 const types = {
   '.html': 'text/html; charset=utf-8',
@@ -104,6 +105,19 @@ const server = http.createServer(async (req, res) => {
     }
 
     const pathname = url.pathname.replace(/\/$/, '') || '/';
+    const redirect = redirects.find((entry) => entry.source === pathname);
+    if (redirect) {
+      res.writeHead(redirect.permanent ? 308 : 307, { Location: redirect.destination + url.search });
+      res.end();
+      return;
+    }
+
+    if ((pathname === '/compare' || pathname === '/compare.html') &&
+        /text\/(?:x-)?markdown/.test(request.headers.get('accept') || '')) {
+      sendFile(res, path.join(root, 'compare.md'));
+      return;
+    }
+
     const guidePath = pathname === '/guide' || pathname.startsWith('/guide/') || pathname.startsWith('/content/guide');
     if (guidePath) {
       const allowed = await hasGuideCookie(request.headers.get('cookie') || '', process.env.GUIDE_ACCESS_SECRET || '');

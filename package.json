@@ -1,13 +1,18 @@
 {
   "scripts": {
     "dev": "node scripts/dev-server.mjs",
-    "build:guide": "node scripts/build-guide.mjs"
+    "build:guide": "node scripts/build-guide.mjs",
+    "build": "node scripts/export-markdown.mjs",
+    "predev": "npm run build"
   },
   "dependencies": {
     "html5-boilerplate": "^9.0.0"
   },
   "devDependencies": {
+    "@mixmark-io/domino": "^2.2.0",
     "marked": "^15.0.12",
-    "tailwindcss": "^3.4.1"
+    "tailwindcss": "^3.4.1",
+    "turndown": "^7.2.4",
+    "turndown-plugin-gfm": "^1.0.2"
   }
 }

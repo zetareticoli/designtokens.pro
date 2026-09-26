@@ -13,7 +13,5 @@ themes/color modes, lifecycle management, and documentation.
 - [Home (Markdown)](https://www.designtokens.pro/index.md): Same content as plain Markdown
 - [Privacy Policy](https://www.designtokens.pro/privacy): Data handling and cookies
 - [Privacy (Markdown)](https://www.designtokens.pro/privacy.md): Same content as plain Markdown
-- [Compare](https://www.designtokens.pro/compare): How the guide differs from other design token courses
-- [vs Subatomic](https://www.designtokens.pro/compare/subatomic): Written guide vs Brad Frost’s video course
-- [vs Design Tokens Mastery](https://www.designtokens.pro/compare/design-systems-guide): Written guide vs The Design System Guide’s Figma course
-- [vs Design Tokens 101](https://www.designtokens.pro/compare/design-tokens-101): Eight-chapter guide vs the Udemy intro
+- [Compare](https://www.designtokens.pro/compare): How the guide compares with video courses, workshops, articles, and tool documentation
+- [Compare (Markdown)](https://www.designtokens.pro/compare.md): Generated Markdown version of the comparison page

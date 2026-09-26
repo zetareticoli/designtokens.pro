@@ -1,6 +1,8 @@
-# Privacy Policy
+<!-- Generated from privacy.html by scripts/export-markdown.mjs. Edit the HTML source. -->
 
-Design Tokens Pro — https://www.designtokens.pro/
+Source: https://www.designtokens.pro/privacy
+
+# Privacy Policy
 
 ## Our Commitment to Privacy
 
@@ -10,15 +12,15 @@ If you have additional questions or require more information about our Privacy P
 
 ## Information We Collect
 
-We use [Plausible](https://www.plausible.io), a privacy-friendly analytics service, to track simple website analytics. This helps us understand how our site is being used and how we can improve your experience. This data does not include personal identifying information.
+We use [Plausible](https://www.plausible.io/), a privacy-friendly analytics service, to track simple website analytics. This helps us understand how our site is being used and how we can improve your experience. This data does not include personal identifying information.
 
-For users who sign up for our guide updates, we require basic personal information such as your email and first name. This information is stored securely on [ConvertKit](https://convertkit.com), a reliable email marketing service.
+For users who sign up for our guide updates, we require basic personal information such as your email and first name. This information is stored securely on [ConvertKit](https://convertkit.com/), a reliable email marketing service.
 
-We invite you to consult the respective Privacy Policies of these third-party services for more detailed information.
+We invite you to consult the respective Privacy Policies of these third-party servers for more detailed information
 
 ## Cookies
 
-We do not collect any cookies. We respect your privacy and prioritize maintaining a safe and secure browsing experience for all our users.
+We want to assure our visitors that we do not collect any cookies at all. We respect your privacy and prioritize maintaining a safe and secure browsing experience for all our users.
 
 ## Online Privacy Policy Only
 
@@ -30,8 +32,8 @@ By using our website, you hereby consent to our Privacy Policy and agree to its 
 
 ## Changes
 
-We may change this privacy policy anytime, so please check it often. Any changes or explanations will be active right after we post them on the site. If we change this policy significantly, we'll let you know here.
+We may change this privacy policy anytime, so please check it often. Any changes or explanations will be active right after we post them on the site. If we change this policy significantly, we'll let you know here. This way, you'll know what data we gather, how we use it, and when we might share it.
 
 ## Questions and contact
 
-If you would like to access, correct or delete any personal information we have about you, register a complaint, or simply want more information, contact our Privacy Compliance Officer at designtokenspro@francescoimprota.com
+f you would like to access, correct or delete any personal information we have about you, register a complaint, or simply want more information contact our Privacy Compliance Officer at designtokenspro@francescoimprota.com

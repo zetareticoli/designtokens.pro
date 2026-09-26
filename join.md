@@ -1,9 +1,15 @@
-# Join the waitlist — Design Tokens Pro
+<!-- Generated from join.html by scripts/export-markdown.mjs. Edit the HTML source. -->
 
-Design Tokens Pro is a digital guide for designers and developers involved in the product design process. It provides a reliable reference for creating effective design tokens for any platform or technology.
+Source: https://www.designtokens.pro/join
 
-Join the waitlist to stay updated and reserve an early bird price.
+# Join the waitlist – Design Tokens Guide
 
-- Waitlist form (HTML): https://www.designtokens.pro/join
-- Home: https://www.designtokens.pro/
-- Free chapters signup: https://francesco-improta.ck.page/b8a4c3bfea
+## Join the waitlist
+
+Stay updated. Reserve your seat and get an **early bird price** 🚀
+
+Reserve your seat
+
+Unsubscribe at any time.
+
+[Built with ConvertKit](https://convertkit.com/features/forms?utm_campaign=poweredby&utm_content=form&utm_medium=referral&utm_source=dynamic)
