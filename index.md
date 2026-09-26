@@ -37,6 +37,13 @@ From basics to advanced topics, this guide covers all you need to know for creat
 8. **Documenting Tokens** — How to document design tokens effectively so your team can use them consistently.
 9. **Design Tokens and AI** *(coming soon)* — How design tokens become the structured language AI needs to stay on-brand, and how to use AI to create, audit, and ship tokens without losing control.
 
+## How it compares
+
+- [vs Subatomic](https://www.designtokens.pro/compare/subatomic) — $900 video course vs $39 written guide
+- [vs Design Tokens Mastery](https://www.designtokens.pro/compare/design-systems-guide) — Figma / Tokens Studio course vs tool-agnostic written guide
+- [vs Design Tokens 101](https://www.designtokens.pro/compare/design-tokens-101) — one-hour Udemy intro vs eight-chapter reference
+- [All comparisons](https://www.designtokens.pro/compare)
+
 ## Guide materials
 
 - Self-paced digital guide
